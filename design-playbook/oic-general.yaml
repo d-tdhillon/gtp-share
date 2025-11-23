@@ -1,0 +1,110 @@
+title: Oracle Integration Cloud Considerations
+sub-title: Key considerations for designing, securing, and operating integrations using Oracle Integration Cloud (OIC) for Fusion ERP & EPM
+objList:
+  - text: Integration Architecture & Patterns
+    icon: account_tree
+    desc: Define end-to-end architecture and integration patterns aligned to enterprise strategy.
+    notes:
+      - Use OIC for API-led, event-driven, scheduled, and batch integration flows.
+      - Choose patterns: real-time REST/SOAP, scheduled data sync, file-based SFTP, or B2B.
+      - Identify data domains (Finance, HR, Supply Chain, Insurance, Reinsurance) and integration boundaries.
+      - Ensure architecture aligns with Fusion SaaS best practices and data minimisation principles.
+
+  - text: Connectivity & Adapters
+    icon: hub
+    desc: Leverage OIC adapters for Fusion ERP/EPM, databases, on-prem, and third-party platforms.
+    notes:
+      - Use Fusion ERP and HCM adapters for secure, metadata-driven integration.
+      - Use EPM Cloud adapter for data load, metadata load, and business rule execution.
+      - Enable REST/SOAP, FTP/SFTP, B2B, AQ/MQ, and database adapters where required.
+      - Validate endpoint authentication (OAuth2, API keys, certificates) and IP allowlists.
+
+  - text: Event-Driven Integrations
+    icon: notifications
+    desc: Enable real-time processing using Fusion and OIC event framework.
+    notes:
+      - Use business events for suppliers, invoices, journals, assets, projects, etc.
+      - Configure OIC event subscriptions for data enrichment and downstream processing.
+      - Enable asynchronous processing for high-volume insurance events (claims, bordereaux, policy transactions).
+      - Use streaming/event hubs for near-real-time patterns if needed.
+
+  - text: Batch & File-Based Integrations
+    icon: folder
+    desc: Support high-volume data movements required for finance, insurance, and regulatory systems.
+    notes:
+      - Manage FBDI, UCM, and BIP extract flows using OIC scheduling.
+      - Process insurance bordereaux (premium, claims, risk) via SFTP or API pipelines.
+      - Chunk large files for performance and memory optimisation.
+      - Maintain staging logic for partial or incremental loads.
+
+  - text: Insurance-Specific Integration Scenarios
+    icon: business
+    desc: Integrate underwriting, claims, reinsurance, and bordereaux systems with Fusion/EPM.
+    notes:
+      - Process DA/coverholder bordereaux using file transforms and validation rules.
+      - Integrate claims systems (Guidewire, Duck Creek) for AP/GL postings and ledger updates.
+      - Load reinsurance cessions and recoveries to Fusion or EPM for matching and consolidation.
+      - Synchronise actuarial models, YOA/AY structures, and risk codes with EDMCS.
+
+  - text: OBN & B2B Messaging
+    icon: compare_arrows
+    desc: Support e-invoicing, purchase orders, and regulatory B2B compliance.
+    notes:
+      - Use B2B/OIC for PEPPOL, EDIFACT, cXML, and government-mandated e-invoice formats.
+      - Manage vendor connectivity via Oracle Business Network (OBN).
+      - Monitor message acknowledgements, delivery failures, and document transformations.
+      - Ensure compliance with regional mandates (EU VAT, India IRN, Saudi ZATCA, Australia Peppol).
+
+  - text: Data Transformation & Mapping
+    icon: sync_alt
+    desc: Ensure seamless mapping between source and target structures.
+    notes:
+      - Use XSLT, lookups, and AI/ML-based mapping suggestions.
+      - Maintain reusable transformation libraries for COA, YOA/AY, LOB, product hierarchies.
+      - Validate data before Fusion submission using business rules.
+      - Build version-controlled mappings with change impact tracking.
+
+  - text: Security, Access & Data Protection
+    icon: lock
+    desc: Implement strong security, segregation of duties, and data governance.
+    notes:
+      - Use OAuth2 for Fusion/EPM API authentication and certificate-based access.
+      - Encrypt data in-transit and at-rest (SFTP, PGP, Vault integration).
+      - Restrict privileged access to OIC environments and adapters.
+      - Maintain audit logs for integrations, credentials, and runtime operations.
+
+  - text: Error Handling, Alerts & Observability
+    icon: bug_report
+    desc: Implement robust monitoring and operational support processes.
+    notes:
+      - Use OIC dashboards, Monitoring API, and email/SMS alerts for failures.
+      - Implement retry logic, fallback patterns, and dead-letter queues.
+      - Maintain functional error handling for finance/insurance business users.
+      - Track SLA metrics for availability, throughput, and failure rate.
+
+  - text: Performance, Scaling & High-Volume Processing
+    icon: speed
+    desc: Ensure OIC supports enterprise-level and insurance-scale workloads.
+    notes:
+      - Use parallel processing for large FBDI, bordereaux, or claims data flows.
+      - Optimise integration pipelines to reduce latency and avoid throttling.
+      - Use staging layers and incremental logic to handle large insurance datasets.
+      - Monitor CPU/memory utilisation and plan OIC capacity scaling.
+
+  - text: DevOps, CI/CD & Environment Management
+    icon: construction
+    desc: Establish disciplined lifecycle management across Dev, Test, Prod.
+    notes:
+      - Use OIC’s package export/import for deployment automation.
+      - Apply CI/CD pipelines using Git, API deployments, or DevCS/OIC CLI.
+      - Maintain configuration separation for each environment (URLs, keys, certificates).
+      - Version-control integrations, mappings, schedules, and lookup tables.
+
+  - text: Integration with EPM, FCCS & EDMCS
+    icon: join_inner
+    desc: Ensure enterprise data consistency across ERP, EPM, and analytics platforms.
+    notes:
+      - Automate metadata loads to EDMCS from source domain systems.
+      - Push trial balances, premium/claims data, YOA/AY attributes to FCCS.
+      - Load driver-based cost allocations to EPM Planning/PCMCS.
+      - Reconcile data across ERP-EPM-ADW using OIC monitoring and audit logs.
