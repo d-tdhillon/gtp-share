@@ -1,0 +1,101 @@
+title: Disclosure Management Considerations
+sub-title: Key considerations for managing financial disclosures, statutory notes, XBRL/iXBRL tagging, and narrative governance
+objList:
+  - text: Disclosure Framework & Architecture
+    icon: architecture
+    desc: Establish a unified framework for generating, approving, and publishing disclosures.
+    notes:
+      - Use Oracle Disclosure/Narrative Reporting as the central platform.
+      - Integrate with ERP, EPM, FDW, and actuarial data sources.
+      - Maintain reusable templates for statutory, regulatory, and board reporting.
+      - Ensure disclosure sections link directly to certified data cells.
+
+  - text: XBRL & iXBRL Tagging
+    icon: tag
+    desc: Enable tagging of financial statements and regulatory reports for digital submission.
+    notes:
+      - Support taxonomy mapping (IFRS, UK FRC, ESEF, Solvency II, EBA).
+      - Enable inline iXBRL tagging directly within document templates.
+      - Track changes to taxonomy versions and remap tags automatically.
+      - Validate tags before regulatory submission using built-in compliance checks.
+
+  - text: Data Integration & Dynamic Refresh
+    icon: sync_alt
+    desc: Link disclosures to live ERP/EPM/FDW data for accuracy and automation.
+    notes:
+      - Embed EPM/ERP data models in narrative pages and footnotes.
+      - Refresh data dynamically based on role permissions and close calendar.
+      - Track differences between refreshed and previously approved values.
+      - Maintain freeze/unfreeze rules for controlled periods.
+
+  - text: Narrative Reporting & Commentary Management
+    icon: description
+    desc: Produce commentary-rich disclosures with auditability and governance.
+    notes:
+      - Assign preparer, reviewer, and approver roles per disclosure section.
+      - Version-control commentary and footnote text for full traceability.
+      - Support automated variance explanation and commentary suggestions via AI.
+      - Maintain history of prior cycle disclosures for comparison.
+
+  - text: Regulatory & Statutory Reporting (Local & Global)
+    icon: rule_folder
+    desc: Produce settlement-ready and compliance-aligned disclosure packs.
+    notes:
+      - Support annual report, interim report, Solvency II SFCR/RSR, SEC filings.
+      - Generate Lloyd’s QMA/QSR/SBF/GQD aligned disclosures.
+      - Automate footnote tables using standard templates.
+      - Track mapping of disclosures to accounting standards and regulatory rules.
+
+  - text: Close Cycle Alignment & Workflow Integration
+    icon: schedule
+    desc: Align disclosure timelines with the financial close and certification process.
+    notes:
+      - Integrate with Close Manager for milestone sequencing.
+      - Ensure subledgers, GL, and consolidation are signed off before disclosure creation.
+      - Manage late adjustments and track their impact across disclosure tables.
+      - Maintain workflow for each narrative block and tagging step.
+
+  - text: Controls, Governance & Audit Trail
+    icon: verified_user
+    desc: Enforce strong governance across the disclosure lifecycle.
+    notes:
+      - Maintain audit trail for all edits, approvals, and rejections.
+      - Track changes to XBRL tags, text, tables, and commentary.
+      - Restrict sensitive narrative editing via role-based access.
+      - Support sign-off & e-signature workflows for CFO/Controller review.
+
+  - text: Document Assembly & Publishing
+    icon: picture_as_pdf
+    desc: Automate generation of final output formats with minimal manual work.
+    notes:
+      - Publish to PDF, Word, HTML, XBRL/iXBRL from a single template.
+      - Support multi-section, multi-entity document assembly.
+      - Embed tables, charts, images, and commentary dynamically.
+      - Automate distribution lists for board, regulators, and auditors.
+
+  - text: Insurance & Lloyd’s-Specific Disclosure Requirements
+    icon: corporate_fare
+    desc: Extend disclosure management for specialised insurance reporting.
+    notes:
+      - Support disclosures for YOA, RITC, CAT losses, reinsurance assets, and major event notes.
+      - Align disclosure numbers to actuarial basis (BEL, IBNR, UPR).
+      - Generate syndicate-level disclosures for Lloyd’s annual accounts.
+      - Produce cross-entity narratives for ServiceCo, Managing Agent, Corporate Member.
+
+  - text: Performance, Scalability & Multi-Entity Support
+    icon: speed
+    desc: Ensure end-to-end reporting works for large global groups.
+    notes:
+      - Handle high-volume disclosures across multiple jurisdictions.
+      - Provide concurrent workflow streams for interim, annual, and regulatory reports.
+      - Optimise refresh schedules to avoid close-period congestion.
+      - Scale iXBRL tagging to multiple entities and taxonomies.
+
+  - text: AI-Enabled Disclosure Automation
+    icon: auto_awesome
+    desc: Leverage AI to enhance drafting, validation, and risk detection.
+    notes:
+      - Auto-generate draft commentary based on trends and variances.
+      - Highlight inconsistencies between narrative text and numerical data.
+      - Detect missing or mismatched disclosures vs previous cycles.
+      - Provide recommended wording aligned to IFRS, SII, and Lloyd’s reporting rules.
