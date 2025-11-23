@@ -1,0 +1,101 @@
+title: Solvency II 
+sub-title: Key considerations for data, reporting, governance, actuarial integration, and finance alignment for Solvency II (SII)
+objList:
+  - text: Pillar 1 – Quantitative Reporting (SCR, MCR, Balance Sheet)
+    icon: calculate
+    desc: Structure data, controls, and models to support Pillar 1 quantitative requirements.
+    notes:
+      - Maintain granular SII balance sheet by entity, LoB, and region.
+      - Ensure actuarial reserving outputs (BEL, risk margin, lapse risk, CAT risk) feed ERP/EPM.
+      - Calculate SCR by risk module - market, credit, underwriting, operational.
+      - Validate MCR calculations and ensure mapping consistency with GL/EPM.
+
+  - text: Pillar 2 – ORSA, Governance & Risk Framework
+    icon: rule
+    desc: Align enterprise risk, actuarial, and finance functions for governance and risk assessment.
+    notes:
+      - Maintain ORSA documentation with governance, models, and stress scenarios.
+      - Enable integration between risk management and financial planning.
+      - Track changes to methodologies, models, and assumptions.
+      - Maintain oversight of capital, liquidity, and scenario-based solvency positions.
+
+  - text: Pillar 3 – QRT, NST & Public Disclosure
+    icon: description
+    desc: Support automated SII reporting packs and regulatory submissions.
+    notes:
+      - Map GL + EPM data to QRT templates (S.01, S.02, S.06, S.17, S.23, S.25, S.28).
+      - Support Lloyd’s-specific NST templates and QMA/QSR alignments.
+      - Enable automated production of SFCR and RSR disclosures.
+      - Maintain version control and signed-off reporting packs.
+
+  - text: Data Model, Lineage & SII Reporting Structures
+    icon: account_tree
+    desc: Build a governed, traceable data model for SII reporting.
+    notes:
+      - Maintain consistent mapping - GL → EPM → actuarial → QRT.
+      - Store YOA/AY, LoB, territory, treaty, and product dimensions.
+      - Maintain lineage to ensure traceability from source to final QRT cell.
+      - Implement baseline vs stressed scenario data structures.
+
+  - text: Integration with Actuarial Engines
+    icon: functions
+    desc: Ensure robust handoffs between actuarial systems and finance platforms.
+    notes:
+      - Import BEL, IBNR, UPR, risk margin, and cashflow projections.
+      - Align actuarial triangles with finance YOA/AY frameworks.
+      - Track assumption sets, discount curves, and model versions.
+      - Provide adjustments back to ERP/EPM for statutory and SII views.
+
+  - text: Capital Management & SCR Optimisation
+    icon: trending_up
+    desc: Support capital planning, allocation, and optimisation processes.
+    notes:
+      - Link SCR drivers with business planning and strategy.
+      - Factor diversification effects and correlation matrices.
+      - Maintain visibility of capital by entity, region, and LoB.
+      - Build scenario-based capital forecasts in EPM (severe, moderate, base).
+
+  - text: Lloyd’s Market Solvency Requirements
+    icon: corporate_fare
+    desc: Extend SII framework to Lloyd’s-specific solvency rules.
+    notes:
+      - Map SII data to Lloyd’s CMR, QMA, QSR, SBF, and GQD.
+      - Support YOA-specific technical provisions, RITC, and trust fund requirements.
+      - Reconcile ECA (Economic Capital Assessment) with SCR outputs.
+      - Align DXC/TAO data with SII technical provision categories.
+
+  - text: Model Governance, Assumption Management & Validation
+    icon: verified
+    desc: Strong governance around models, assumptions, and documentation.
+    notes:
+      - Maintain a central repository for actuarial assumptions and model settings.
+      - Track model changes under a formal model governance framework.
+      - Perform backtesting, validation, and sensitivity analyses.
+      - Provide evidence for internal and external validation cycles.
+
+  - text: Risk, Stress & Scenario Testing
+    icon: psychology
+    desc: Integrate stress testing and scenario analysis into SII and ORSA processes.
+    notes:
+      - Run prescribed stresses - interest rate, inflation, mortality, lapse, CAT.
+      - Build ad-hoc stress scenarios linked to underwriting or claims trends.
+      - Feed scenario results back into capital management dashboards.
+      - Maintain controlled workflows for stress-run approval and documentation.
+
+  - text: Controls, Audit & Regulatory Compliance
+    icon: rule_folder
+    desc: Ensure Solvency II processes meet audit and regulator expectations.
+    notes:
+      - Maintain controls over SII data, transformations, and model runs.
+      - Log all adjustments and overrides with justification.
+      - Track changes to QRT mappings and regulatory interpretation updates.
+      - Provide audit trails for all SII submissions and sign-off processes.
+
+  - text: Automation, OIC Integration & Performance
+    icon: speed
+    desc: Automate SII pipelines for efficiency, scale, and accuracy.
+    notes:
+      - Use OIC to automate data movement between ERP, EPM, actuarial, and data marts.
+      - Enable parallel processing for BEL, risk margin, and capital calculations.
+      - Automate QRT/NST production and publish directly into regulatory portals.
+      - Build real-time dashboards for solvency position monitoring.
