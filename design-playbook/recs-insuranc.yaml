@@ -1,0 +1,92 @@
+title: Insurance-Specific Reconciliation
+sub-title: Key considerations for premium, claims, reinsurance, trust fund, and syndicate reconciliations in Oracle ARCS
+objList:
+  - text: Premium Receivable Reconciliations
+    icon: receipt_long
+    desc: Ensure premium balances reconcile across policy admin, bordereaux, and GL.
+    notes:
+      - Reconcile gross written premium (GWP), UPR, and instalment schedules to GL balances.
+      - Load bordereaux data for delegated authority (DA) and binder business as matching data.
+      - Match policy-level items to GL summary balances using custom attributes.
+      - Track ageing, overdue balances, and broker/coverholder-level reconciliations.
+
+  - text: Claims Liability & Outstanding Claims
+    icon: gavel
+    desc: Support reconciliation of claims outstanding, IBNR, RBNS, and paid claims.
+    notes:
+      - Reconcile claims subsystem totals (Guidewire, Duck Creek, etc.) to the GL.
+      - Load claim payment and reserve transactions for matching against GL entries.
+      - Track large-loss items separately with workflows for actuarial sign-off.
+      - Support accident year (AY) and YOA-based reconciliations where required.
+
+  - text: Reinsurance Ceded & Recoveries
+    icon: sync_alt
+    desc: Reconcile ceded premium, reinsurance recoveries, and treaty balances.
+    notes:
+      - Load ceded bordereaux or treaty schedules for matching to GL.
+      - Support many-to-many matching (multiple recoveries to single claim).
+      - Reconcile receivables and payables with reinsurer statements.
+      - Track large-loss recovery ageing and overdue balances.
+
+  - text: Trust Fund & Lloyd’s Cash Reconciliations
+    icon: account_balance
+    desc: Support Lloyd’s mandates on trust fund accounts (PTF, STF, FAL).
+    notes:
+      - Reconcile bank statements to trust ledger balances.
+      - Maintain evidence for Lloyd’s Minimum Standards and audit.
+      - Track transactions by syndicate, YOA, and trust type.
+      - Integrate DXC settlement files for automated matching.
+
+  - text: Intercompany & Managing Agent Recharges
+    icon: compare_arrows
+    desc: Ensure accurate recharges across managing agent, service company, and corporate member structures.
+    notes:
+      - Match intercompany balances with counterparties across entities/YOAs.
+      - Support rule-based auto-match for predictable fee/commission charges.
+      - Track differences caused by timing or FX movements.
+      - Enforce dual sign-off for syndicate-level recharges.
+
+  - text: Delegated Authority (DA) / Coverholder Reconciliations
+    icon: groups
+    desc: Manage high-volume reconciliations for DA business.
+    notes:
+      - Load coverholder bordereaux (premium, claims, risk) into ARCS.
+      - Match coverholder submissions to GL and underwriting systems.
+      - Apply tolerances for timing differences in DA reporting.
+      - Track exception items requiring coverholder clarification.
+
+  - text: Bank & Cash Reconciliations for Premium & Claims
+    icon: account_balance_wallet
+    desc: Support high-volume banking reconciliations for premium receipts and claims payments.
+    notes:
+      - Use Transaction Matching rules for bank-to-GL reconciliation.
+      - Configure auto-match for standard premium receipts and claim payments.
+      - Track unmatched cash and suspense accounts.
+      - Provide exception workflows for investigatory follow-up.
+
+  - text: Solvency II & Technical Provisions Support
+    icon: safety_check
+    desc: Align reconciliations with SII technical provision processes.
+    notes:
+      - Reconcile actuarial reserves (best estimate liability, risk margin) to GL.
+      - Maintain documentation for methodology changes and actuarial assumptions.
+      - Track differences between actuarial, TAO, and GL valuations.
+      - Support data lineage for QRT, QMA, and SII submissions.
+
+  - text: High-Volume Matching & Performance
+    icon: speed
+    desc: Optimize performance for insurance datasets.
+    notes:
+      - Partition large bordereaux or claims files into incremental loads.
+      - Run matching rules in batches to avoid performance bottlenecks.
+      - Archive old periods to improve runtime.
+      - Monitor match-rate KPIs to refine rules and tolerances.
+
+  - text: Controls, Audit & Evidence Requirements
+    icon: rule
+    desc: Maintain strong governance aligned with insurance and Lloyd’s regulatory expectations.
+    notes:
+      - Require attachments for actuarial sign-offs, bordereaux approvals, and reinsurer statements.
+      - Maintain full workflow history for audit trails.
+      - Track aged unmatched items and escalate via dashboards.
+      - Ensure consistency with internal control frameworks (SOX, Lloyd’s MS2/MS8).
