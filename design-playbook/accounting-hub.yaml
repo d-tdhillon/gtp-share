@@ -1,0 +1,101 @@
+title: Accounting Hub Enablement for Insurance Subledger
+sub-title: How Oracle Accounting Hub (AHCS) is configured and deployed to support a dedicated Insurance Subledger
+objList:
+  - text: AHCS Architecture & Deployment Model
+    icon: architecture
+    desc: Stand up AHCS as the accounting engine for insurance premium, claims, and reinsurance events.
+    notes:
+      - Deploy AHCS as the central accounting rules engine for insurance transactions.
+      - Maintain the insurance subledger outside Fusion GL while AHCS transforms events into accounting entries.
+      - Support multi-book (statutory, management, Lloyd’s, Solvency II) accounting in parallel.
+      - Ensure all subledger events pass through AHCS before summarised posting to GL.
+
+  - text: Source System Event Design
+    icon: event
+    desc: Define the granular insurance ‘events’ that AHCS will consume and convert into accounting.
+    notes:
+      - Premium events - written, endorsed, earned, cancelled, reinstated.
+      - Claims events - FNOL, reserve set, reserve change, payment, recovery, salvage/subrogation.
+      - Reinsurance events - cession, premium payable, recovery received, reinstatement premium.
+      - DA/Lloyd’s events - TAO, ECOT/EBOT, DXC settlement events, binder bordereaux transactions.
+
+  - text: Accounting Rule Configuration (AFR/ADR)
+    icon: rule
+    desc: Use Accounting Rules Framework (AFR) and Accounting Derivation Rules (ADR) to translate insurance data into GL entries.
+    notes:
+      - Map event types to specific accounting rules - debit/credit patterns per insurance event.
+      - Use ADR to derive GL segments (entity, product, LoB, YOA/AY, currency).
+      - Handle multi-layer reinsurance accounting using rule-based logic.
+      - Allow separate rule sets for IFRS, US GAAP, Lloyd’s, and Solvency II views.
+
+  - text: Mapping Sets, CVRs & COA Integration
+    icon: view_list
+    desc: Ensure insurance attributes map to valid Chart of Accounts (COA) combinations.
+    notes:
+      - Configure mapping sets for LoB, broker, treaty, binder, product, UMR, YOA/AY.
+      - Enforce CVRs to prevent invalid combinations from being posted to GL.
+      - Use AHCS to harmonise different upstream systems (claims, policy, reinsurance).
+      - Integrate with EDMCS for COA and dimension governance.
+
+  - text: Transformation & Standardisation Layer
+    icon: sync_alt
+    desc: Provide a standardised AHCS layer to convert raw insurance events into consistent financial events.
+    notes:
+      - Normalise data from multiple sources (policy admin, claims, reinsurance).
+      - Apply enrichment (territory, currency, LoB) before accounting.
+      - Standardise DA bordereaux structures before generating accounting entries.
+      - Provide a single source of truth for premium, claims, and reinsurance postings.
+
+  - text: Multi-Ledger & Multi-GAAP Support
+    icon: public
+    desc: Generate multiple accounting representations from the same insurance event.
+    notes:
+      - Simultaneously produce statutory, management, Lloyd’s, and regulatory books.
+      - Support Solvency II technical provisions and risk margin treatments.
+      - Maintain separate reporting currencies (GBP, USD, EUR) via ledger groups.
+      - Reconcile differences using AHCS multi-book reporting tools.
+
+  - text: Posting Logic & Summarisation
+    icon: playlist_add
+    desc: Control how subledger entries flow from AHCS to Fusion GL.
+    notes:
+      - Summarise transaction-level subledger data into GL posting groups.
+      - Maintain detailed audit trail within AHCS while keeping GL lean.
+      - Control posting frequency - real-time, daily, or period-end.
+      - Separate insurance postings from operational subledgers (AP/AR/FA).
+
+  - text: Reconciliation & Financial Close Support
+    icon: checklist
+    desc: Integrate AHCS with ARCS, Close Manager, and FDW for clean period-end.
+    notes:
+      - Reconcile AHCS subledger totals with GL balances.
+      - Maintain drillback capability from GL to insurance source events.
+      - Include AHCS posting controls in Close Manager tasks.
+      - Feed reconciled balances into FCCS for consolidation and SII reporting.
+
+  - text: AHCS + OIC Integration Flow
+    icon: cloud_sync
+    desc: Use OIC as the integration layer connecting upstream insurance systems to AHCS.
+    notes:
+      - OIC pulls events from policy, claims, reinsurance, DA platforms.
+      - Transform and validate data before loading into AHCS subledger tables.
+      - Manage retry logic, file chunking, and high-volume processing for bordereaux.
+      - Use OIC to orchestrate multi-step accounting flows (event → AHCS → GL → FCCS).
+
+  - text: Audit, Controls & Governance
+    icon: verified_user
+    desc: Strengthen financial control by using AHCS as the authoritative accounting engine.
+    notes:
+      - Maintain rule versioning for every accounting policy change.
+      - Provide evidence for external audit (Lloyd’s, SII, IFRS, statutory).
+      - Enforce workflow for rule deployments and mapping updates.
+      - Log every accounting transformation for audit trail completeness.
+
+  - text: Performance, Scale & High-Volume Insurance Processing
+    icon: speed
+    desc: Design AHCS to support millions of insurance events per period.
+    notes:
+      - Partition AHCS staging/subledger tables for high-volume bordereaux.
+      - Optimise accounting rules for minimal latency.
+      - Run multi-threaded accounting creation jobs for peak CAT or renewal periods.
+      - Auto-archive old insurance event data without losing auditability.
