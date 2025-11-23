@@ -1,0 +1,101 @@
+title: Fixed Assets
+sub-title: Key considerations for designing, configuring, and governing Fixed Assets (FA) in Oracle Fusion
+objList:
+  - text: Asset Structure & Governance
+    icon: account_tree
+    desc: Establish clear rules for asset creation, tracking, and end-to-end lifecycle governance.
+    notes:
+      - Define asset books (corporate, tax, statutory) and assign responsible owners.
+      - Align asset categories, location codes, and depreciation rules to COA design.
+      - Use EDMCS to govern FA segment values and reporting hierarchies.
+      - Establish policies for asset additions, retirements, transfers, and adjustments.
+
+  - text: Asset Books, Categories & Key Flexfields
+    icon: view_list
+    desc: Configure the FA structure to ensure proper accounting and reporting.
+    notes:
+      - Define category structures by asset type (IT, furniture, leasehold improvements, vehicles, etc.).
+      - Configure corporate vs tax books with different depreciation methods.
+      - Use descriptive flexfields (DFFs) for insurance-specific needs (project, claim, location, insurer asset ref).
+      - Validate mapping of asset category to GL accounts and SLA rules.
+
+  - text: Capitalisation & Project Integration
+    icon: home_repair_service
+    desc: Enable seamless flow from Projects/Procurement to Fixed Assets.
+    notes:
+      - Integrate with Oracle Projects for capital WIP tracking and CIP-to-asset transfers.
+      - Automate capitalisation via PO receipts, AP invoices, or Project costs.
+      - Enforce rules for partial capitalisation and multi-asset splits.
+      - Maintain audit trails for cost adjustments and reclassifications.
+
+  - text: Depreciation Methods & Accounting
+    icon: calculate
+    desc: Configure depreciation rules consistent with accounting policy.
+    notes:
+      - Support straight-line, declining balance, units-of-production, and custom methods.
+      - Configure prorate calendars and convention rules (mid-month, mid-quarter).
+      - Manage impairments, revaluations, and accelerated depreciation.
+      - Align depreciation postings with ledger currency and translation rules.
+
+  - text: Asset Tracking, Tagging & Location Controls
+    icon: place
+    desc: Ensure physical tracking and compliance with operational processes.
+    notes:
+      - Use asset tags and location tracking for moveable assets.
+      - Set up location hierarchies and periodic asset verification cycles.
+      - Enable barcode/RFID or inventory tools for physical counts.
+      - Integrate with Facilities/ITSM systems for change-of-location controls.
+
+  - text: Leased Assets (IFRS16 / ASC842)
+    icon: receipt_long
+    desc: Manage right-of-use asset accounting for leased properties and equipment.
+    notes:
+      - Integrate with Oracle Lease Accounting or maintain manual entries if not in scope.
+      - Configure ROU asset creation, amortisation schedules, and lease liability split.
+      - Support remeasurement events (renewals, terminations, modifications).
+      - Reconcile lease payment schedules to AP and GL.
+
+  - text: Asset Retirement, Disposal & Gain/Loss
+    icon: delete
+    desc: Ensure accurate financial treatment of retirements and disposals.
+    notes:
+      - Automate retirement accounting including accumulated depreciation removal.
+      - Support partial retirements and multi-asset disposals.
+      - Track salvage value, net book value, and gain/loss calculations.
+      - Ensure links to insurance claims for damaged/lost assets where applicable.
+
+  - text: Reconciliation & Controls
+    icon: rule
+    desc: Maintain strong governance across FA balances and GL activity.
+    notes:
+      - Reconcile FA subledger to GL using ARCS and Close Manager tasks.
+      - Track unposted depreciation, pending transactions, and capital WIP balances.
+      - Enforce workflow approval for adjustments and retirements.
+      - Control manual journals to FA-related accounts using GL policies.
+
+  - text: Reporting, Analytics & Compliance
+    icon: insights
+    desc: Enable internal, statutory, and management reporting for assets.
+    notes:
+      - Use FA OTBI subject areas for operational reporting (additions, disposals, depreciation).
+      - Use BIP for statutory fixed asset registers and audit-ready reporting.
+      - Integrate with OAC/ADW for long-term trend analysis and CAPEX dashboards.
+      - Support tax and statutory reporting differences via alternate books.
+
+  - text: Multi-Currency, FX & Global Operations
+    icon: public
+    desc: Ensure correct handling of multi-currency and global asset operations.
+    notes:
+      - Maintain asset cost in functional currency while supporting reporting currencies.
+      - Validate FX impacts on depreciation for foreign currency additions.
+      - Reconcile translation adjustments (CTA) for fixed asset balances.
+      - Standardise policies for global entities with differing asset rules.
+
+  - text: Performance, Volume & High-Throughput Processing
+    icon: speed
+    desc: Scale FA processes to support large enterprise and insurance environments.
+    notes:
+      - Optimise depreciation runs during off-peak hours.
+      - Automate mass additions from AP/Projects to reduce manual effort.
+      - Archive old books/periods to improve performance.
+      - Support bulk reclassifications, mergers, and reorganisations efficiently.
