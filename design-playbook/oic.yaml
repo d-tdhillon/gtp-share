@@ -1,0 +1,101 @@
+title: Last Mile Reporting
+sub-title: Key considerations for producing final, auditable, narrative-rich financial and regulatory reports
+objList:
+  - text: Consolidation & Source Data Alignment
+    icon: join_inner
+    desc: Ensure all financial, actuarial, and operational data is fully reconciled before last-mile reporting.
+    notes:
+      - Align ERP, EPM, actuarial, and data warehouse outputs into a single source of truth.
+      - Reconcile GL, subledger, and consolidation balances before publishing.
+      - Validate multi-currency and FX translation differences.
+      - Confirm alignment between statutory, management, and regulatory reporting views.
+
+  - text: Narrative Reporting & Commentary Workflow
+    icon: description
+    desc: Enable collaborative production of commentary, MD&A, variance explanations, and disclosures.
+    notes:
+      - Use Oracle Narrative Reporting (NR) for structured commentary and approvals.
+      - Assign preparers, reviewers, and approvers for each commentary section.
+      - Track versions, changes, and sign-offs for full auditability.
+      - Integrate commentary with dynamic EPM/ERP data refreshes.
+
+  - text: Regulatory & Statutory Reporting Packs
+    icon: rule_folder
+    desc: Produce compliance-ready reporting for statutory, regulatory, and market-specific obligations.
+    notes:
+      - Generate statutory FS, annual reports, regulatory filings, and disclosures.
+      - Support Solvency II QRT, NST, SFCR/RSR final outputs.
+      - Enable Lloyd’s QMA, QSR, SBF, and GQD alignment for market entities.
+      - Maintain version-control and evidence for regulatory sign-off.
+
+  - text: Management & Board Reporting
+    icon: account_balance
+    desc: Deliver executive-level reporting packs for decision-making and governance.
+    notes:
+      - Build automated board packs with charts, KPIs, and commentary.
+      - Integrate KPIs related to underwriting, claims, reinsurance, capital, solvency.
+      - Include forecast vs actual variances and drivers from Planning/EPM.
+      - Apply governance for final approvals and distribution.
+
+  - text: Disclosure Management & Audit Trail
+    icon: verified_user
+    desc: Maintain full traceability from source numbers to published reporting.
+    notes:
+      - Link disclosures directly to data cells in EPM and ERP for dynamic integrity.
+      - Maintain mapping rules for footnotes, adjustments, and narrative commentary.
+      - Keep historical versions with timestamped evidence for external audit.
+      - Support tagging for XBRL/iXBRL as required.
+
+  - text: Financial Close Integration
+    icon: schedule
+    desc: Ensure last-mile reporting follows the close calendar and certification deadlines.
+    notes:
+      - Integrate with Close Manager for sequencing commentary and report generation.
+      - Validate that all upstream reconciliations (ARCS, subledger finalisation) are complete.
+      - Lock data progressively as each close milestone is met.
+      - Provide “late adjustment impacts” reporting for controllers.
+
+  - text: Cross-System Data Orchestration (ERP → EPM → NR)
+    icon: sync_alt
+    desc: Ensure data flows smoothly with no latency or manual intervention.
+    notes:
+      - Use OIC to automate data loads into EPM and Narrative Reporting.
+      - Refresh embedded report objects and commentary sections with dynamic data.
+      - Schedule automated refresh windows during close cycles.
+      - Highlight differences between refreshed and previously published numbers.
+
+  - text: Integrated Controls & Risk Management
+    icon: rule
+    desc: Embed strong governance into the reporting lifecycle.
+    notes:
+      - Enable workflow for every narrative/text section and data point.
+      - Restrict access to sensitive disclosure content.
+      - Implement certification steps for preparer → reviewer → CFO.
+      - Track override approvals and late changes with full audit history.
+
+  - text: Visualisation, Formatting & Publication
+    icon: picture_as_pdf
+    desc: Ensure professional-quality output across formats (PDF, PPT, HTML, iXBRL).
+    notes:
+      - Leverage Oracle NR for template-based formatting and automation.
+      - Support multiple outputs - Board Pack, Regulatory Pack, Investor Report.
+      - Embed charts, commentary, and tables linked to live data.
+      - Enable automated distribution lists with secure access control.
+
+  - text: Performance, Scalability & Multi-Entity Support
+    icon: speed
+    desc: Scale last-mile reporting for large groups, global entities, and recurring cycles.
+    notes:
+      - Handle high-volume disclosures across multiple regions or business units.
+      - Optimise refresh schedules to avoid bottlenecks during peak close.
+      - Automate multi-currency consolidation and re-translation before reporting.
+      - Support parallel report development for interim and annual cycles.
+
+  - text: AI-Assisted Commentary & Insights
+    icon: auto_awesome
+    desc: Use AI to enhance narrative drafting and highlight anomalies.
+    notes:
+      - Generate draft commentary for variances, trends, and drivers.
+      - Identify anomalies across premium, claims, reinsurance, and expense data.
+      - Suggest narrative improvements based on prior cycles.
+      - Auto-flag inconsistencies between numbers and narrative text.
