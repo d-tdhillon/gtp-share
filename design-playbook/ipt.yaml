@@ -1,0 +1,101 @@
+title: Insurance Premium Tax (IPT) Considerations
+sub-title: Key considerations for IPT determination, calculation, reporting, and accounting in global insurance operations
+objList:
+  - text: IPT Regulatory Framework & Jurisdiction Rules
+    icon: public
+    desc: Define IPT rules based on jurisdiction, product, territory, and policyholder location.
+    notes:
+      - IPT is jurisdiction-based and differs by risk location, not insurer location.
+      - Support multiple IPT types- standard IPT, parafiscal charges, levies, fire brigade tax.
+      - Maintain country-by-country IPT rates, exemptions, and special classes.
+      - Track frequent rule changes (EU, UK, France, Spain, Italy, Nordic markets).
+
+  - text: IPT Determination Logic
+    icon: psychology
+    desc: Automate IPT determination based on policy attributes and transaction type.
+    notes:
+      - Determine IPT based on - risk location, product, class, territorial exposure, policyholder type.
+      - Differentiate IPT for direct vs. intermediated business.
+      - Handle endorsements, mid-term adjustments (MTAs), cancellations, and refunds.
+      - Maintain mapping tables for treatment per LoB, region, broker, and binder.
+
+  - text: IPT for Delegated Authority (DA) & Coverholder Business
+    icon: groups
+    desc: Manage IPT for bordereaux-based premium flows across multiple territories.
+    notes:
+      - Apply IPT rules for each risk record in premium bordereaux.
+      - Support multiple risk locations in a single policy/binder section.
+      - Calculate IPT on split premiums at transaction-level granularity.
+      - Integrate IPT into DA bordereaux ingestion via OIC and subledger layers.
+
+  - text: IPT for Lloyd’s Market & Syndicates
+    icon: corporate_fare
+    desc: Extend IPT rules to accommodate Lloyd’s-specific IPT obligations.
+    notes:
+      - Support Lloyd’s central IPT filings where Lloyd’s is the tax payer of record.
+      - Track syndicate-specific product codes, class of business, and ECA implications.
+      - Align DXC/TAO outputs with IPT mapping and premium classifications.
+      - Manage IPT adjustments for RITC year movements and YOA transitions.
+
+  - text: IPT vs VAT vs GST Treatment
+    icon: rule
+    desc: Distinguish IPT application from VAT/GST based on product and jurisdiction.
+    notes:
+      - Insurance premiums are usually exempt from VAT but subject to IPT.
+      - Broker commissions may be VATable even if premiums are IPT-only.
+      - Some markets apply both IPT + VAT-like levies (e.g., Italy, Belgium).
+      - Reinsurance is typically exempt from IPT but must be validated per market.
+
+  - text: IPT Calculation & Accounting
+    icon: calculate
+    desc: Ensure IPT is correctly calculated, accrued, and posted into accounting systems.
+    notes:
+      - Calculate IPT on written and MTA premium, not necessarily earned premium.
+      - Store IPT amount, base amount, rates, and jurisdiction in subledger fields.
+      - Post IPT liability to tax payable accounts through SLA/AHCS accounting rules.
+      - Manage IPT on refunds and cancellations with correct reversals.
+
+  - text: IPT Reporting & Returns
+    icon: description
+    desc: Produce country-specific IPT returns, declarations, and payment files.
+    notes:
+      - Support UK IPT returns, Spanish CCS, French parafiscal reports, Irish contributions.
+      - Automate output using BI Publisher, OIC, or FDW reporting marts.
+      - Apply specific reporting frequency - monthly, quarterly, semi-annual.
+      - Maintain detailed audit trails for all IPT-relevant entries.
+
+  - text: IPT Controls, Audit & Compliance
+    icon: verified
+    desc: Enforce governance controls for IPT accuracy and regulatory compliance.
+    notes:
+      - Maintain approval controls for IPT rule changes and overrides.
+      - Track differences between calculated and reported IPT.
+      - Store adjustments and corrections separately for audit traceability.
+      - Provide evidence for external audits, Lloyd’s reviews, and tax authority queries.
+
+  - text: IPT for Multi-Currency & Cross-Border Policies
+    icon: currency_exchange
+    desc: Handle FX and multi-country aspects of IPT calculations.
+    notes:
+      - Convert taxable premium to the required reporting currency using regulatory FX rules.
+      - Track IPT by currency, binder section, and jurisdiction.
+      - Manage IPT for multi-location risks with proportional FX split.
+      - Align FX impacts with GL and EPM translation logic.
+
+  - text: IPT Integration with Subledger, Policy Admin & OIC
+    icon: sync_alt
+    desc: Use OIC and the insurance subledger to orchestrate IPT determination and accounting.
+    notes:
+      - Apply IPT validation during bordereaux ingestion and policy event streaming.
+      - Use AHCS/SLA rules to post IPT liability and recoveries to GL.
+      - Push transaction-level IPT details to EPM/FDW for regulatory reporting.
+      - Integrate IPT into the insurance subledger for drillback auditability.
+
+  - text: Performance, Volume & Bordereaux Processing
+    icon: speed
+    desc: Scale IPT calculations for high-volume DA, MGA, and global retail products.
+    notes:
+      - Support millions of risk-level IPT calculations per month.
+      - Optimise IPT rules for parallel processing of large bordereaux files.
+      - Use caching or pre-computed rate maps for faster IPT assignment.
+      - Archive historic IPT results for regulatory look-back periods (6–10 years).
