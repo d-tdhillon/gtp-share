@@ -1,0 +1,110 @@
+title: Finance Data Warehouse
+sub-title: Key considerations for designing and operating an enterprise Finance Data Warehouse across ERP, EPM, actuarial, and insurance systems
+objList:
+  - text: Data Model & Architecture
+    icon: account_tree
+    desc: Establish a unified enterprise-wide data model for finance, actuarial, and insurance reporting.
+    notes:
+      - Define core fact tables - GL balances, journal lines, AP/AR transactions, FA, Projects.
+      - Include insurance-specific fact tables - premium, claims, reinsurance, YOA/AY triangles.
+      - Create standard dimensions - entity, COA, product, LOB, broker, YOA, AY, territory, currency.
+      - Use layered architecture - staging → curated → semantic marts.
+
+  - text: Integration with ERP, EPM & Actuarial Systems
+    icon: sync_alt
+    desc: Enable seamless ingestion from Fusion ERP, EPM (FCCS/PCMCS/Planning), OIC, and actuarial engines.
+    notes:
+      - Ingest GL balances daily or intra-day from Fusion.
+      - Load EPM cubes for consolidation, planning, allocation, and solvency outputs.
+      - Integrate actuarial systems for BEL, IBNR, UPR, risk margin, and capital outputs.
+      - Support near-real-time event feeds from policy & claims systems.
+
+  - text: Insurance & Lloyd’s Market Data Structures
+    icon: business
+    desc: Extend data warehouse structures for delegated authority, reinsurance, and market reporting.
+    notes:
+      - Store bordereaux data (premium, claims, risk) at granular transaction level.
+      - Maintain TAO, DXC, EBOT/ECOT mapping layers for Lloyd’s data.
+      - Track IC flows - managing agent → corporate member → ServiceCo.
+      - Store historical YOA movements and RITC transfers.
+
+  - text: Data Quality & Validation Rules
+    icon: verified
+    desc: Implement enterprise-grade DQ and validation logic for finance and regulatory reporting.
+    notes:
+      - Validate YOA/AY, segment, LOB, product, treaty, and broker codes.
+      - Enforce referential integrity with COA, EDMCS, and EPM metadata.
+      - Apply reconciliation rules - source → ERP → EPM → FDW.
+      - Maintain DQ dashboards for financial controllers and actuarial teams.
+
+  - text: Metadata, Hierarchies & EDMCS Integration
+    icon: view_list
+    desc: Ensure consistency across ERP, EPM, data warehouse, and reporting layers.
+    notes:
+      - Use EDMCS as the golden source for COA, entity, product, segment, YOA/AY hierarchies.
+      - Automate metadata sync via OIC or Data Exchange.
+      - Maintain versioning for reorganisations, new YOA launches, or new entities.
+      - Support audit history for hierarchy changes.
+
+  - text: Multi-Currency & FX Handling
+    icon: public
+    desc: Design robust FX processing for global finance and actuarial use cases.
+    notes:
+      - Load daily FX rates and maintain historic rate tables.
+      - Support multi-currency balances for statutory, functional, and reporting.
+      - Track FX effects on premium, claims, and reinsurance flows.
+      - Integrate FX translation and remeasurement logic aligned with GL.
+
+  - text: Solvency II & Regulatory Reporting
+    icon: rule_folder
+    desc: Deliver SII QRTs, NSTs, GQD, QMA/QSR, and regulatory packs directly from FDW.
+    notes:
+      - Maintain SII-specific data marts for BEL, risk margin, capital, SCR/MCR.
+      - Align QRT mapping tables to EPM/FCCS structures.
+      - Store stress scenario outputs for ORSA and SII Pillar 2.
+      - Generate submission-ready datasets for regulators and Lloyd’s.
+
+  - text: Allocation, Profitability & Planning
+    icon: trending_up
+    desc: Support profitability, cost allocation, and forecasting models from a consistent data platform.
+    notes:
+      - Store PCMCS outputs for granular cost allocations across LoB, entity, and geography.
+      - Provide driver-based forecasting input layers for Planning/EPM.
+      - Maintain profitability marts for product, broker, segment, YOA/AY.
+      - Support financial/actuarial reconciled view for performance management.
+
+  - text: Last-Mile Reporting & Narrative Integration
+    icon: description
+    desc: Provide a trusted source for last-mile reporting and narrative reporting.
+    notes:
+      - Feed Narrative Reporting (NR) with certified datasets.
+      - Enable drilldowns from board-pack numbers to transaction-level detail.
+      - Maintain version-controlled period snapshots for audit and regulatory sign-off.
+      - Link financial outputs to commentary sections for MD&A, SFCR/RSR.
+
+  - text: Security, Access Control & Compliance
+    icon: lock
+    desc: Apply strong data security, masking, and compliance controls.
+    notes:
+      - Use row-level and role-based security for entity/LoB segmentation.
+      - Mask sensitive claims, policyholder, and reinsurance details.
+      - Apply audit trails for all loads, transformations, and metadata changes.
+      - Comply with GDPR, Lloyd’s governance, and local regulatory data laws.
+
+  - text: Performance, Scalability & High-Volume Processing
+    icon: speed
+    desc: Scale the FDW to support entire insurance finance and actuarial workloads.
+    notes:
+      - Optimise ingestion of >1M-row bordereaux datasets.
+      - Use partitioning, clustering, and columnar storage for speed.
+      - Schedule heavy loads outside close windows to avoid contention.
+      - Support multi-year history for YOA/AY triangles and actuarial models.
+
+  - text: Automation, Orchestration & OIC Pipelines
+    icon: auto_awesome
+    desc: Build fully automated integration pipelines to reduce manual intervention.
+    notes:
+      - Use OIC for ERP/EPM/Actuarial → FDW ETL orchestration.
+      - Automate error notification, retry logic, and data reconciliation.
+      - Enable automated period snapshots, cut-offs, and freeze logic.
+      - Provide full lifecycle CI/CD for mappings, transformations, and tables.
