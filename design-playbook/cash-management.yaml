@@ -1,0 +1,110 @@
+title: Cash Management Subledger
+sub-title: Key considerations for designing, configuring, and governing the Cash Management subledger in Oracle Fusion
+objList:
+  - text: Bank Account Structure & Governance
+    icon: account_balance
+    desc: Establish clear rules for creating, maintaining, and securing bank accounts.
+    notes:
+      - Maintain a central bank account master with approvals for creation/updates.
+      - Align with treasury policies, trust fund requirements, and regional banking rules.
+      - Enforce security by restricting who can reconcile, sweep, or maintain accounts.
+      - Ensure bank account attributes (currency, purpose, legal entity) match GL design.
+
+  - text: Bank Statement Integration & Formats
+    icon: cloud_sync
+    desc: Automate ingestion of bank statements using standard formats and integrations.
+    notes:
+      - Enable electronic statements (BAI2, CAMT.053, MT940, country-specific formats).
+      - Configure OIC/SFTP interfaces for daily or intra-day statement upload.
+      - Validate mapping rules from bank file fields to Fusion Cash Management.
+      - Handle multiple bank statement sources for global entities or Lloyd’s trust accounts.
+
+  - text: Bank Reconciliation Rules
+    icon: compare_arrows
+    desc: Define rules for auto-matching cash transactions to GL, AP, and AR activity.
+    notes:
+      - Configure auto-match rules using amount, date, reference, and tolerance ranges.
+      - Support matching against multiple transaction types (AP payments, AR receipts, payroll, claims).
+      - Use manual matching only for exceptions or unreconciled items.
+      - Maintain audit logs for all matches, overrides, and adjustments.
+
+  - text: Cash Forecasting & Liquidity Management
+    icon: timeline
+    desc: Enable forecasting across bank accounts, ledgers, and business units.
+    notes:
+      - Configure forecast sources - AR expected receipts, AP scheduled payments, payroll, claims.
+      - Integrate with Treasury systems for cash pooling and liquidity reporting.
+      - Provide daily cash position reporting at entity, bank, and currency levels.
+      - Support insurance-specific requirements (trust funds, claims funding).
+
+  - text: Cash Accounting & Subledger Integration
+    icon: sync_alt
+    desc: Ensure proper hand-off of cash transactions between Cash Management and the GL.
+    notes:
+      - Align Subledger Accounting (SLA) rules for cash clearing, bank charges, FX gains/losses.
+      - Enable cash clearing accounts to manage timing differences.
+      - Ensure consistency between bank statement dates, clearing dates, and accounting dates.
+      - Validate revaluation and translation impacts for foreign-currency bank accounts.
+
+  - text: Unidentified, Unapplied & Suspense Items
+    icon: help_outline
+    desc: Manage exceptions efficiently, especially in high-volume industries.
+    notes:
+      - Track unidentified receipts separately until classified.
+      - Reconcile suspense accounts regularly in ARCS/Close Manager.
+      - Configure rules to minimise manual suspense entries.
+      - Use matching rules to automate classification where possible.
+
+  - text: Payment & Receipt Integration
+    icon: attach_money
+    desc: Ensure alignment across AP, AR, Payroll, Claims, and external systems.
+    notes:
+      - Validate integration of AP payments (checks, wires, ACH, SEPA) to Cash Management.
+      - Ensure AR receipt batches flow correctly for reconciliation.
+      - Integrate claims payments for insurance operations.
+      - Manage multiple payment platforms (banks, treasury, PSPs).
+
+  - text: Fraud Prevention & Control
+    icon: verified_user
+    desc: Embed fraud controls and treasury compliance into cash processes.
+    notes:
+      - Use Positive Pay/Reverse Positive Pay integrations for cheque protection.
+      - Define approval workflows for bank account changes and sensitive transactions.
+      - Restrict manual cash adjustments or journal entries.
+      - Implement dual-approval for high-value payments.
+
+  - text: Daily Cash Position & Reporting
+    icon: insights
+    desc: Provide dashboard visibility to treasury, finance, and shared services teams.
+    notes:
+      - Enable dashboards for cash balances by bank, currency, region, or entity.
+      - Track variances between forecast vs actual cash.
+      - Provide drilldown from bank balance → statement line → matched transaction.
+      - Integrate with OAC/ADW for advanced analytics.
+
+  - text: Foreign Currency, FX & Multi-Entity Banking
+    icon: public
+    desc: Ensure robust FX handling and multi-currency reconciliations.
+    notes:
+      - Reconcile FX differences between statement amount and booked amount.
+      - Automate FX revaluations for foreign currency accounts.
+      - Manage multi-entity banking structures and cash pooling arrangements.
+      - Align FX rate usage with corporate treasury and GL policies.
+
+  - text: High-Volume Processing, Performance & Automation
+    icon: speed
+    desc: Support large volumes of cash transactions efficiently.
+    notes:
+      - Optimise auto-match rules to maximise match rate and reduce manual workload.
+      - Process high-volume bank files in staggered loads.
+      - Archive old statements to improve performance.
+      - Use Transaction Matching (ARCS) for complex or large reconciliations (claims, DA, reinsurance).
+
+  - text: Audit, Compliance & Evidence
+    icon: rule
+    desc: Maintain full auditability and compliance with treasury, internal control, and regulatory requirements.
+    notes:
+      - Maintain evidence for reconciliations, unmatched items, and exceptions.
+      - Capture workflow history for each reconciliation period.
+      - Enforce SOX controls over bank access, approvals, and reconciliations.
+      - Align with internal/external audit requirements for cash processes.
