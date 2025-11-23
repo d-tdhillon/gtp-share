@@ -1,0 +1,101 @@
+title: Oracle Fusion Intercompany Considerations
+sub-title: Key considerations for designing, automating, and governing Intercompany (IC) processes in Oracle Fusion ERP & EPM
+objList:
+  - text: Intercompany Framework & Governance
+    icon: account_tree
+    desc: Establish a clear organisational IC framework with global ownership and policies.
+    notes:
+      - Define IC policies - allowable transactions, pricing rules, markup, and documentation.
+      - Identify IC transaction owners (finance ops, SSC, actuarial, underwriting, reinsurance).
+      - Establish approval workflows for IC agreements and monthly settlements.
+      - Maintain a global IC catalogue of services, fees, and allocations.
+
+  - text: IC Accounts, Rules & COA Design
+    icon: view_list
+    desc: Align COA structure to support automated IC processing and reconciliation.
+    notes:
+      - Create dedicated IC accounts per entity or per line of business.
+      - Use consistent segment values for IC partner, product, region, and YOA/AY if applicable.
+      - Prevent use of non-IC accounts in IC journals.
+      - Enable cross-validation rules (CVRs) to control valid IC combinations.
+
+  - text: Automated Intercompany Transaction Processing
+    icon: sync_alt
+    desc: Use Fusion’s IC features to generate matched entries across entities.
+    notes:
+      - Configure IC receivable/payable accounts for each entity pair.
+      - Automate reciprocal entries through Intercompany Balancing Rules.
+      - Support multi-segment balancing (entity, region, BU, product, project).
+      - Use automated workflows for initiator → receiver approval.
+
+  - text: IC Billing, Fees & Cross-Charges
+    icon: receipt_long
+    desc: Manage cross-charges across legal entities, business units, and functions.
+    notes:
+      - Support cost allocations for shared services, actuarial, claims, and IT.
+      - Automate periodic IC fee journals using recurring templates.
+      - Use Projects or EPM for complex IC costing and push summary totals to Fusion.
+      - Validate markup rules, transfer pricing, and cost-sharing agreements.
+
+  - text: Insurance-Specific Intercompany Flows
+    icon: business
+    desc: Support IC flows unique to insurance, syndicates, and delegated authority (DA).
+    notes:
+      - Manage IC flows between managing agent, service companies, and corporate members.
+      - Support cross-company claims payments, LAE costs, and CAT event allocations.
+      - Handle premium cessions, inward/outward reinsurance, and commutation settlement.
+      - Track intercompany balances by YOA/AY, LOB, treaty, or underwriting pool.
+
+  - text: Multi-Currency, FX & Cross-Border IC
+    icon: public
+    desc: Ensure accurate FX handling for global intercompany arrangements.
+    notes:
+      - Use approved rate types for IC entries (Corporate, Spot, Period Avg).
+      - Generate realised/unrealised FX adjustments for IC settlement timing differences.
+      - Monitor IC exposures for Treasury and hedging strategies.
+      - Ensure consistent FX translation between Fusion GL and FCCS.
+
+  - text: Intercompany Matching, Settlement & Netting
+    icon: compare_arrows
+    desc: Enable automated IC matching, dispute resolution, and settlement processes.
+    notes:
+      - Match reciprocal entries using IC reports, OTBI, or ARCS IC modules.
+      - Enable settlement netting to reduce multi-entity cash movements.
+      - Support staggered settlement cycles (monthly, quarterly).
+      - Automate dispute workflow for mismatches in amount, currency, or timing.
+
+  - text: Integration with FCCS & EPM Consolidation
+    icon: join_inner
+    desc: Ensure IC elimination and consolidation work seamlessly across ERP & EPM.
+    notes:
+      - Map Fusion IC accounts to FCCS ICP dimension for eliminations.
+      - Ensure matching rules align between ERP IC and FCCS IC matching.
+      - Handle CTA adjustments for IC balances involving foreign entities.
+      - Provide detailed partner-level data for EPM reconciliation.
+
+  - text: Intercompany Reporting & Analytics
+    icon: insights
+    desc: Provide transparency of IC balances, settlement status, and variances.
+    notes:
+      - Use OTBI and BI Publisher for IC ageing, partner analysis, and unmatched items.
+      - Provide root-cause analytics for recurring disputes.
+      - Integrate with OAC/ADW for multi-year trend reporting.
+      - Enable dashboards for settlement forecasts and exposure reporting.
+
+  - text: Controls, Audit & Compliance
+    icon: rule
+    desc: Maintain IC controls aligned with SOX, transfer pricing, and regulatory compliance.
+    notes:
+      - Enforce approval workflows for IC journals and adjustments.
+      - Maintain documentation for transfer pricing, SLAs, and allocation rules.
+      - Track overrides and manual IC journals separately.
+      - Maintain full audit trail and evidence for IC reconciliations.
+
+  - text: Performance, Volume & Automation
+    icon: speed
+    desc: Ensure scalable IC processing for large, multi-entity organisations.
+    notes:
+      - Automate recurring IC journals and allocation outputs.
+      - Optimise IC balancing rules for high-volume transactions.
+      - Use APIs/FBDI for bulk IC entry uploads or upstream system integrations.
+      - Stagger heavy IC processing to avoid close-period performance issues.
