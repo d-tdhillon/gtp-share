@@ -1,0 +1,101 @@
+title: OIC Lloyds Market Integration Accelerators
+sub-title: Predefined Oracle Integration Cloud patterns for Lloyd’s DXC, TAO, EBOT/ECOT, RITC, and syndicate reporting workflows
+objList:
+  - text: DXC Settlement & Technical Accounting Automation
+    icon: corporate_fare
+    desc: Automate ingestion, transformation, and posting of DXC messages into Fusion ERP & EPM.
+    notes:
+      - Process daily/weekly DXC settlement messages (LPAN, settlement, claim, premium).
+      - Convert DXC formats into ERP-ready journals and AP/AR invoices.
+      - Validate syndicate, YOA, class of business, and market segment mappings.
+      - Reconcile processed DXC items with Fusion GL and ARCS automatically.
+
+  - text: TAO (Technical Accounting Output) Integration
+    icon: receipt_long
+    desc: Automate loading of TAO data into Fusion for accounting and reconciliation.
+    notes:
+      - Map TAO fields (net premium, brokerage, tax, claims) to COA and SLA rules.
+      - Apply validation for mandatory Lloyd’s data elements (risk code, class, CAT code).
+      - Generate IC journals across syndicate → corporate member → ServiceCo.
+      - Support both “treaty” and “fac” segments with configurable drivers.
+
+  - text: EBOT & ECOT Market Reform Messaging
+    icon: compare_arrows
+    desc: Standardised patterns for processing EBOT (premium) and ECOT (claim) messages.
+    notes:
+      - Translate market messages (ACORD, XML, JSON) into Fusion financial events.
+      - Automate allocation to YOA, LOB, broker, and treaty.
+      - Support partial payments, adjustments, and claim recoveries.
+      - Reconcile ECOT paid positions with DXC and subledger AP data.
+
+  - text: RITC & YOA Close-Out Workflow Automation
+    icon: calendar_month
+    desc: Automate integration workflows for Year of Account closure and RITC transfers.
+    notes:
+      - Load actuarial reserving outputs for closing YOAs into Fusion/APR.
+      - Post RITC debits/credits across closing and opening YOAs.
+      - Integrate with FCCS for consolidation and elimination of YOA balances.
+      - Provide reconciliation files for controllers and Lloyd’s submissions.
+
+  - text: Lloyd’s Bordereaux (Premium, Claims, Risk)
+    icon: table_view
+    desc: High-volume bordereaux ingestion for Lloyd’s delegated authority business.
+    notes:
+      - Validate mandatory Lloyd’s data set (LDR fields).
+      - Auto-map to syndicate, YOA, coverholder, binder, and LOB.
+      - Perform risk-level transformations (split by section, UMR, UCR).
+      - Feed Fusion GL, EPM, and actuarial data marts via OIC staging.
+
+  - text: Lloyd’s Regulatory Reporting Data Flows
+    icon: assessment
+    desc: Prebuilt outbound flows for QMA, QSR, GQD, and SII reporting.
+    notes:
+      - Extract trial balance, YOA movement, and technical provision data.
+      - Transform GL/EPM data into Lloyd’s reporting structures.
+      - Automate submission-ready file creation (CSV, XML, templates).
+      - Maintain version-control for reporting periods and sign-off workflows.
+
+  - text: Market-Level Intercompany Integration
+    icon: sync_alt
+    desc: Automate complex IC flows across Market entities.
+    notes:
+      - Generate ServiceCo → Syndicate → Corporate Member IC postings.
+      - Allocate expenses, management fees, and profit commissions.
+      - Support IC netting and settlement cycles per Lloyd’s calendar.
+      - Reconcile IC balances using ARCS IC-matching.
+
+  - text: Premium & Claim Event Real-Time Adapter
+    icon: notifications
+    desc: Stream real-time underwriting/claim events for Lloyd’s-specific processing.
+    notes:
+      - Trigger workflows for premium endorsement, claim notify, reserve change.
+      - Enrich events with UMR/UCR, binder, CAT code, and LOB.
+      - Post events to GL/AP/AR and update EPM cubes (FCCS/PCMCS).
+      - Integrate with actuarial engines for reserve modelling refresh.
+
+  - text: DXC Exception Handling & Reconciliation
+    icon: bug_report
+    desc: Advanced reconciliation and error-handling patterns for DXC/market data.
+    notes:
+      - Identify mismatches between DXC, EBOT/ECOT, and GL.
+      - Auto-route exceptions to underwriting, claims, or finance queues.
+      - Maintain functional error messages for non-technical user resolution.
+      - Produce daily exception dashboards for operational teams.
+
+  - text: Security, Controls & Lloyd’s Compliance
+    icon: rule
+    desc: Ensure integrations meet Lloyd’s governance and audit standards.
+    notes:
+      - Apply encryption (PGP/SFTP), token-based access, and strict endpoint controls.
+      - Maintain evidence trails for DXC → ERP/EPM transformations.
+      - Apply change-control governance for mapping updates and data rules.
+      - Support Lloyd’s MS2, MS8, SII governance, and audit requirements.
+
+  - text: Performance, High-Volume Processing & Scaling
+    icon: speed
+    desc: Optimise OIC throughput for large Lloyd’s and delegated authority data volumes.
+    notes:
+      - Parallel processing for TAO, DXC, and bordereaux file loads.
+      - Chunking/streaming to handle >1M-row bordereaux files.
+      - Scaling rules for CAT-event surge (claims spikes).
+      - Automated clean-up of UCM/OIC staging for long-term performance.
