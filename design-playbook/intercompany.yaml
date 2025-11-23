@@ -1,0 +1,101 @@
+title: Intercompany
+sub-title: Key considerations for intercompany flows across insurance groups, Lloyd’s entities, MGAs, service companies, and reinsurance arrangements
+objList:
+  - text: Premium Allocation & Cross-Entity Distribution
+    icon: receipt_long
+    desc: Manage premium flows across entities, syndicates, pools, and YOA structures.
+    notes:
+      - Allocate written and earned premium across corporate members, service companies, and syndicates.
+      - Support fronting arrangements where one entity writes risk but another carries exposure.
+      - Track YOA-level premium splits across multiple writing entities.
+      - Reconcile premium allocations with bordereaux uploads and underwriting systems.
+
+  - text: Claims Settlement Across Group Entities
+    icon: gavel
+    desc: Support IC flows for claims paid by one entity on behalf of another.
+    notes:
+      - Handle cross-entity claim payments (e.g., ServiceCo paying claims for Syndicate).
+      - Allocate loss adjustment expenses (LAE) and operating costs to correct entity/YOA.
+      - Track large-loss events and CAT claims across multiple entities.
+      - Support IC recoveries for shared claims, subrogation, and salvage.
+
+  - text: Reinsurance Ceded & Retrocession Flows
+    icon: sync_alt
+    desc: Manage ceded premium, commissions, and recoveries across intercompany and external reinsurers.
+    notes:
+      - Allocate ceded premium by entity, treaty, YOA, and class of business.
+      - Track reinsurance payable/receivable balances for group internal reinsurance structures.
+      - Support commutations, profit commissions, reinstatement premiums, and waterfall calculations.
+      - Align ceded balances to actuarial triangles and reinsurance bordereaux.
+
+  - text: Managing Agent, ServiceCo & Corporate Member IC Flows (Lloyd’s)
+    icon: corporate_fare
+    desc: Handle unique Lloyd’s market intercompany requirements.
+    notes:
+      - Track fees, profit commissions, and central settlement flows between Syndicate, ServiceCo, and Corporate Member.
+      - Allocate expenses and management charges across YOA and LOB.
+      - Support RITC-related IC postings between closing and opening YOAs.
+      - Reconcile IC balances to DXC settlement files and Lloyd’s QMA/QSR submissions.
+
+  - text: Delegated Authority (DA) / Coverholder IC Processing
+    icon: groups
+    desc: Manage intercompany impacts of DA business and coverholder arrangements.
+    notes:
+      - Allocate premium, commissions, and fees from MGA/coverholder entities to writing carriers.
+      - Handle IC adjustments for claims handled by TPAs or coverholders.
+      - Track revenue share or fee arrangements under binder agreements.
+      - Integrate DA bordereaux with IC journals for premium and claims splits.
+
+  - text: Shared Services & Operating Cost Allocations
+    icon: miscellaneous_services
+    desc: Allocate central costs to underwriting entities, service companies, and syndicates.
+    notes:
+      - Allocate IT, HR, Finance, Claims Ops, and global support costs across entities.
+      - Use EPM/PCM for complex cost driver calculations; post results to Fusion IC accounts.
+      - Track cost absorption by LOB, territory, and YOA for profitability analysis.
+      - Reconcile service charges to transfer pricing documentation.
+
+  - text: Multi-Currency & Cross-Border Settlement
+    icon: public
+    desc: Ensure IC flows support complex FX and multi-currency settlement patterns.
+    notes:
+      - Calculate FX gains/losses on IC settlements across currencies and functional currencies.
+      - Manage IC exposures for treasury hedging strategies.
+      - Support cross-border regulatory requirements (e.g., US → UK → Bermuda flows).
+      - Reconcile FX impacts between Fusion GL, reinsurance systems, and FCCS.
+
+  - text: Intercompany Matching, Netting & Settlement Cycles
+    icon: compare_arrows
+    desc: Ensure accurate, timely IC reconciliations and netted settlements.
+    notes:
+      - Use ARCS or IC matching rules to reconcile reciprocal balances.
+      - Support netting cycles for premium, claims, and reinsurance flows.
+      - Track overdue IC amounts and flag disputes for underwriting/finance review.
+      - Align settlement cycles to Lloyd’s central settlement timeline where applicable.
+
+  - text: Integration with Actuarial, FCCS & Technical Accounting
+    icon: join_inner
+    desc: Align IC flows with actuarial reserving, consolidation, and technical accounting structures.
+    notes:
+      - Map IC accounts to FCCS ICP dimension for automated elimination.
+      - Align AY/YOA IC flows to actuarial models and reserving systems.
+      - Ensure technical accounting (TAO/EBOT/ECOT) messages integrate with GL IC entries.
+      - Provide partner-level IC details for consolidation, QMA/QSR, and SII reporting.
+
+  - text: Controls, Audit & Regulatory Requirements
+    icon: rule
+    desc: Maintain auditability across insurance-specific IC processes.
+    notes:
+      - Enforce approval workflows for IC journals and reinsurance-related IC adjustments.
+      - Maintain documentation for IC pricing, cost-sharing agreements, and treaties.
+      - Track overrides to automated IC rules and late adjustments.
+      - Align with Lloyd’s MS2/MS5, transfer pricing, and external audit requirements.
+
+  - text: Performance, Automation & High-Volume Processing
+    icon: speed
+    desc: Manage high data volumes from bordereaux, TAO, reinsurance, and cross-entity flows.
+    notes:
+      - Automate recurring IC entries from EPM/PCM cost allocations.
+      - Process high-volume DA bordereaux to generate IC postings efficiently.
+      - Use APIs, FBDI, or OIC integrations for bulk IC uploads or treaty settlements.
+      - Optimise IC balancing rules to avoid close-period delays.
