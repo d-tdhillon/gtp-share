@@ -1,0 +1,92 @@
+title: Fixed Assets - Insurance
+sub-title: Key considerations for managing fixed assets in an insurance environment (claims, CAT events, underwriting, operations)
+objList:
+  - text: Claims-Related Asset Tracking
+    icon: gavel
+    desc: Support assets directly linked to claims handling and loss events.
+    notes:
+      - Track assets destroyed, damaged, or stolen as part of claim events.
+      - Maintain linkage between asset records and claim numbers for audit and recovery.
+      - Automate write-off posting when an insurance claim settles for a total loss.
+      - Support salvage tracking, sale proceeds, and accounting for gain/loss.
+
+  - text: CAT Event & Emergency Response Equipment
+    icon: warning
+    desc: Manage high-mobility assets used during catastrophe (CAT) events.
+    notes:
+      - Track mobile inspection equipment (drones, cameras, adjuster kits).
+      - Maintain location-based control for temporary CAT offices and mobile units.
+      - Enable quick transfer of assets between regions during surge events.
+      - Reconcile temporary CAT purchases and disposals during post-event reviews.
+
+  - text: Underwriting, Risk Engineering & Survey Assets
+    icon: engineering
+    desc: Support specialised assets used by risk engineers, surveyors, and underwriting teams.
+    notes:
+      - Track inspection tools, safety equipment, and on-site diagnostic devices.
+      - Maintain usage logs for regulated industries (industrial, marine, energy).
+      - Allocate costs to underwriting teams, LOBs, or products where relevant.
+      - Provide evidence trails for engineering risk assessments and surveys.
+
+  - text: IT, Infrastructure & Policy Admin Assets
+    icon: devices
+    desc: Manage technology assets critical to insurance operations.
+    notes:
+      - Track laptops, servers, scanners, and imaging systems used in underwriting and claims.
+      - Integrate with ITSM systems for lifecycle tracking and incident management.
+      - Automate capitalisation for large policy system upgrades and cloud migrations.
+      - Ensure depreciation aligns with regulatory and cybersecurity requirements.
+
+  - text: Loss Adjuster Assets & Field Operations
+    icon: person_pin
+    desc: Manage equipment issued to adjusters working on-site.
+    notes:
+      - Track portable devices, vehicles, and high-value kits used for field assessments.
+      - Support location-based assets for roaming adjusters.
+      - Manage rapid deployment of assets during surge claim periods.
+      - Record asset usage against claim activity for cost attribution.
+
+  - text: Salvage, Recovery & Disposal Processes
+    icon: recycle
+    desc: Align FA disposals with insurance salvage and recovery workflows.
+    notes:
+      - Capture salvage values and compare to book value at disposal.
+      - Automate GL postings for salvage, impairment, or insurance recovery.
+      - Track donated or destroyed assets with appropriate approvals.
+      - Integrate FA disposals with claims recovery and subrogation processes.
+
+  - text: Integration with Claims, Underwriting & Reinsurance Systems
+    icon: hub
+    desc: Enable seamless data interactions between FA and operational systems.
+    notes:
+      - Link fixed assets to claim files for total loss, partial loss, or property claims.
+      - Capture underwriting asset usage for cost allocations.
+      - Align FA data with reinsurance recoveries for catastrophic events.
+      - Support downstream reporting (FCCS, actuarial, risk management).
+
+  - text: Regulatory, Audit & Solvency Requirements
+    icon: rule
+    desc: Address insurance-specific regulatory and audit obligations.
+    notes:
+      - Maintain evidence for asset values impacting solvency coverage and SCR.
+      - Support external audit traceability for large claim-related disposals.
+      - Reconcile FA → GL → FCCS for SII Technical Provision reporting where relevant.
+      - Enforce controls for loss-related adjustments and impairment events.
+
+  - text: Project-to-Asset Capitalisation for Insurance Initiatives
+    icon: construction
+    desc: Support capital projects unique to insurance transformation and compliance.
+    notes:
+      - Track major digital platform investments (claims modernisation, underwriting engines).
+      - Manage capitalisation of regulatory investments (IFRS17, Solvency II systems).
+      - Allocate capital costs across entities, syndicates, or lines of business.
+      - Support multi-currency project accounting for global programmes.
+
+  - text: Performance, Mobility & High-Volume Use Cases
+    icon: speed
+    desc: Ensure FA can scale with high-volume and fast-moving operational environments.
+    notes:
+      - Support bulk asset transfers for CAT deployments.
+      - Optimise depreciation runs for multi-entity insurance groups.
+      - Manage high-volume disposals during system upgrades or office transformations.
+      - Use automation rules to reduce manual effort for recurring insurance use cases.
