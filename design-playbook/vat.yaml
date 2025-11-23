@@ -1,0 +1,101 @@
+title: VAT Considerations
+sub-title: Key considerations for VAT setup, compliance, reporting, and cross-jurisdiction handling in Oracle Fusion and insurance environments
+objList:
+  - text: VAT Framework & Country Configuration
+    icon: public
+    desc: Establish VAT rules, jurisdictions, and tax authorities across operating regions.
+    notes:
+      - Define VAT jurisdictions, tax regimes, and rates for each country.
+      - Maintain standard, reduced, zero, exempt, and reverse-charge rates.
+      - Configure EU-specific rules - triangulation, intra-EU supply, distance selling.
+      - Maintain periodic rate updates and change-control governance.
+
+  - text: VAT on Services vs Goods
+    icon: gavel
+    desc: Separate VAT treatment based on supply type and cross-border rules.
+    notes:
+      - Services follow “place of supply” rules; goods follow “place of delivery.”
+      - For B2B cross-border services, apply reverse charge where required.
+      - Insurance services often exempt — validate impacts on input VAT recovery.
+      - Manage mixed-supply rules where insurance commissions include taxable elements.
+
+  - text: VAT Determination in ERP (AP/AR)
+    icon: sync_alt
+    desc: Configure tax engines to automatically determine VAT during invoice processing.
+    notes:
+      - Use Tax Classification Codes (TCC) and Tax Rules in Oracle.
+      - Automate VAT based on supplier, item, location, and transaction type.
+      - Support AP reverse charge, self-billing, and intercompany VAT.
+      - Validate VAT treatment for multi-currency and multi-entity transactions.
+
+  - text: VAT for Insurance Operations
+    icon: business
+    desc: Support VAT complexity across claims, commissions, brokers, reinsurers, and DA business.
+    notes:
+      - Claims services (adjusters, lawyers, medical) generally attract VAT; claims payouts do not.
+      - Broker commissions may be exempt or partially taxable depending on jurisdiction.
+      - Reinsurance is generally exempt but must be validated country by country.
+      - DA/coverholder fees, third-party administrator fees may attract VAT or local equivalents (GST).
+
+  - text: VAT Recovery & Partial Exemption
+    icon: balance
+    desc: Manage ability to reclaim input VAT, especially in insurance where many outputs are exempt.
+    notes:
+      - Calculate recoverable % using partial exemption or pro-rata methods.
+      - Maintain separate buckets for recoverable, non-recoverable, and restricted input VAT.
+      - Automate adjustments at period-end in GL/AP.
+      - Produce documentation required by tax authorities for partial exemption calculations.
+
+  - text: VAT on Intercompany Transactions
+    icon: compare_arrows
+    desc: Handle VAT correctly for cross-entity services and charges.
+    notes:
+      - Apply local VAT based on legal entity and “place of supply.”
+      - Recognise reverse charge for EU and non-EU cross-border services.
+      - Validate VAT override rules for cost allocations and shared service charges.
+      - Ensure IC VAT recharges reconcile to AP/AR and tax reporting.
+
+  - text: VAT Reporting, Returns & Real-Time Reporting
+    icon: description
+    desc: Produce VAT returns, SAF-T, real-time reporting and electronic submissions.
+    notes:
+      - Generate VAT returns using Fusion Tax Reporting and BI Publisher.
+      - Support MTD (Making Tax Digital) for UK VAT.
+      - Support SAF-T (Portugal, Poland, Norway), RTIR (Hungary), B2G mandates, and global e-invoicing.
+      - Use OIC/OBN for real-time electronic VAT submissions.
+
+  - text: VAT on Claims & Recoveries
+    icon: receipt_long
+    desc: Manage VAT on claims expenses, recoveries, salvage, and subrogation.
+    notes:
+      - Track VAT on repair services, legal fees, medical invoices, and adjuster costs.
+      - Ensure recoveries incorporate VAT where taxable.
+      - Identify VAT components on salvage recoveries.
+      - Reconcile claims VAT to AP, GL, and subledger claims data.
+
+  - text: VAT Determination for Delegated Authority (DA) Bordereaux
+    icon: table_view
+    desc: Handle VAT on DA premium/claims bordereaux across multiple countries.
+    notes:
+      - Apply VAT rules based on binder, territory, coverage, and risk location.
+      - Manage VAT on TPA fees, handling charges, and commissions.
+      - Support multi-currency VAT reporting at granular transaction level.
+      - Integrate DA VAT with subledger and OIC transformation rules.
+
+  - text: VAT Controls, Audit & Compliance
+    icon: verified_user
+    desc: Maintain strong tax governance with audit-ready evidence.
+    notes:
+      - Enforce maker-checker workflow for tax configuration changes.
+      - Maintain audit trail for VAT rate changes, overrides, and manual adjustments.
+      - Maintain documentation for partial exemption and VAT recovery.
+      - Provide reconciliations for tax authority queries and statutory audit.
+
+  - text: Automation, OIC Integration & High-Volume Processing
+    icon: auto_awesome
+    desc: Automate VAT processes using OIC, tax APIs, and ERP tax engines.
+    notes:
+      - Use OIC to validate VAT fields in supplier and customer feeds.
+      - Automate tax rate updates from central repositories.
+      - Apply VAT enrichment to bordereaux and reinsurance data before accounting.
+      - Support high-volume VAT posting for claims, DA business, and AP invoices.
