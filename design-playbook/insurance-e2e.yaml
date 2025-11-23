@@ -1,0 +1,65 @@
+title: Insurance Integration Operating Model
+sub-title: End-to-end data & process flow across Claims, Underwriting, Reinsurance, ERP, EPM, and Actuarial systems
+objList:
+  - text: Source Systems & Upstream Data Producers
+    icon: cloud
+    desc: Core insurance platforms that generate premium, policy, claims, and reinsurance data.
+    notes:
+      - Policy Admin Systems: policy, premium, risk data.
+      - Claims Systems: FNOL, reserves, payments, recoveries.
+      - Reinsurance Systems: treaties, cessions, recoveries, commutations.
+      - DA/Coverholder Platforms: bordereaux for premium, claims, risk.
+
+  - text: Data Intake & Staging (OIC / Data Platform)
+    icon: sync_alt
+    desc: Integration hub for validating, cleansing, and staging data before ERP/EPM loading.
+    notes:
+      - OIC handles API, event-driven, and SFTP/file-based ingestion.
+      - Data quality rules validate mandatory insurance attributes (LOB, YOA/AY, treaty).
+      - Transformations standardise COA segments, risk codes, product hierarchies.
+      - Staging lake supports incremental loads and high-volume bordereaux.
+
+  - text: ERP Integration (Oracle Fusion)
+    icon: corporate_fare
+    desc: Posting of financial transactions into GL, AP, AR, FA, Projects.
+    notes:
+      - Premium and claim transactions mapped to GL via SLA rules.
+      - AP integrations create payable invoices for claims vendors and reinsurers.
+      - Project integrations capture CAPEX and major programme spend.
+      - Bank/cash updates flow to Cash Management for reconciliation.
+
+  - text: EPM Integration (FCCS, PCMCS, Planning)
+    icon: join_inner
+    desc: Consolidation, planning, and profitability analysis using multi-dimensional structures.
+    notes:
+      - Trial balance loads from Fusion GL to FCCS for consolidation.
+      - Cost allocations from PCMCS feed back to ERP for IC postings.
+      - Planning uses operational drivers for budgeting (claims, premium, loss ratios).
+      - YOA/AY, product, segment, broker, and territory stored as EPM dimensions.
+
+  - text: Actuarial System Integration
+    icon: functions
+    desc: Provide validated financial and operational data to actuarial models.
+    notes:
+      - Claims triangles (AY/YOA) generated from ERP + source system data.
+      - Premium, exposure, and reserving feeds exported to actuarial engines.
+      - Reinsurance structures exchanged for recovery modelling.
+      - Validated actuarial outputs returned to EPM and Finance for provisioning.
+
+  - text: Feedback Loops & Enrichment
+    icon: repeat
+    desc: Continuous integration loops improve accuracy and reduce manual adjustments.
+    notes:
+      - Actuarial reserve adjustments flow back to GL as journals.
+      - Reinsurance recoveries validated against actuarial calculations.
+      - Premium adjustments and endorsements re-fed into GL and FCCS.
+      - Claims development updates trigger new actuarial scenarios.
+
+  - text: Controls, Governance & Monitoring
+    icon: rule
+    desc: Strong integration control framework across the full insurance value chain.
+    notes:
+      - Reconciliation between source → ERP → EPM → actuarial.
+      - SLA dashboards for interface status, load failures, data anomalies.
+      - Audit trails of transformations, validations, and data approvals.
+      - Daily controls for claims, premium, and bordereaux processing.
