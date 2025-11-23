@@ -1,0 +1,128 @@
+title: Oracle Fusion Projects Subledger Considerations
+sub-title: Key considerations for designing, configuring, and governing Oracle Projects as a subledger to GL
+objList:
+  - text: Project Structure & Governance
+    icon: account_tree
+    desc: Establish consistent, governed project structures aligned with enterprise policy.
+    notes:
+      - Define project templates, types, and classifications (capital, operating, regulatory).
+      - Use project attributes such as business unit, project org, sponsor, and funding source.
+      - Govern project creation, change control, and closure via workflow.
+      - Align project structures with COA segments and EDMCS hierarchy rules.
+
+  - text: Task Design & Granularity
+    icon: view_list
+    desc: Structure tasks to support reporting, costing, billing, and capitalisation.
+    notes:
+      - Define task levels (summary vs detail) and restrict unnecessary granularity.
+      - Enable task-level budgeting, costing, and billing rules.
+      - Use consistent naming conventions across business units.
+      - Map tasks to appropriate expenditure types and financial categories.
+
+  - text: Cost Collection & Processing
+    icon: receipt_long
+    desc: Track project costs from AP, Procurement, Payroll, Inventory, and external systems.
+    notes:
+      - Integrate AP invoices, expense claims, and timesheets automatically.
+      - Support procurement cost flow (PO → Receipt → AP Invoice → Project cost).
+      - Capture payroll/labour costs using time cards or external HR integrations.
+      - Configure cost distribution, burdening, and cost adjustment rules.
+
+  - text: Capital Projects & Asset Capitalisation
+    icon: home_repair_service
+    desc: Support CIP (Construction in Progress), capitalisation, and FA integration.
+    notes:
+      - Track all capital WIP costs until asset readiness.
+      - Automate asset creation via Mass Capitalisation from Projects to Fixed Assets.
+      - Support partial capitalisation, multi-asset splits, and retirement of CIP assets.
+      - Maintain reconciliation of CIP balances with FA and GL.
+
+  - text: Project Billing & Revenue Recognition
+    icon: payments
+    desc: Manage contract-based billing and revenue for internal and external projects.
+    notes:
+      - Configure contract types- T&M, fixed price, milestone, cost-plus.
+      - Define revenue recognition methods aligned with policy (percent complete, event-based).
+      - Automate invoice generation and transfer to AR.
+      - Track unbilled/unearned revenue and reconcile with GL.
+
+  - text: Funding, Grants & Multi-Sponsor Projects
+    icon: account_balance_wallet
+    desc: Manage complex funding across internal, external, or regulatory sources.
+    notes:
+      - Configure billing controls, funding limits, and cost ceilings.
+      - Track cost sharing, co-financing, and sponsor-specific restrictions.
+      - Support conditional funding (regulatory, IFRS17 compliance, technology upgrades).
+      - Provide audit trail for each funding source.
+
+  - text: Integration with Procurement, AP & Inventory
+    icon: shopping_cart
+    desc: Ensure end-to-end flow of project-related procurement and vendor costs.
+    notes:
+      - Map procurement categories to project expenditure types.
+      - Automate accruals and chargeable cost capture.
+      - Track inventory issues to projects for materials and equipment.
+      - Ensure 3-way match exceptions flow correctly into project costing.
+
+  - text: Insurance-Specific Project Use Cases
+    icon: business
+    desc: Support insurance transformation, technology, and catastrophe operations.
+    notes:
+      - Track costs for policy administration system migrations or claims modernisation.
+      - Allocate costs to LOB, YOA/AY, entities, or strategic programmes.
+      - Capture CAT event project costs (temporary offices, systems, surge staffing).
+      - Support regulatory compliance projects (IFRS17, Solvency II, Lloyd’s reforms).
+
+  - text: Subledger Accounting (SLA) Configuration
+    icon: sync_alt
+    desc: Ensure project costs and revenue are accounted correctly in GL.
+    notes:
+      - Map expenditure types to natural accounts, cost centres, and asset accounts.
+      - Configure capital vs expense accounting through SLA rules.
+      - Validate FX impacts on project costs and revenue.
+      - Align project accounting with ledger settings (calendar, currency, COA).
+
+  - text: Budgeting, Forecasting & Controls
+    icon: rule
+    desc: Establish strong financial controls around project spend.
+    notes:
+      - Enable budgetary control at project or task level.
+      - Integrate with EPM for rolling forecasts and multi-year CAPEX planning.
+      - Track budget vs actuals and enforce cost ceilings.
+      - Require approval workflows for budget changes or transfers.
+
+  - text: Multi-Currency, Global Projects & FX
+    icon: public
+    desc: Ensure correct handling of foreign currency transactions and global funding.
+    notes:
+      - Track project costs in transaction currency, project currency, and ledger currency.
+      - Manage FX gains/losses for cross-border projects.
+      - Support multi-entity project costing and intercompany allocations.
+      - Align translation and remeasurement rules with GL and EPM.
+
+  - text: Reporting & Analytics
+    icon: insights
+    desc: Provide detailed project visibility for Finance, PMO, and business teams.
+    notes:
+      - Use OTBI, Project Performance Reporting (PPR), and BI Publisher for project insights.
+      - Enable dashboards for cost, schedule, revenue, billing, and variances.
+      - Integrate with OAC/ADW for long-term analytics and programme reporting.
+      - Provide drilldown from GL → Project → Task → Transaction.
+
+  - text: Close, Reconciliation & Audit Trail
+    icon: checklist
+    desc: Ensure accurate period close across Projects, GL, AP, and FA.
+    notes:
+      - Reconcile project costs, CIP, and billed balances in ARCS.
+      - Track unprocessed costs, pending transfers, and unbilled revenue.
+      - Lock projects and tasks after close to prevent late adjustments.
+      - Maintain audit trail of cost adjustments, SLA postings, and billing events.
+
+  - text: Performance, Volume & Automation
+    icon: speed
+    desc: Optimise project processes for high-volume environments.
+    notes:
+      - Schedule cost distribution and asset capitalisation during off-peak times.
+      - Use FBDI and REST APIs for bulk project or cost uploads.
+      - Automate recurring project expenses and standard cost allocations.
+      - Enable workflow automation for approvals and cost adjustments.
