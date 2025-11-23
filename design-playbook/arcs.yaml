@@ -1,0 +1,101 @@
+title: ARCS
+sub-title: Key considerations for designing, implementing, and governing Account Reconciliation Cloud Service (ARCS)
+objList:
+  - text: Reconciliation Strategy & Scope
+    icon: checklist
+    desc: Define the reconciliation framework, scope, and ownership across Finance.
+    notes:
+      - Identify which reconciliations will be balance-sheet, template-based, or transaction-matching.
+      - Define ownership model - preparers, reviewers, approvers, controllers.
+      - Prioritise high-risk, high-volume, or regulatory-sensitive accounts.
+      - Standardise reconciliation frequency (monthly, quarterly, annual).
+
+  - text: Account Segmentation & Risk Rating
+    icon: flag
+    desc: Classify accounts based on risk, volume, regulatory importance, and materiality.
+    notes:
+      - Assign risk ratings (High, Medium, Low) to drive workflow and documentation needs.
+      - Segment accounts by business unit, region, entity, and process.
+      - Apply rules to automate risk scores based on balance movements or history.
+      - Align segmentation with internal controls and audit framework (SOX).
+
+  - text: Formats, Profiles & Templates
+    icon: view_list
+    desc: Standardise reconciliation formats across account types and processes.
+    notes:
+      - Create reusable templates for bank recs, accruals, intercompany, suspense, and operational accounts.
+      - Define profile attributes (currency, preparer group, thresholds, regulatory flags).
+      - Use dynamic rules to enforce minimum documentation or variance thresholds.
+      - Ensure templates align with GL, subledger, and statutory requirements.
+
+  - text: Data Loads & Integration
+    icon: cloud_sync
+    desc: Automate GL balance imports and transaction-level data feeds.
+    notes:
+      - Integrate Fusion GL balances using Data Exchange or direct ARCS integration adapters.
+      - Load subledger detail (AP, AR, FA, Projects) for transaction matching.
+      - Support external data sources (bank files, bordereaux, actuarial feeds).
+      - Schedule automated loads and monitor for failures or data gaps.
+
+  - text: Transaction Matching (TM)
+    icon: compare_arrows
+    desc: Enable automated matching for high-volume reconciliations.
+    notes:
+      - Use match rules for bank extracts, subledger feeds, cash receipts, and claims payments.
+      - Configure auto-match thresholds, multi-attribute matching, and tolerance rules.
+      - Support 1-to-1, 1-to-many, and many-to-many matching logic.
+      - Define exception workflows for unresolved or unmatched items.
+
+  - text: Workflow, Approvals & Controls
+    icon: approvals
+    desc: Ensure reconciliations flow through a controlled approval process.
+    notes:
+      - Configure preparer → reviewer → approver workflows.
+      - Enforce segregation of duties and regional/location-based approvals.
+      - Automate alerts for upcoming deadlines, overdue recs, or aging exceptions.
+      - Enable certification workflows for SOX and audit-critical accounts.
+
+  - text: Policies, Supporting Evidence & Audit Trail
+    icon: description
+    desc: Ensure reconciliations meet internal and external audit standards.
+    notes:
+      - Require attachments (calculations, statements, ageing, supporting schedules).
+      - Maintain full audit logs of preparer, reviewer, and approver actions.
+      - Restrict deletions or changes to certified reconciliations.
+      - Align documentation standards with external audit requirements.
+
+  - text: Metrics, KPIs & Performance Monitoring
+    icon: insights
+    desc: Track performance and improve reconciliation efficiency.
+    notes:
+      - Monitor KPIs - completion rate, late reconciliations, exception ageing.
+      - Use dashboards for entity-level and global visibility.
+      - Track matching % for Transaction Matching processes.
+      - Highlight bottlenecks, recurring exceptions, or high-risk accounts.
+
+  - text: Integration with Close Manager & Fusion ERP
+    icon: join_inner
+    desc: Align reconciliation timelines with accounting close cycles.
+    notes:
+      - Sync ARCS deadlines with Close Manager tasks.
+      - Ensure subledger close occurs before reconciliation start.
+      - Link reconciliations to GL entries, journals, and transactional details.
+      - Prevent period closure without reconciliation of critical accounts.
+
+  - text: Continuous Improvement & Automation
+    icon: trending_up
+    desc: Increase automation, reduce manual effort, and enhance control quality.
+    notes:
+      - Automate preparation using pre-certified balances for low-risk accounts.
+      - Use rule-based auto-certification where thresholds permit.
+      - Introduce AI/ML-based anomaly detection and risk scoring for recs.
+      - Periodically review profiles to retire duplicate or obsolete reconciliations.
+
+  - text: Performance, Scalability & High-Volume Support
+    icon: speed
+    desc: Ensure ARCS can scale for large enterprises and high-volume matching.
+    notes:
+      - Optimise Transaction Matching for high-volume feeds (cash, claims, payments).
+      - Schedule staggered loads for large data sets to avoid performance bottlenecks.
+      - Archive older periods to improve performance.
+      - Scale for multiple entities, currencies, and decentralised finance teams.
