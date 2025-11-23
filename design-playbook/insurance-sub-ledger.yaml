@@ -1,0 +1,110 @@
+title: Insurance Subledger Considerations
+sub-title: Key considerations for designing a dedicated insurance subledger supporting premium, claims, reinsurance, and Lloyd’s market processes
+objList:
+  - text: Core Subledger Architecture
+    icon: account_tree
+    desc: Establish a dedicated, granular subledger for insurance transaction recording.
+    notes:
+      - Supports premium, claims, recoveries, commissions, and UPR/IBNR adjustments.
+      - Maintain detailed transaction-level data before summarisation to GL/EPM.
+      - Provide configurable accounting rules independent of GL/SLA.
+      - Enable multi-ledger support for statutory, management, Lloyd’s, and regulatory views.
+
+  - text: Premium Subledger Processing
+    icon: attach_money
+    desc: Track written, earned, unearned, and ceded premiums with full auditability.
+    notes:
+      - Store premium instalments, endorsements, cancellations, and adjustments.
+      - Maintain mapping to LOB, product, UMR, binder, broker, and territory.
+      - Support earned premium calculations and deferral rules (UPR/DPAC).
+      - Integrate with policy admin systems for real-time or batch premium updates.
+
+  - text: Claims Subledger Processing
+    icon: gavel
+    desc: Track claim notifications, reserves, payments, recoveries, and LAE.
+    notes:
+      - Capture FNOL, case reserve, and actuarial IBNR movements.
+      - Track paid-to-date, salvage, subrogation, and reinsurance recoveries.
+      - Maintain UCR, ULR, claim triangles, and claims-by-AY/YOA splits.
+      - Integrate with claims systems for reserve updates and settlement events.
+
+  - text: Reinsurance Subledger (Ceded & Assumed)
+    icon: handshake
+    desc: Manage ceded, retro, and assumed reinsurance transactions and multi-layer structures.
+    notes:
+      - Track treaty layers, attachment points, reinstatements, profit commissions.
+      - Manage cession splits by LoB, territory, YOA/AY, section.
+      - Post reinsurance payable/receivable, commissions, and recoveries to GL.
+      - Integrate with technical accounting (TAO/EBOT/ECOT) for Lloyd’s syndicates.
+
+  - text: Lloyd’s & Delegated Authority (DA) Support
+    icon: corporate_fare
+    desc: Provide subledger capabilities aligned with Lloyd’s market requirements.
+    notes:
+      - Store DA-level premium/claims bordereaux and binder structures.
+      - Support syndicate → ServiceCo → Corporate Member IC flows.
+      - Track YOA-level reserves, RITC adjustments, and DXC settlement mappings.
+      - Reconcile Lloyd’s TAO, EBOT/ECOT, and DXC outputs at transaction level.
+
+  - text: Multi-Dimensional Insurance Accounting
+    icon: grid_view
+    desc: Maintain dimensional richness required for actuarial, underwriting, and finance.
+    notes:
+      - Support key dimensions - entity, YOA, AY, LoB, product, treaty, broker, coverage, currency.
+      - Allow mapping to EPM (FCCS, PCMCS, Planning) dimensions.
+      - Maintain atomic event-level granularity with drilldown capability.
+      - Automate dimension derivation based on policy, claim, or reinsurance data.
+
+  - text: Subledger Accounting Rules & Posting to GL
+    icon: sync_alt
+    desc: Apply configurable accounting rules before summarisation to the General Ledger.
+    notes:
+      - Define event-based accounting - premium written, earned, settled, claim incurred.
+      - Support management vs statutory vs regulatory accounting treatments.
+      - Group summarised postings using GL segment rules, avoiding transaction-level GL load.
+      - Align subledger translation/revaluation with GL multi-currency settings.
+
+  - text: Actuarial Integration & Reserving
+    icon: functions
+    desc: Provide actuarial teams with consistent, reconciled subledger data.
+    notes:
+      - Export claims triangles, premium exposure, and AY/YOA movements.
+      - Accept actuarial adjustments (IBNR, risk margin, reserve changes) for posting.
+      - Maintain version-controlled reserve bases by period.
+      - Align with Solvency II technical provision requirements.
+
+  - text: Data Quality, Controls & Reconciliation
+    icon: rule
+    desc: Establish strong governance around insurance subledger data.
+    notes:
+      - Validate mandatory fields - UMR, UCR, binder, YOA, AY, LoB, broker, currency.
+      - Reconcile subledger → GL → EPM using ARCS and automated checks.
+      - Track unmatched items (premium, claims, recoveries, fees).
+      - Maintain full audit trail for adjustments and overrides.
+
+  - text: Multi-Currency & FX Handling
+    icon: public
+    desc: Support robust FX processing for global policies and claims.
+    notes:
+      - Store original, transaction, and reporting currency values.
+      - Revalue unpaid premium, reserves, and reinsurance balances.
+      - Convert claim payments using daily or spot rates.
+      - Support Lloyd’s multi-currency reporting (GBP, USD, CAD, EUR).
+
+  - text: Performance, Volume & High-Throughput Processing
+    icon: speed
+    desc: Handle large insurance data volumes with high-frequency updates.
+    notes:
+      - Support millions of bordereaux rows per period.
+      - Use batch and streaming ingestion via OIC for policy/claim events.
+      - Summarise or compress subledger data by dimensions for long-term storage.
+      - Provide parallelisable close processes for premium earning and reserve movement.
+
+  - text: Last Mile Reporting & Regulatory Support
+    icon: description
+    desc: Feed downstream reporting processes with reconciled insurance data.
+    notes:
+      - Enable SFCR/RSR, QRT, and Lloyd’s QMA/QSR reporting.
+      - Feed profitability, underwriting, and claims dashboards.
+      - Provide reconciled data for finance close, actuarial review, and ORSA.
+      - Integrate with Narrative Reporting for final disclosures.
