@@ -1,0 +1,128 @@
+title: Accounts Payable
+sub-title: End-to-end AP design including Supplier Portal, Oracle Business Network (OBN), and AI-enabled automation
+objList:
+  - text: Supplier Master Data & Governance
+    icon: group
+    desc: Establish strong control over supplier creation, updates, and lifecycle governance.
+    notes:
+      - Enforce maker–checker approval workflow for supplier onboarding.
+      - Categorise suppliers (broker, reinsurer, claims vendor, service provider, coverholder).
+      - Validate tax information, bank details, and global regulatory identifiers (VAT, W-8/W-9).
+      - Govern supplier hierarchy, grouping, and classification using EDMCS or defined governance.
+
+  - text: Supplier Portal Enablement
+    icon: person
+    desc: Enable suppliers to self-serve, reducing AP workload and improving accuracy.
+    notes:
+      - Allow suppliers to upload invoices, maintain bank details, and track payment status.
+      - Enable electronic invoicing through Portal templates and validated formats.
+      - Configure approval workflows for supplier-initiated updates (bank, tax, address).
+      - Provide role-specific access for brokers, reinsurers, and claims vendors.
+
+  - text: Oracle Business Network (OBN) Integration
+    icon: cloud_sync
+    desc: Enable electronic trading via OBN for PO/invoice exchange and supplier collaboration.
+    notes:
+      - Support e-invoicing, PO flips, and acknowledgement messages via OBN.
+      - Comply with local e-invoicing mandates (PEPPOL, India IRN, Saudi ZATCA, EU formats).
+      - Integrate with supplier systems to reduce manual keying and OCR reliance.
+      - Track B2B messages and resolve transmission errors via OBN console.
+
+  - text: Invoice Processing, OCR & AI Extraction
+    icon: auto_awesome
+    desc: Automate invoice capture and reduce manual data entry using Intelligent Document Recognition (IDR).
+    notes:
+      - Use Oracle IDR/AI to extract header and line details from PDF/email invoices.
+      - Improve accuracy over time using self-learning AI models.
+      - Apply anomaly detection for duplicate or unusual invoices.
+      - Automate tolerance checks, tax validation, and supplier field recognition.
+
+  - text: Invoice Approval Workflow & Business Rules
+    icon: workflow
+    desc: Configure intelligent routing based on policy, amount, supplier type, and risk.
+    notes:
+      - Enable AI-based routing for high-risk or unusual invoice patterns.
+      - Configure different flows for PO vs Non-PO invoices.
+      - Route claims vendor invoices based on claim type, location, or adjuster.
+      - Enable escalations, SLAs, and reminders for overdue approvals.
+
+  - text: PO Matching & Procurement Integration
+    icon: shopping_cart
+    desc: Enforce procurement compliance and reduce manual exceptions.
+    notes:
+      - Use 2-way, 3-way, and 4-way matching with configurable tolerances.
+      - Integrate receiving, accrual, and purchasing rules with AP.
+      - Prevent bypass of PO policy except via documented exceptions.
+      - Align PO categories and item types to GL accounting rules.
+
+  - text: Claims Vendor & Insurance-Specific AP Processing
+    icon: gavel
+    desc: Support AP processes unique to insurance, Lloyd’s, and claims ecosystems.
+    notes:
+      - Integrate claims systems (Guidewire, Duck Creek, bespoke) for automatic payable creation.
+      - Handle CAT event surge payments and emergency vendor disbursements.
+      - Support broker fees, reinsurance payable statements, and loss adjuster fee payments.
+      - Align payments with salvage, subrogation, or large-loss workflows.
+
+  - text: Payment Processing & Banking Integration
+    icon: payments
+    desc: Manage secure, compliant global payments across multiple entities.
+    notes:
+      - Support SEPA, BACS, ACH, wires, virtual cards, and global bank formats.
+      - Configure payment approval rules, signatory limits, and dual authorization.
+      - Integrate with Cash Management for clearing, reconciliation, and FX posting.
+      - Enable real-time visibility into payment status via Supplier Portal.
+
+  - text: Tax, Withholding & Compliance
+    icon: rule
+    desc: Ensure compliance with tax, regulatory, and statutory reporting requirements.
+    notes:
+      - Configure VAT/GST rules and support cross-border tax logic.
+      - Automate withholding tax calculations (TDS, 1099, CIS).
+      - Align OBN/BIP outputs with government e-reporting mandates.
+      - Track reverse-charge, intercompany charges, and tax-exempt suppliers.
+
+  - text: Subledger Accounting (SLA) Integration
+    icon: sync_alt
+    desc: Ensure AP accounting is consistent, auditable, and compliant with policy.
+    notes:
+      - Map AP events to correct GL accounts via SLA rules.
+      - Support multi-ledger, multi-GAAP, and reporting currencies.
+      - Control adjustments to liability, bank clearing, and FX gain/loss accounts.
+      - Validate tax and accrual postings for statutory and management reporting.
+
+  - text: Multi-Currency & FX Treatment
+    icon: public
+    desc: Ensure accurate handling of foreign currency payables.
+    notes:
+      - Configure FX rate types for invoice entry and payment execution.
+      - Track realised FX at payment and unrealised FX for period close.
+      - Support payments in functional and non-functional currencies.
+      - Manage FX exposure for global vendors and cross-border claims.
+
+  - text: Integration with ARCS & Close Manager
+    icon: join_inner
+    desc: Align AP processes with financial close and reconciliation.
+    notes:
+      - Reconcile AP liability, GRNI, accruals, and suspense accounts in ARCS.
+      - Track unaccounted invoices, on-hold invoices, and payment exceptions.
+      - Include AP close tasks and approvals in Close Manager.
+      - Use OTBI/BIP for AP ageing, spend, and accrual reporting.
+
+  - text: AI-Driven Risk Management, Fraud Detection & Insights
+    icon: visibility
+    desc: Use AI models to strengthen AP controls and reduce fraud.
+    notes:
+      - Flag suspicious invoices (new bank details, unusual patterns, duplicate claims).
+      - Predict late payments and vendor credit issues.
+      - Identify high-risk vendors or claim adjusters using anomaly detection.
+      - Recommend auto-approval for low-risk, repeat, or contracted invoices.
+
+  - text: Performance, Automation & High-Volume Processing
+    icon: speed
+    desc: Ensure AP scales across global operations and insurance-specific workloads.
+    notes:
+      - Use FBDI, ADF, and APIs for bulk invoice uploads.
+      - Optimise IDR batch processing for high-volume vendor invoices.
+      - Automate recurring invoices, fee schedules, and contract-based payments.
+      - Monitor performance dashboards and optimise approval cycle times.
