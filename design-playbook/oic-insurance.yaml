@@ -1,0 +1,65 @@
+title: OIC Accelerators for Insurance Integrations
+sub-title: Predefined integration patterns for bordereaux, reinsurance, Lloyd’s DXC, TAO, EBOT/ECOT, and actuarial feeds
+objList:
+  - text: Bordereaux Processing Accelerator
+    icon: table_view
+    desc: High-volume ingestion and validation of DA/coverholder premium, risk, and claims bordereaux.
+    notes:
+      - Supports CSV, Excel, XML, JSON formats.
+      - Auto-mapping using reusable templates for LOB, broker, territory, YOA/AY.
+      - In-built DQ checks - missing fields, invalid dates, currency normalisation.
+      - Pushes validated data to Fusion (via FBDI/API) and EPM (via Data Exchange).
+
+  - text: Reinsurance Cession & Recovery Accelerator
+    icon: sync_alt
+    desc: Integration pipeline for treaty cessions, facultative placements, and recovery calculations.
+    notes:
+      - Supports outward reinsurance treaties, profit commission, loss corridors.
+      - Maps treaty layers to GL and FCCS IC partners.
+      - Automates cash call and recovery posting into AP/AR/GL.
+      - Handles multi-step waterfall allocation for large-loss events.
+
+  - text: Lloyd’s Market Integration Accelerator
+    icon: corporate_fare
+    desc: Integration patterns for DXC, TAO, EBOT, and ECOT.
+    notes:
+      - Converts Lloyd’s messages into ERP-ready formats.
+      - Automates technical accounting entries for premium, claims, and recoveries.
+      - Reconciles DXC settlements with GL and ARCS.
+      - Supports RITC transfers and YOA close-out postings.
+
+  - text: Premium & Claims Event Adapter
+    icon: notifications
+    desc: Real-time streaming of policy/claim events to ERP/EPM.
+    notes:
+      - Subscribes to policy issuance, endorsement, cancellation, FNOL, reserve updates.
+      - Auto-posts financial impact into Fusion GL/AP/AR.
+      - Enriches events with LOB, product, broker, and coverage metadata.
+      - Feeds Planning/EPM for real-time forecasting.
+
+  - text: Actuarial Data Exchange Accelerator
+    icon: functions
+    desc: Two-way integration between actuarial engines and ERP/EPM.
+    notes:
+      - Streams claims triangles, premium exposures, and reserve movements.
+      - Version-control for actuarial assumption sets.
+      - Returns IBNR and reserve adjustments for GL postings.
+      - Integrates with FCCS for Solvency II and QMA/QSR reporting.
+
+  - text: Centralised IC & Allocation Automation
+    icon: shared
+    desc: Standardised flows for allocations, IC postings, and cost-sharing.
+    notes:
+      - Supports PCMCS allocation outputs → Fusion IC journals.
+      - Automates IC settlements across syndicates/service companies.
+      - Enables cross-entity allocation of claims, CAT costs, and shared services.
+      - Provides reconciliation files for ARCS IC matching.
+
+  - text: Error Handling, Observability & Control Framework
+    icon: visibility
+    desc: Standardised monitoring and error-management layer.
+    notes:
+      - Functional error messaging for finance/claims users.
+      - Automatic retries, dead-letter queue, and exception routing.
+      - SLA dashboards for data latency, load volume, and business impact.
+      - Supports daily, weekly, and period-end reconciliation checkpoints.
