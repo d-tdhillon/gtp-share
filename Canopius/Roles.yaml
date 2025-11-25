@@ -1,0 +1,553 @@
+oracle_fusion_resource_table:
+
+  - id: 1
+    group: SI
+    role: Programme Director
+    key_activities: "Governance, steerco management, oversight"
+    deliverables: "RAIDs, roadmap, governance packs"
+    mistake: "Limited steering access"
+    fix: "Weekly senior touchpoints"
+    months_needed: "100%"
+
+  - id: 2
+    group: SI
+    role: Project Manager / PMO
+    key_activities: "Plan, scope, status, RAID management"
+    deliverables: "Integrated project plan, status reports, change log"
+    mistake: "PMO used only for admin"
+    fix: "Position PMO as risk owners"
+    months_needed: "100%"
+
+  - id: 3
+    group: SI
+    role: Solution Architect
+    key_activities: "Global design, integration alignment"
+    deliverables: "Solution Design Document, architecture diagrams"
+    mistake: "Architect joined too late"
+    fix: "Engage architect from mobilisation"
+    months_needed:
+      Jan: "100%"
+      Feb: "100%"
+      Mar: "80%"
+      Apr: "60%"
+      May: "40%"
+      Jun: "10%"
+      Jul: "10%"
+      Aug: "0%"
+      Sep: "0%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 4
+    group: SI
+    role: Functional Consultant – GL
+    key_activities: "COA design, ledger configuration"
+    deliverables: "COA design, GL setup"
+    mistake: "COA delays across regions"
+    fix: "Create COA governance board"
+    months_needed:
+      Jan: "40%"
+      Feb: "70%"
+      Mar: "90%"
+      Apr: "90%"
+      May: "80%"
+      Jun: "60%"
+      Jul: "50%"
+      Aug: "20%"
+      Sep: "10%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 5
+    group: SI
+    role: Functional Consultant – AP
+    key_activities: "Suppliers, payments, tax configuration"
+    deliverables: "AP config, supplier master design"
+    mistake: "Supplier data cleanup too late"
+    fix: "Start cleansing in M1–M2"
+    months_needed:
+      Jan: "30%"
+      Feb: "60%"
+      Mar: "80%"
+      Apr: "90%"
+      May: "80%"
+      Jun: "70%"
+      Jul: "40%"
+      Aug: "20%"
+      Sep: "10%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 6
+    group: SI
+    role: Functional Consultant – AR
+    key_activities: "Billing, customers, receipts"
+    deliverables: "AR config, customer master design"
+    mistake: "Customer hierarchy unclear"
+    fix: "Nominate a global data owner"
+    months_needed:
+      Jan: "30%"
+      Feb: "70%"
+      Mar: "90%"
+      Apr: "90%"
+      May: "80%"
+      Jun: "60%"
+      Jul: "40%"
+      Aug: "20%"
+      Sep: "10%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 7
+    group: SI
+    role: Functional Consultant – FA
+    key_activities: "Asset books, depreciation, conversions"
+    deliverables: "FA config, book setup"
+    mistake: "Asset books misaligned"
+    fix: "Standardise depreciation rules"
+    months_needed:
+      Jan: "20%"
+      Feb: "50%"
+      Mar: "80%"
+      Apr: "80%"
+      May: "70%"
+      Jun: "50%"
+      Jul: "30%"
+      Aug: "20%"
+      Sep: "10%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 8
+    group: SI
+    role: Functional Consultant – Cash Mgmt
+    key_activities: "Banks, reconciliation, statements"
+    deliverables: "Bank setup templates"
+    mistake: "Late bank onboarding"
+    fix: "Start connectivity from M3"
+    months_needed:
+      Jan: "10%"
+      Feb: "40%"
+      Mar: "70%"
+      Apr: "90%"
+      May: "70%"
+      Jun: "50%"
+      Jul: "30%"
+      Aug: "10%"
+      Sep: "0%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 9
+    group: SI
+    role: Technical Lead / OIC Developer
+    key_activities: "Build integrations (OIC, API)"
+    deliverables: "OIC integrations, MD50s"
+    mistake: "No early integration mapping"
+    fix: "Hold mapping workshops early"
+    months_needed:
+      Jan: "0%"
+      Feb: "20%"
+      Mar: "60%"
+      Apr: "90%"
+      May: "100%"
+      Jun: "100%"
+      Jul: "90%"
+      Aug: "60%"
+      Sep: "30%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 10
+    group: SI
+    role: Data Migration Lead
+    key_activities: "Mapping, cleansing rules, mock loads"
+    deliverables: "Migration plan, mapping sheets"
+    mistake: "Cleansing left too late"
+    fix: "Start cleansing Day 1"
+    months_needed:
+      Jan: "40%"
+      Feb: "60%"
+      Mar: "80%"
+      Apr: "90%"
+      May: "90%"
+      Jun: "100%"
+      Jul: "100%"
+      Aug: "100%"
+      Sep: "80%"
+      Oct: "60%"
+      Nov: "40%"
+      Dec: "0%"
+
+  - id: 11
+    group: SI
+    role: Reporting / BI Developer
+    key_activities: "Develop OTBI/BIP reports"
+    deliverables: "Reporting catalogue"
+    mistake: "Reports left until hypercare"
+    fix: "Finalise catalogue in design"
+    months_needed:
+      Jan: "0%"
+      Feb: "30%"
+      Mar: "40%"
+      Apr: "70%"
+      May: "90%"
+      Jun: "90%"
+      Jul: "80%"
+      Aug: "40%"
+      Sep: "20%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 12
+    group: SI
+    role: Security & Roles Consultant
+    key_activities: "Role model, SOD, provisioning"
+    deliverables: "Role matrix"
+    mistake: "Roles built too late"
+    fix: "Freeze roles before UAT"
+    months_needed:
+      Jan: "0%"
+      Feb: "10%"
+      Mar: "40%"
+      Apr: "80%"
+      May: "90%"
+      Jun: "90%"
+      Jul: "70%"
+      Aug: "40%"
+      Sep: "20%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 13
+    group: SI
+    role: Testing Manager
+    key_activities: "Plan SIT/UAT, triage defects"
+    deliverables: "Test plan, test scripts"
+    mistake: "Scripts generated late"
+    fix: "Write scripts during build"
+    months_needed:
+      Jan: "0%"
+      Feb: "10%"
+      Mar: "30%"
+      Apr: "80%"
+      May: "100%"
+      Jun: "100%"
+      Jul: "90%"
+      Aug: "80%"
+      Sep: "60%"
+      Oct: "40%"
+      Nov: "10%"
+      Dec: "0%"
+
+  - id: 14
+    group: SI
+    role: Change & Training Lead
+    key_activities: "Comms, training, readiness"
+    deliverables: "Training materials, comms plan"
+    mistake: "Change underestimated"
+    fix: "Assign regional change leads"
+    months_needed:
+      Jan: "20%"
+      Feb: "30%"
+      Mar: "40%"
+      Apr: "50%"
+      May: "60%"
+      Jun: "70%"
+      Jul: "80%"
+      Aug: "90%"
+      Sep: "100%"
+      Oct: "100%"
+      Nov: "90%"
+      Dec: "60%"
+
+  - id: 15
+    group: Finance
+    role: Finance Process Owners
+    key_activities: "Approve design, validate configuration"
+    deliverables: "Process maps, design signoff"
+    mistake: "Overloaded with BAU"
+    fix: "Allocate 30–40% FTE"
+    months_needed:
+      Jan: "40%"
+      Feb: "50%"
+      Mar: "70%"
+      Apr: "80%"
+      May: "80%"
+      Jun: "70%"
+      Jul: "60%"
+      Aug: "40%"
+      Sep: "40%"
+      Oct: "30%"
+      Nov: "20%"
+      Dec: "10%"
+
+  - id: 16
+    group: Finance
+    role: Regional SMEs (US/UK/APAC)
+    key_activities: "Tax & statutory inputs, UAT"
+    deliverables: "Localisation requirements"
+    mistake: "Regions engaged too late"
+    fix: "Include regions in global design"
+    months_needed:
+      Jan: "20%"
+      Feb: "40%"
+      Mar: "60%"
+      Apr: "80%"
+      May: "80%"
+      Jun: "70%"
+      Jul: "70%"
+      Aug: "40%"
+      Sep: "20%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 17
+    group: Finance
+    role: COA & Controls Lead
+    key_activities: "COA design, control framework"
+    deliverables: "COA design, mapping"
+    mistake: "COA over-engineered"
+    fix: "Simplify segments early"
+    months_needed:
+      Jan: "50%"
+      Feb: "70%"
+      Mar: "80%"
+      Apr: "60%"
+      May: "40%"
+      Jun: "20%"
+      Jul: "0%"
+      Aug: "0%"
+      Sep: "0%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 18
+    group: Finance
+    role: Data Owners
+    key_activities: "Cleanse & validate data"
+    deliverables: "Clean datasets"
+    mistake: "No accountable data owners"
+    fix: "Assign regional owners"
+    months_needed:
+      Jan: "40%"
+      Feb: "60%"
+      Mar: "80%"
+      Apr: "90%"
+      May: "100%"
+      Jun: "100%"
+      Jul: "90%"
+      Aug: "80%"
+      Sep: "60%"
+      Oct: "40%"
+      Nov: "20%"
+      Dec: "10%"
+
+  - id: 19
+    group: Finance
+    role: UAT Testers
+    key_activities: "Execute UAT"
+    deliverables: "UAT results"
+    mistake: "Testers untrained"
+    fix: "Train 1 month pre-UAT"
+    months_needed:
+      Jan: "0%"
+      Feb: "0%"
+      Mar: "0%"
+      Apr: "10%"
+      May: "20%"
+      Jun: "40%"
+      Jul: "70%"
+      Aug: "100%"
+      Sep: "90%"
+      Oct: "40%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 20
+    group: Finance
+    role: Training Champions
+    key_activities: "Deliver training"
+    deliverables: "Local training packs"
+    mistake: "Generic training"
+    fix: "Localise per region"
+    months_needed:
+      Jan: "0%"
+      Feb: "0%"
+      Mar: "0%"
+      Apr: "10%"
+      May: "20%"
+      Jun: "40%"
+      Jul: "60%"
+      Aug: "80%"
+      Sep: "100%"
+      Oct: "100%"
+      Nov: "60%"
+      Dec: "20%"
+
+  - id: 21
+    group: IT
+    role: IT Programme Manager
+    key_activities: "Governance, escalation"
+    deliverables: "Internal reporting"
+    mistake: "Misaligned with SI"
+    fix: "Weekly alignment meetings"
+    months_needed: "100%"
+
+  - id: 22
+    group: IT
+    role: Enterprise Architect
+    key_activities: "Design approvals"
+    deliverables: "Architecture signoff"
+    mistake: "Late reviews"
+    fix: "Embed EA early"
+    months_needed:
+      Jan: "100%"
+      Feb: "100%"
+      Mar: "80%"
+      Apr: "40%"
+      May: "20%"
+      Jun: "0%"
+      Jul: "0%"
+      Aug: "0%"
+      Sep: "0%"
+      Oct: "0%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 23
+    group: IT
+    role: Integration Developers
+    key_activities: "Build integrations"
+    deliverables: "Interface builds"
+    mistake: "Dependencies missed"
+    fix: "Maintain integration tracker"
+    months_needed:
+      Jan: "0%"
+      Feb: "20%"
+      Mar: "50%"
+      Apr: "80%"
+      May: "100%"
+      Jun: "100%"
+      Jul: "90%"
+      Aug: "60%"
+      Sep: "40%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 24
+    group: IT
+    role: Data Migration Specialists
+    key_activities: "Extract, transform, load"
+    deliverables: "ETL routines"
+    mistake: "Extracts delivered late"
+    fix: "Lock extraction windows"
+    months_needed:
+      Jan: "40%"
+      Feb: "60%"
+      Mar: "70%"
+      Apr: "80%"
+      May: "90%"
+      Jun: "100%"
+      Jul: "100%"
+      Aug: "100%"
+      Sep: "80%"
+      Oct: "60%"
+      Nov: "40%"
+      Dec: "10%"
+
+  - id: 25
+    group: IT
+    role: Security Admin
+    key_activities: "User provisioning"
+    deliverables: "Access logs"
+    mistake: "Roles untested"
+    fix: "Perform security UAT"
+    months_needed:
+      Jan: "0%"
+      Feb: "10%"
+      Mar: "30%"
+      Apr: "60%"
+      May: "90%"
+      Jun: "90%"
+      Jul: "80%"
+      Aug: "40%"
+      Sep: "20%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 26
+    group: IT
+    role: Reporting/Analytics Lead
+    key_activities: "Validate reports"
+    deliverables: "Report signoff"
+    mistake: "Over-reliance on SI"
+    fix: "Validate every report"
+    months_needed:
+      Jan: "0%"
+      Feb: "10%"
+      Mar: "20%"
+      Apr: "40%"
+      May: "80%"
+      Jun: "80%"
+      Jul: "60%"
+      Aug: "40%"
+      Sep: "20%"
+      Oct: "10%"
+      Nov: "0%"
+      Dec: "0%"
+
+  - id: 27
+    group: IT
+    role: Cutover Manager
+    key_activities: "Plan & execute cutover"
+    deliverables: "Runbook"
+    mistake: "Cutover left to PM"
+    fix: "Assign specialist by M6"
+    months_needed:
+      Jan: "0%"
+      Feb: "0%"
+      Mar: "0%"
+      Apr: "10%"
+      May: "20%"
+      Jun: "40%"
+      Jul: "60%"
+      Aug: "80%"
+      Sep: "100%"
+      Oct: "100%"
+      Nov: "80%"
+      Dec: "20%"
+
+  - id: 28
+    group: IT
+    role: Hypercare Support
+    key_activities: "Post-go-live support"
+    deliverables: "Hypercare tracker"
+    mistake: "Team not trained"
+    fix: "Train during SIT/UAT"
+    months_needed:
+      Jan: "0%"
+      Feb: "0%"
+      Mar: "0%"
+      Apr: "0%"
+      May: "0%"
+      Jun: "0%"
+      Jul: "0%"
+      Aug: "0%"
+      Sep: "20%"
+      Oct: "40%"
+      Nov: "100%"
+      Dec: "100%"
