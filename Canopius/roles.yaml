@@ -1,0 +1,143 @@
+oracle_fusion_financials_resources:
+  SI:
+    - role: Programme Director
+      key_activities: "Governance, steerco management, risk and issue control"
+      deliverables: "Governance packs, RAIDs, delivery roadmap"
+      months_needed: "M1–M12"
+
+    - role: Project Manager / PMO
+      key_activities: "Plan management, dependencies, scope and status tracking"
+      deliverables: "Integrated project plan, status reports, change log"
+      months_needed: "M1–M12"
+
+    - role: Solution Architect
+      key_activities: "Global design, process integration, architecture governance"
+      deliverables: "Solution Design Document, architecture diagrams"
+      months_needed: "M1–M5"
+
+    - role: Functional Consultant – GL
+      key_activities: "COA design, ledgers, journals, allocations"
+      deliverables: "GL configuration, COA design, reconciliation model"
+      months_needed: "M2–M9"
+
+    - role: Functional Consultant – AP
+      key_activities: "Suppliers, invoices, payments, tax setups"
+      deliverables: "AP configuration, supplier master design"
+      months_needed: "M2–M9"
+
+    - role: Functional Consultant – AR
+      key_activities: "Customers, billing, receipts, revenue setup"
+      deliverables: "AR configuration, customer master design"
+      months_needed: "M2–M9"
+
+    - role: Functional Consultant – Fixed Assets
+      key_activities: "Asset books, depreciation methods, asset conversions"
+      deliverables: "FA configuration, asset book design, conversion templates"
+      months_needed: "M2–M9"
+
+    - role: Functional Consultant – Cash Management
+      key_activities: "Bank accounts, reconciliation, bank statements"
+      deliverables: "Bank setup templates, cash management configuration"
+      months_needed: "M2–M9"
+
+    - role: Technical Lead / OIC Developer
+      key_activities: "Build integrations, APIs, orchestration logic"
+      deliverables: "Technical specs (MD50), OIC integrations built"
+      months_needed: "M3–M10"
+
+    - role: Data Migration Lead
+      key_activities: "Data mapping, cleansing rules, mock loads"
+      deliverables: "Data Migration Plan, mapping sheets, mock load results"
+      months_needed: "M2–M11"
+
+    - role: Reporting / BI Developer
+      key_activities: "Build OTBI/BIP reports, analytics dashboards"
+      deliverables: "Report catalogue, developed reports"
+      months_needed: "M4–M10"
+
+    - role: Security & Roles Consultant
+      key_activities: "Role model design, SOD, provisioning framework"
+      deliverables: "Role matrix, security design, SOD analysis"
+      months_needed: "M3–M10"
+
+    - role: Testing Manager
+      key_activities: "Plan SIT & UAT, scripts, defect triage"
+      deliverables: "Test plan, test scripts, defect logs"
+      months_needed: "M4–M10"
+
+    - role: Change & Training Lead
+      key_activities: "Communications, training design, business readiness"
+      deliverables: "Training materials, comms plan, readiness assessment"
+      months_needed: "M3–M12"
+
+  Finance:
+    - role: Finance Process Owners (GL/AP/AR/FA)
+      key_activities: "Approve design, validate configuration, sign off processes"
+      deliverables: "To-Be process maps, design approvals"
+      months_needed: "M2–M12"
+
+    - role: Regional SMEs (US/UK/APAC)
+      key_activities: "Tax localisation, statutory requirements, UAT participation"
+      deliverables: "Local tax requirements, statutory inputs, UAT results"
+      months_needed: "M2–M10"
+
+    - role: COA & Controls Lead
+      key_activities: "COA structure, accounting controls, reconciliations"
+      deliverables: "COA design, mapping crosswalk, control framework"
+      months_needed: "M2–M6"
+
+    - role: Data Owners
+      key_activities: "Master data cleansing, validate migrated data"
+      deliverables: "Cleansed datasets, data validation signoff"
+      months_needed: "M3–M11"
+
+    - role: UAT Testers
+      key_activities: "Execute UAT, verify processes, log defects"
+      deliverables: "UAT execution results, acceptance signoff"
+      months_needed: "M7–M9"
+
+    - role: Training Champions
+      key_activities: "Deliver end-user training, regional support"
+      deliverables: "Training sessions, end-user readiness"
+      months_needed: "M9–M12"
+
+  IT:
+    - role: IT Programme Manager
+      key_activities: "Internal governance, SI oversight, escalation mgmt"
+      deliverables: "Internal status reporting, escalation packs"
+      months_needed: "M1–M12"
+
+    - role: Enterprise Architect
+      key_activities: "Design approvals, integration governance"
+      deliverables: "Architecture signoffs, solution approvals"
+      months_needed: "M1–M5"
+
+    - role: Integration Developers
+      key_activities: "Build OIC/API integrations, unit testing"
+      deliverables: "Interface builds, unit test results"
+      months_needed: "M4–M10"
+
+    - role: Data Migration Specialists
+      key_activities: "Extract-transform-load (ETL) execution"
+      deliverables: "ETL routines, migration load results"
+      months_needed: "M3–M11"
+
+    - role: Security Admin
+      key_activities: "Provision roles, maintain access controls"
+      deliverables: "Access logs, role assignment reports"
+      months_needed: "M4–M12"
+
+    - role: Reporting/Analytics Lead
+      key_activities: "Validate BI reports and dashboards"
+      deliverables: "Report acceptance, validated outputs"
+      months_needed: "M5–M10"
+
+    - role: Cutover Manager
+      key_activities: "Plan and execute cutover activities"
+      deliverables: "Cutover runbook, go-live readiness checklist"
+      months_needed: "M8–M12"
+
+    - role: Hypercare Support (Tech + Functional)
+      key_activities: "Post-go-live defects resolution"
+      deliverables: "Hypercare tracker, issue resolution"
+      months_needed: "M11–M12"
