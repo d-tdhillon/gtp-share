@@ -1,0 +1,89 @@
+treasury_systems_comparison:
+  - system_name: "GTreasury"
+    role: "Current System"
+    website: "https://gtreasury.com/platform/"
+    best_for: "Mid-to-Large Insurers needing agility, usability, and modular growth."
+    licensing_model:
+      type: "Modular Subscription"
+      details: "Base fee + specific add-on fees (e.g., Risk, Cash). Low initial TCO."
+    support_structure:
+      type: "Standard + Dedicated"
+      details: "High-touch client service. 99.9% Uptime SLA. Generally faster response times."
+    insurance_capabilities:
+      - "Visual Risk Management for hedging"
+      - "Investment income visibility"
+      - "API integration with Claim Systems"
+    pros:
+      - "User Interface is modern and intuitive"
+      - "Faster implementation (3-6 months)"
+      - "Cost-effective (pay only for what you use)"
+    cons:
+      - "Bank connectivity library is smaller than Kyriba's"
+      - "Less 'out of the box' regulatory reporting for EU (Solvency II)"
+
+  - system_name: "Kyriba"
+    role: "Primary Competitor"
+    website: "https://www.kyriba.com/solutions/treasury/"
+    best_for: "Global Insurers needing massive bank connectivity and fraud protection."
+    licensing_model:
+      type: "Tiered Bundled SaaS"
+      details: "Packages (Core, Advanced, Enterprise). Often requires buying a bundle."
+    support_structure:
+      type: "Tiered Support"
+      details: "Silver (Web), Gold (24/7), Platinum (Dedicated Manager). Platinum is recommended for complex setups."
+    insurance_capabilities:
+      - "Dedicated 'Solvency II' reporting modules"
+      - "High-volume 'Payment Factory' for Claims"
+      - "Fraud Detection (Sanctions screening)"
+    pros:
+      - "Market leader in bank connectivity (75k+ formats)"
+      - "Strong fraud detection and compliance tools"
+      - "Large user community"
+    cons:
+      - "Expensive premium pricing"
+      - "Steep learning curve for new users"
+      - "Hidden costs for consulting/upgrades"
+
+  - system_name: "FIS (Integrity)"
+    role: "Specialist Competitor"
+    website: "https://www.fisglobal.com/en/corporate-treasury"
+    best_for: "Financial Institutions with deep, complex derivative and risk logic."
+    licensing_model:
+      type: "SaaS / Transaction Based"
+      details: "Can be based on Assets Under Management (AUM) or transaction volume."
+    support_structure:
+      type: "Managed Services"
+      details: "Strong option to outsource back-office treasury operations entirely to FIS."
+    insurance_capabilities:
+      - "Deep quantitative risk modeling"
+      - "Complex derivative handling (Annuity hedging)"
+      - "Money Market Fund integrations"
+    pros:
+      - "Unmatched depth for investment risk"
+      - "Managed service options reduce internal headcount"
+    cons:
+      - "Legacy interface feel"
+      - "Long implementation times (9-15 months)"
+      - "Complex upgrades"
+
+  - system_name: "SAP S/4HANA Treasury"
+    role: "ERP Competitor"
+    website: "https://www.sap.com/products/erp/s4hana/finance/treasury-management.html"
+    best_for: "Insurers deeply embedded in the SAP ecosystem for GL and Claims."
+    licensing_model:
+      type: "Hybrid / Module License"
+      details: "Part of RISE with SAP (Cloud) or On-Premise license + maintenance."
+    support_structure:
+      type: "Enterprise Support"
+      details: "Standard SAP OSS support. Relies on internal IT or 3rd party integrators."
+    insurance_capabilities:
+      - "Native IFRS 17 integration"
+      - "Real-time GL posting for claims/investments"
+      - "Exposure visibility from policy sub-ledgers"
+    pros:
+      - "Zero-reconciliation (Unified General Ledger)"
+      - "Secure (Single Sign-On with ERP)"
+    cons:
+      - "Very expensive implementation (consultant heavy)"
+      - "Clunky UI (unless using Fiori apps)"
+      - "Requires internal SAP IT resources"
