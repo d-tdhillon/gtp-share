@@ -1,0 +1,138 @@
+title: "Oracle Fusion Global Template Rollout – UK Deployment"
+sub-title: "Key Considerations for Implementing a Global Template for UK Finance, Regulatory & Operational Teams"
+
+objList:
+  - text: UK Accounting Standards & Regulatory Compliance
+    icon: balance
+    desc: Ensure the global template aligns to UK statutory, audit and regulatory frameworks.
+    notes:
+      - Support UK GAAP or IFRS depending on statutory classification and group reporting requirements.
+      - Address HMRC compliance including Making Tax Digital (MTD) and statutory VAT reporting.
+      - Ensure readiness for annual statutory accounts, audit adjustments and UK Companies House requirements.
+      - Provide structures for FCA/Lloyd’s reporting where applicable for insurance entities.
+
+  - text: UK Tax, VAT & HMRC Requirements
+    icon: receipt_long
+    desc: Configure all UK-specific indirect tax and regulatory tax processes.
+    notes:
+      - Implement UK VAT rules including standard, reduced, zero-rated and exempt supplies.
+      - Support VAT group registration, partial exemption and reverse charge mechanisms.
+      - Enable OCR-based invoice processing with correct VAT determination for domestic and EU/overseas services.
+      - Ensure HMRC MTD-compliant extraction of VAT returns for digital submission.
+
+  - text: Local Operating Model & UK Team Structure
+    icon: groups
+    desc: Align global process design with UK finance organisation roles and responsibilities.
+    notes:
+      - Determine responsibility splits between UK finance, shared services and central functions.
+      - Ensure UK controllers, FP&A, tax and treasury teams have defined roles within Fusion workflows.
+      - Incorporate governance reflective of UK corporate frameworks and delegation of authority.
+      - Tailor change management to UK teams who expect clarity, structure and regulatory precision.
+
+  - text: Insurance, Lloyd’s & London Market Requirements
+    icon: insurance
+    desc: Address London Market and Lloyd’s-specific requirements within the global template.
+    notes:
+      - Enable mapping of Underwriting Year (YOA), Accident Year (AY), syndicate, managing agent and broker structures.
+      - Support DA/bordereaux ingestion, premium and claims workflows relevant to Lloyd’s markets.
+      - Provide segments for treaty types, binders, UMRs and reinsurance interactions.
+      - Align outputs for Lloyd’s regulatory returns, market reporting and Solvency II submissions.
+
+  - text: Multi-Entity, Multi-Currency & UK Ledger Structure
+    icon: domain
+    desc: Localise the global ledger structure to meet UK statutory and reporting needs.
+    notes:
+      - Enable GBP as functional currency, with support for multi-currency transactions and reporting.
+      - Support separate statutory and management books where needed for UK subsidiaries.
+      - Address multi-entity structures across UK trading, holding and service companies.
+      - Provide UK-specific accounting treatments for FX revaluations, realised/unrealised gains and translation.
+
+  - text: Banking, Payments & UK Market Integrations
+    icon: account_balance
+    desc: Ensure payment formats, bank communications and treasury processes align with UK financial institutions.
+    notes:
+      - Configure BACS, CHAPS, Faster Payments and SEPA formats for UK banking operations.
+      - Integrate with Barclays, HSBC, Lloyds Banking Group, NatWest and other UK banks.
+      - Implement payment approvals and positive pay processes aligned to UK treasury controls.
+      - Support automated bank statement ingestion and reconciliation using UK formats.
+
+  - text: Procurement & Supplier Management Localisation
+    icon: shopping_cart
+    desc: Adapt P2P processes to UK procurement, vendor and VAT control requirements.
+    notes:
+      - Capture VAT registration numbers and HMRC due diligence requirements for suppliers.
+      - Configure delegated authorities aligned with UK cost centre and budget owners.
+      - Address invoice matching practices commonly used in UK/AP and procurement teams.
+      - Support cross-border VAT treatments and UK–EU trade rules post-Brexit.
+
+  - text: Financial Close, Controls & UK Audit Expectations
+    icon: checklist
+    desc: Align close processes with UK statutory and audit cycles.
+    notes:
+      - Provide ARCS, Close Manager and reconciliations tailored to UK regulatory and audit demands.
+      - Support UK year-end cycles, including strict evidence requirements for audit.
+      - Implement strong SOD, approval workflows and control frameworks for SOX/UK audit compliance.
+      - Ensure audit trails for all journals, configurations and adjustments.
+
+  - text: Brexit Considerations & Cross-Border Treatment
+    icon: public
+    desc: Address the impact of Brexit on tax, reporting and trade-related processes.
+    notes:
+      - Implement import/export VAT handling for trade with EU partners.
+      - Configure country-of-origin and duty-related fields for customs reporting.
+      - Ensure procurement and invoicing logic aligns with post-Brexit compliance rules.
+      - Support EU/non-EU supply classifications within VAT reporting.
+
+  - text: Data Migration & UK Cutover Planning
+    icon: sync_alt
+    desc: Manage migration of legacy UK finance and insurance systems into the global template.
+    notes:
+      - Map legacy GLs, VAT codes, supplier and customer data into the global Fusion structure.
+      - Cleanse data to ensure VAT, entity and cost centre accuracy.
+      - Avoid cutover during UK fiscal year-end (March/April) or Solvency II reporting periods.
+      - Validate bank accounts, BACS/CHAPS formats and UK approval hierarchies post-migration.
+
+  - text: UK Integrations & Third-Party Platforms
+    icon: cloud_sync
+    desc: Connect UK-specific systems to Fusion in accordance with global integration standards.
+    notes:
+      - Integrate with UK payroll solutions such as Workday, ADP or Sage.
+      - Connect to tax platforms supporting HMRC MTD VAT submissions.
+      - Support integrations with Lloyd’s platforms (DXC, PPL, TMEL) where applicable.
+      - Enable treasury integrations for FX rate uploads and bank connectivity.
+
+  - text: Training, Change Management & Cultural Expectations
+    icon: school
+    desc: Deliver targeted change management suited to UK team culture and regulatory awareness.
+    notes:
+      - Provide structured training emphasising financial control, audit and VAT processes.
+      - Deliver sessions in UK time zones with UK-specific scenarios.
+      - Engage UK SMEs early to socialise global-template-driven process standardisation.
+      - Ensure training includes London Market and Lloyd’s-specific examples if relevant.
+
+  - text: Time Zone, Project Delivery & Hypercare Support
+    icon: schedule
+    desc: Coordinate global rollout with UK working hours and key reporting periods.
+    notes:
+      - Ensure overlap between global design teams and UK SMEs for workshops and sign-offs.
+      - Provide hypercare coverage aligned to UK business hours during go-live.
+      - Consider UK public holidays and regulatory deadlines in rollout planning.
+      - Structure UAT cycles to enable London team participation across time zones.
+
+  - text: Testing & UK-Specific Scenario Coverage
+    icon: rule
+    desc: Ensure test cycles cover UK statutory, VAT, banking and insurance requirements.
+    notes:
+      - Include VAT logic for domestic, EU and reverse-charge scenarios.
+      - Test BACS/CHAPS/Faster Payment integrations end-to-end.
+      - Validate Solvency II, Lloyd’s and FCA reporting structures where applicable.
+      - Confirm UK month-end and year-end processes operate smoothly within global design.
+
+  - text: Future Scalability, EMEA Alignment & Localisation Roadmap
+    icon: auto_awesome
+    desc: Position the UK as a stable anchor point within the EMEA global template architecture.
+    notes:
+      - Ensure the ledger, CoA and VAT design scales to future UK growth or regulatory changes.
+      - Align UK template processes with broader EMEA standardisation efforts.
+      - Prepare for future digital reporting (HMRC developments, ESG requirements, FCA changes).
+      - Support deeper integration with AHCS, ARCS, EPM and FDW for UK statutory and regulatory reporting.
