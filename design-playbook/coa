@@ -1,0 +1,138 @@
+title: "Chart of Accounts (CoA) Mapping & Governance"
+sub-title: "Unified Value Set Definitions, Hierarchies, and Source-to-Target Mapping Across Finance, Insurance & Lloyd’s"
+
+objList:
+  - text: Purpose of CoA Mapping
+    icon: hub
+    desc: Establish a governed framework that standardises all chart of accounts values, mappings, and hierarchies across source systems and Oracle Fusion.
+    notes:
+      - Provides a single harmonised CoA for GL, AHCS and downstream reporting.
+      - Enables consistent mapping from multiple legacy insurance, claims and policy systems.
+      - Ensures strong governance across value sets, hierarchies and financial dimensions.
+      - Prevents fragmentation and reconciliation issues caused by uncontrolled local coding.
+
+  - text: CoA Design Structure
+    icon: view_module
+    desc: Define core accounting segments and ensure consistent design across entities, regions and syndicates.
+    notes:
+      - Includes segments such as Company, Cost Centre, Natural Account, Product, LoB, Channel, Broker, Source, Project, and YOA/AY where applicable.
+      - Designed to support insurance and Lloyd’s-specific dimensions such as Syndicate, Managing Agent and Underwriting Year.
+      - Ensures each segment has a clear business purpose, owner and governance rules.
+      - Supports future scalability for new business lines, GAAP views and operational reporting.
+
+  - text: Value Set Definitions
+    icon: label
+    desc: Maintain controlled value sets with clear definitions, validation rules and segment logic.
+    notes:
+      - Each segment has its own value set with definitions, allowed patterns, parent-child structures and status rules.
+      - Supports alphanumeric rules, mandatory prefixes, sequencing and conditional logic.
+      - Value sets validated through EDMCS to prevent invalid values from entering GL.
+      - Enables global standardised segments while supporting regional variations through parent-child rollups.
+
+  - text: Segment Hierarchies
+    icon: account_tree
+    desc: Create reporting and management hierarchies for summarisation, rollups and statutory/regulatory reporting.
+    notes:
+      - Hierarchies maintained for Natural Account, Cost Centre, LoB, Product, YOA, AY and Syndicate dimensions.
+      - Supports management reporting, regulatory reporting, Lloyd’s returns and IFRS/US GAAP rollups.
+      - Hierarchies versioned to support past-period reporting without rework.
+      - Enables multi-level summarisation for segment-based analytics and OAC/Power BI modelling.
+
+  - text: Source System Mapping Framework
+    icon: swap_horiz
+    desc: Convert upstream codes (policy, claims, reinsurance, bordereaux, legacy GL) into valid Fusion CoA segments.
+    notes:
+      - Mapping tables define source-to-target mappings for each upstream system.
+      - Supports multiple mapping types including direct mapping, conditional mapping and multi-attribute mapping.
+      - Enables central teams to manage mappings without IT deployments.
+      - Ensures consistent mapping across regions for underwriting, claims, IPT and DA transactions.
+
+  - text: Multi-Source & Legacy-to-Fusion Mapping
+    icon: sync_alt
+    desc: Provide a structured approach to map legacy GLs, insurance systems and bordereaux to Oracle Fusion CoA.
+    notes:
+      - Harmonises legacy GL segment structures into the new Fusion CoA.
+      - Defines mapping by Company, Line of Business, Product, Broker, Source or Treaty where required.
+      - Supports thousands of source values through controlled lookup and transformation logic.
+      - Includes Lloyd’s-specific mappings such as UMR, Syndicate and Underwriting Year.
+
+  - text: Insurance-Specific Segment Mapping
+    icon: insurance
+    desc: Account for insurance attributes that must map to specific CoA dimensions.
+    notes:
+      - Maps product classes, perils, LoB, territories and treaty types to the correct COA segments.
+      - Enables IPT reporting by mapping tax jurisdictions to revenue/tax accounts.
+      - Ensures bordereaux attributes align with ledger codes for premium, claims and reinsurance postings.
+      - Supports Lloyd’s and non-Lloyd’s segmentation side by side.
+
+  - text: FX, Currency & Account Mapping
+    icon: public
+    desc: Define how natural accounts and FX-related segments translate across functional and reporting currencies.
+    notes:
+      - FX gain/loss accounts mapped based on natural account rules and currency conditions.
+      - Derives correct reporting currency using ledger definitions and transaction currency rules.
+      - Supports multi-ledger mapping across statutory, management and Lloyd’s books.
+      - Ensures currency-based mapping for DA cash, reinsurance recoveries and IPT.
+
+  - text: Hierarchy Governance & Version Control
+    icon: verified_user
+    desc: Control updates to value sets and hierarchies using strict governance and workflow approval.
+    notes:
+      - EDMCS holds master definitions and governs all CoA changes across environments.
+      - All updates versioned with clear audit of who changed what and when.
+      - Hierarchy updates governed through approval workflows involving Finance Design Authority.
+      - Ensures downstream reporting stability by controlling effective-dates and version rollouts.
+
+  - text: EDMCS Integration
+    icon: cloud_sync
+    desc: Use EDMCS as the authoritative master data platform for CoA, hierarchies and mappings.
+    notes:
+      - EDMCS publishes value sets and hierarchies to Fusion GL, AHCS and EPM.
+      - EDMCS maintains crosswalks for source → target mappings.
+      - Provides subscription views to OAC, Power BI and data warehouses.
+      - Ensures that mappings, hierarchies and values stay synchronised across all systems.
+
+  - text: Validation Rules & CVR Integration
+    icon: rule
+    desc: Ensure that all CoA mappings comply with segment combinations and chart validation rules.
+    notes:
+      - Validates each mapped segment against CVRs to prevent invalid journal postings.
+      - Ensures segments such as Legal Entity + Cost Centre or LoB + Product align with valid combinations.
+      - Uses CVR failures as upstream data quality checks for source systems.
+      - Enables governance reports showing invalid or stale mappings.
+
+  - text: CoA Mapping for AHCS Event Models
+    icon: event
+    desc: Map insurance event attributes to CoA segments for rule-based accounting.
+    notes:
+      - Premium, claims and reinsurance events mapped to segment values through ADR and mapping sets.
+      - Ensures consistency between AHCS accounting and GL reporting structures.
+      - Supports multiple accounting representations from the same source event.
+      - Enables drill-back from GL to mapped source attributes for audit.
+
+  - text: Financial Close & Reconciliation Enablement
+    icon: checklist
+    desc: Enable clean reconciliations through consistent mapping, hierarchies and governance.
+    notes:
+      - CoA mapping ensures that balances post consistently across ledgers and legal entities.
+      - Supports ARCS reconciliations by providing stable, predictable account mappings.
+      - Enables multi-ledger tie-outs for Lloyd’s, statutory and management views.
+      - Reduces manual adjustments through confident, rule-based mapping accuracy.
+
+  - text: Data Lineage & Auditability
+    icon: history
+    desc: Provide full visibility from source value → mapped value → CoA segment → GL account.
+    notes:
+      - Provides complete lineage for regulatory or audit requests.
+      - Enables traceability of mapping changes and hierarchy updates over time.
+      - Stores historical mapping versions for retrospective period reporting.
+      - Ensures mapping transparency across all insurance and syndicate processes.
+
+  - text: Future Evolution & CoA Simplification Roadmap
+    icon: auto_awesome
+    desc: Enhance the CoA and mapping framework for scalability and improved reporting.
+    notes:
+      - Introduce AI-assisted mapping recommendations based on historical mappings.
+      - Rationalise redundant or legacy CoA values using EDMCS governance.
+      - Standardise hierarchies across regions for global reporting and Solvency II.
+      - Extend mapping automation into subledger and bordereaux ingestion processes.
