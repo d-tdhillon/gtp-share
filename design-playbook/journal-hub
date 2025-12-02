@@ -1,0 +1,138 @@
+title: "Journal Hub"
+sub-title: "A Cloud-Native Manual & Ad Hoc Journal Transformation Engine for Oracle Accounting Hub and Fusion GL"
+
+objList:
+  - text: Core Purpose of Journal Hub
+    icon: hub
+    desc: Provide a centralised, governed mechanism for converting manual and semi-structured data feeds into controlled accounting journals.
+    notes:
+      - Acts as the single “journal factory” for all manual and ad hoc journals entering Oracle GL or AHCS.
+      - Designed around SharePoint as the primary, user-friendly upload channel for finance teams.
+      - Reduces dependency on Excel-to-FBDI processes and increases control, auditability, and consistency.
+      - Provides a governed pattern applicable across finance, tax, treasury, Lloyd’s, and insurance operations.
+
+  - text: Ingestion & File Processing Architecture
+    icon: upload_file
+    desc: Provide simple ingestion using SharePoint as the main channel, with flexible alternatives for automation.
+    notes:
+      - Finance users drag-and-drop files into SharePoint libraries which trigger automated Journal Hub processing.
+      - SharePoint metadata such as period, entity, file type or uploader can be used as part of the journal logic.
+      - Supports tolerant ingestion that handles small, frequent file layout changes such as renaming or reordering of columns.
+      - Enables secondary ingestion paths through SFTP, API or Azure Blob for system-driven or automated interfaces.
+
+  - text: Canonical Journal Data Model
+    icon: view_module
+    desc: Standardise all SharePoint-fed files into a consistent canonical schema for reliable journal creation.
+    notes:
+      - Normalises spreadsheets, cashbooks, IPT files and bordereaux into a unified structure regardless of original format.
+      - Stores SharePoint file attributes including folder location, uploader identity, timestamps and version.
+      - Supports multi-currency, multi-entity and multi-ledger attributes consistently.
+      - Ensures downstream integrations with GL, AHCS and ARCS remain stable even when upstream files vary.
+
+  - text: Journal Template & Mapping Framework
+    icon: rule
+    desc: Provide a flexible, business-managed mapping and transformation layer.
+    notes:
+      - Templates define required fields, tolerance logic and mapping behaviour for each journal type.
+      - Finance users can adapt mappings without IT involvement through governed update workflows.
+      - FX account and currency mapping logic is embedded to derive correct natural accounts, reporting currency and ledger currency.
+      - Journal Hub detects and adapts to small structural adjustments in incoming files without breaking processing.
+
+  - text: Validation, Controls & Quality Gates
+    icon: verified
+    desc: Apply strong data, structural and accounting validations automatically before posting.
+    notes:
+      - Validations run immediately upon SharePoint upload, returning errors directly to the submitter.
+      - Syntactic and business checks ensure completeness, accuracy, balancing and period validity.
+      - COA and mapping validations use EDMCS and CVRs to prevent invalid journal submissions.
+      - Finance teams can correct errors and re-upload efficiently without relying on IT.
+
+  - text: Journal Generation for AHCS & Fusion GL
+    icon: playlist_add
+    desc: Generate accounting entries using either FAH rules or direct GL journal creation.
+    notes:
+      - Supports FAH event creation when rule-driven subledger accounting is required.
+      - Supports GL journal creation via FBDI or REST for manual-style journals.
+      - Preserves drill-back links between GL journals, the canonical model and the original SharePoint file.
+      - Summarises large files for GL efficiency while retaining detailed audit history within Journal Hub.
+
+  - text: Insurance-Specific Journal Automation
+    icon: insurance
+    desc: Automate manual insurance finance processes that rely on spreadsheets and shared workbooks.
+    notes:
+      - Enables IPT, premium tax, multi-country levies and other tax journals from SharePoint templates.
+      - Supports bordereaux-based premium, claims and DA adjustments when source systems cannot fully integrate.
+      - Addresses reinsurance adjustments, brokerage accruals and complex cash postings using governed templates.
+      - Provides structured handling of Year-of-Account, Accident-Year, treaty, binder and syndicate-level mappings.
+
+  - text: Multi-Ledger, Multi-Currency & Multi-Entity Processing
+    icon: public
+    desc: Route and transform journals across diverse ledger and currency structures.
+    notes:
+      - Journal Hub automatically determines the correct ledger using entity, currency and template metadata.
+      - FX conversions use Oracle GL or configured currency tables to derive transactional, functional and reporting currency amounts.
+      - FX account mapping determines correct P&L or balance sheet accounts for revaluation and translation effects.
+      - Supports statutory, management, Lloyd’s and regulatory books in parallel.
+
+  - text: Reconciliation, ARCS Feeds & Financial Close Support
+    icon: checklist
+    desc: Provide file-to-journal-to-GL traceability and integrate with ARCS for reconciliation automation.
+    notes:
+      - Generates ARCS Transaction Matching feeds for cash, IPT, suspense and other key accounts.
+      - Supports ARCS reconciliation compliance with structured file identifiers, batch IDs and journal references.
+      - Delivers clean, reconcilable datasets for cash vs. GL, premium vs. ledger and balance sheet substantiation.
+      - Provides reconciliation views supporting Lloyd’s syndicate and agency cash positions.
+
+  - text: Lloyd’s Agency & Syndicate Cash Recs
+    icon: anchor
+    desc: Support London Market and Lloyd’s-specific settlement, cash and bordereaux reconciliations.
+    notes:
+      - Processes settlement files uploaded by agency and syndicate teams into SharePoint.
+      - Supports Lloyd’s-specific structures including DXC settlement extracts and multi-syndicate reporting.
+      - Enables reconciliation of bank movements, settlement receipts and ledger positions.
+      - Maintains a clear audit trail linking SharePoint uploads, cash movements and GL postings.
+
+  - text: Integration with OIC, Azure & Multi-Cloud
+    icon: cloud_sync
+    desc: Use modern integration services to orchestrate ingestion, transformation and journal posting.
+    notes:
+      - Logic Apps or Power Automate monitor SharePoint for new files.
+      - OIC handles transformation, validations, staging and Oracle API integration.
+      - Supports retries, chunked processing and exception routing for resilience.
+      - Works seamlessly in hybrid environments combining user-driven SharePoint uploads with system-driven SFTP/API sources.
+
+  - text: Workflow, Approvals & Governance
+    icon: verified_user
+    desc: Enforce controlled workflows and approval steps for sensitive journals.
+    notes:
+      - Supports preparer, reviewer and approver roles linked to SharePoint and Journal Hub metadata.
+      - Finance approvers receive alerts for journals requiring authorisation before posting.
+      - Governance controls ensure safe updates to mappings, templates, FX rates and derivation rules.
+      - All mappings, transformations and approvals are versioned for audit readiness.
+
+  - text: Performance, Throughput & Close Acceleration
+    icon: speed
+    desc: Scale to support heavy insurance, treasury and Lloyd’s month-end workloads.
+    notes:
+      - Parallel batch execution accelerates high-volume cashbooks and bordereaux processing.
+      - Efficient summarisation reduces GL load during peak activity.
+      - SharePoint supports global teams operating across time zones with high file throughput.
+      - Designed for surge periods such as quarter-end, CAT events and renewal cycles.
+
+  - text: Monitoring, Visibility & Error Management
+    icon: monitor_heart
+    desc: Provide transparency and control from SharePoint ingestion to GL posting.
+    notes:
+      - Dashboards display the status of SharePoint uploads, journal batches and exceptions.
+      - Error messages route back to submitters with clear explanations and remediation guidance.
+      - Finance operations can self-serve most error fixes without waiting on technical support.
+      - All processing activity is logged end-to-end for audit and compliance.
+
+  - text: Future Evolution & Automation Roadmap
+    icon: auto_awesome
+    desc: Expand Journal Hub into an intelligent accounting and reconciliation platform.
+    notes:
+      - AI-driven mapping and FX account derivation suggestions based on historical journals.
+      - Anomaly detection for out-of-pattern journals or unusual cash movements.
+      - Predictive reconciliation for Lloyd’s agency and syndicate cash flows.
+      - Finance-led configuration for template creation and mapping maintenance using SharePoint and governed UI components.
