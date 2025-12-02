@@ -1,0 +1,138 @@
+title: "Oracle Fusion Global Template Rollout – India Deployment"
+sub-title: "Key Considerations for Implementing a Global Template for India-Based Finance, Tax, Regulatory & Shared Services Teams"
+
+objList:
+  - text: Indian Accounting Standards & Regulatory Compliance
+    icon: balance
+    desc: Ensure the global template aligns with India’s statutory, audit and regulatory frameworks.
+    notes:
+      - Support Ind-AS requirements where they differ from IFRS or global reporting policies.
+      - Enable statutory adjustments for Indian entity reporting, including Schedule III compliance.
+      - Address local audit requirements including CARO, internal audit and statutory audit expectations.
+      - Align financial statement structures with MCA (Ministry of Corporate Affairs) and Companies Act requirements.
+
+  - text: GST & Indian Indirect Tax Localisation
+    icon: receipt_long
+    desc: Configure comprehensive GST functionality in alignment with Indian tax rules.
+    notes:
+      - Implement CGST, SGST, IGST and UTGST rules across procurement, sales and inter-state transactions.
+      - Support place-of-supply rules, input tax credit (ITC), reverse charge mechanism and GST rate variations.
+      - Enable e-invoicing and e-way bill compliance where required via API integrations with GSTN-approved providers.
+      - Ensure tax determination is automated for domestic, import, export and service-based transactions.
+
+  - text: Indian Direct Tax & Withholding Requirements
+    icon: rule
+    desc: Configure withholding tax rules for Indian vendors, contractors and service providers.
+    notes:
+      - Implement TDS/TCS logic including PAN validation, threshold checks and section-wise tax rates.
+      - Support TDS certificates, challans and integration with e-TDS filing systems.
+      - Automate WHT on rent, professional services, consultancy and contract labour categories.
+      - Provide accurate mappings for 26AS and Form 16A generation where required.
+
+  - text: Local Operating Model & India Finance Team Structure
+    icon: groups
+    desc: Adapt global processes to India’s finance, shared services and compliance-heavy environment.
+    notes:
+      - Identify whether India hosts a shared service centre supporting multiple global regions.
+      - Clarify local vs central responsibilities for P2P, O2C, R2R and tax operations.
+      - Structure workflows with strong internal control checkpoints aligned to Indian compliance expectations.
+      - Ensure India finance teams are trained to manage high-volume, transaction-heavy operations.
+
+  - text: Multi-Entity, Multi-GAAP & Multi-Currency Requirements
+    icon: public
+    desc: Support India’s diverse business structures and multi-currency operational needs.
+    notes:
+      - Enable INR functional ledger with support for USD, EUR, GBP and other currency transactions.
+      - Allow Ind-AS vs IFRS adjustments where global reporting differs from statutory reporting.
+      - Support multi-entity ledger setups for Indian holding, trading and service companies.
+      - Provide multi-GAAP reporting flows where India statutory accounts differ from group-level GAAP.
+
+  - text: Banking, Payments & Local Treasury Integrations
+    icon: account_balance
+    desc: Configure integrations with Indian banks and payment formats.
+    notes:
+      - Integrate with SBI, HDFC, ICICI, Axis, Kotak and other key Indian banks.
+      - Support NEFT, RTGS, IMPS, APB and NACH payment formats.
+      - Enable automatic bank statement ingestion using CAMS, SWIFT or local formats.
+      - Support treasury processes involving foreign currency remittances and RBI compliance.
+
+  - text: Procurement & Supplier Management Compliance
+    icon: shopping_cart
+    desc: Adapt P2P processes for Indian compliance and supplier verification requirements.
+    notes:
+      - Capture PAN, GSTIN, TDS category and address details during supplier onboarding.
+      - Validate GSTIN against the GSTN registry where integrated.
+      - Configure invoice workflows ensuring correct GST and TDS determination.
+      - Support three-way matching and India-specific tax/duty lines on vendor invoices.
+
+  - text: Payroll, HR & Statutory Labour Compliance
+    icon: badge
+    desc: Ensure integrations support Indian statutory labour and payroll contributions.
+    notes:
+      - Integrate with payroll systems supporting PF, ESI, LWF and professional tax deductions.
+      - Capture compliance data such as PF UAN, ESI numbers and state-specific professional tax details.
+      - Enable processing of gratuity, bonus and statutory leave encashment accounting.
+      - Ensure payroll GL and tax postings align with statutory reporting requirements.
+
+  - text: Financial Close, Controls & Audit Requirements
+    icon: checklist
+    desc: Align period close and compliance workflows with India statutory calendars.
+    notes:
+      - Support monthly, quarterly and annual close cycles tied to MCA and tax authority deadlines.
+      - Configure ARCS and Close Manager for India-specific reconciliations including GST, TDS and IC postings.
+      - Maintain strong audit trails for journal postings, configuration changes and tax calculations.
+      - Provide evidence for statutory audits, internal audits, GST audits and tax assessments.
+
+  - text: Data Migration & India Cutover Planning
+    icon: sync_alt
+    desc: Migrate legacy data supporting India’s tax-heavy and transaction-intensive operations.
+    notes:
+      - Map legacy charts, tax structures, GSTIN mappings, vendor/customer attributes into Fusion.
+      - Cleanse historical GST and TDS data for accurate post-go-live reporting.
+      - Avoid cutover around Indian fiscal year-end (March/April) or major GST filing windows.
+      - Validate bank accounts, payment files, GST codes and TDS categories during trial migrations.
+
+  - text: India Integrations, Third-Party Platforms & Tax Engines
+    icon: cloud_sync
+    desc: Connect India-specific systems into the global Fusion landscape.
+    notes:
+      - Integrate with GSTN-approved e-invoicing and e-way bill providers (e.g., ClearTax, Iris, Tally-based connectors).
+      - Connect with payroll platforms (ADP India, Ramco, Darwinbox, Keka, Workday).
+      - Integrate with indirect/direct tax systems for automated GST/TDS filings.
+      - Align with treasury systems managing FEMA/RBI-compliant remittances.
+
+  - text: Training, Change Management & Cultural Considerations
+    icon: school
+    desc: Deliver structured, compliance-focused training tailored to India’s working style.
+    notes:
+      - Provide detailed training on GST, TDS, TCS, and compliance-driven workflows.
+      - Use structured, step-by-step guides aligned with India’s process-heavy work culture.
+      - Train shared service teams on high-volume processing, reconciliations and exception handling.
+      - Ensure communication plans respect India’s hierarchical review structures.
+
+  - text: Time Zone, Delivery Model & Hypercare Support
+    icon: schedule
+    desc: Manage rollout execution and hypercare support aligned with IST business hours.
+    notes:
+      - Align collaboration windows between India, EMEA and US teams for design and testing.
+      - Conduct SIT/UAT cycles in India time zones with strong SME participation.
+      - Provide hypercare during IST hours to support early volume spikes and tax deadlines.
+      - Factor in Indian public holidays, fiscal year-end and festival seasons in planning.
+
+  - text: Testing & India-Specific Scenario Coverage
+    icon: rule
+    desc: Ensure SIT/UAT covers India-heavy tax and compliance scenarios.
+    notes:
+      - Test GST scenarios including interstate, reverse charge, import/export and credit reversals.
+      - Validate TDS/TCS rules, threshold logic and section-wise deductions.
+      - Test NEFT/RTGS/IMPS/NACH payment files end-to-end.
+      - Validate statutory reporting flows across Ind-AS, MCA and GST/TDS authorities.
+
+  - text: Scalability, Shared Services & Future Readiness
+    icon: auto_awesome
+    desc: Prepare the global template to scale within India’s expanding finance, tax and shared services footprint.
+    notes:
+      - Design COA, ledger and tax structures that support future India entity expansion.
+      - Position India SSCs as central hubs for global processing standardisation.
+      - Enable ongoing compliance updates for GST rate changes, TDS reforms and MCA/SEBI regulatory shifts.
+      - Support deeper integration with AHCS, ARCS, EPM and FDW for India statutory and tax reporting. 
