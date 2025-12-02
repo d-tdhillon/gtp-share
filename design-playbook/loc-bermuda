@@ -1,0 +1,129 @@
+title: "Oracle Fusion Global Template Rollout – Bermuda Deployment"
+sub-title: "Key Considerations for Implementing a Global Template for Bermuda Legal Entities, Insurance Operations & Regulatory Requirements"
+
+objList:
+  - text: Bermuda Accounting Standards & Regulatory Environment
+    icon: balance
+    desc: Ensure the global template reflects Bermuda’s insurance-heavy regulatory and accounting landscape.
+    notes:
+      - Align Fusion design with Bermuda Monetary Authority (BMA) reporting rules and statutory account structures.
+      - Support local GAAP or US GAAP reporting depending on entity classification under BMA frameworks.
+      - Enable statutory-to-management adjustment capability for insurance and reinsurance entities.
+      - Provide clear audit trails to meet BMA regulatory oversight expectations.
+
+  - text: Insurance & Reinsurance-Dominant Operating Model
+    icon: insurance
+    desc: Adapt the global template for Bermuda’s reinsurance and specialty insurance operations.
+    notes:
+      - Support reinsurance-heavy accounting including ceded premium, recoveries, reinstatement premiums and retrocession.
+      - Enable mappings for complex treaty structures, brokers, markets and multi-currency placements.
+      - Provide segment support for underwriting year, treaty type, contract class and reinsurance program.
+      - Include premium, losses, IBNR and claims accounting processes expected in Bermuda markets.
+
+  - text: Multi-Currency, USD-Ledger & Reporting Structures
+    icon: public
+    desc: Accommodate Bermuda’s reliance on USD and multi-currency reinsurance transactions.
+    notes:
+      - Support USD as the primary ledger, with multi-currency transactional activity booked across major currencies.
+      - Ensure FX revaluation, realised/unrealised accounting and translation rules align with global policy.
+      - Provide ledger flexibility for management, regulatory and statutory views.
+      - Facilitate Bermuda entity consolidation where multiple reinsurance portfolios exist.
+
+  - text: BMA Reporting, Solvency & Compliance
+    icon: rule
+    desc: Enable reporting structures required for BMA filings and solvency frameworks.
+    notes:
+      - Align Fusion COA and segment design to BMA statutory returns and solvency reporting categories.
+      - Provide mapping structures for technical provisions, loss triangles, risk margins and balance sheet classifications.
+      - Support granular drill-back for BMA audits and independent actuarial reviews.
+      - Ensure reporting outputs for EBS, BSCR and regulatory submissions are fed from consistent data.
+
+  - text: Tax, Economic Substance & Local Regulatory Requirements
+    icon: receipt_long
+    desc: Address Bermuda’s unique tax and economic substance obligations.
+    notes:
+      - Ensure transaction recording and reporting supports the Economic Substance Act.
+      - Capture attributes demonstrating core income-generating activities (CIGA) in Bermuda.
+      - Support local tax reporting, even though Bermuda is a zero-corporate-tax regime.
+      - Maintain documentation to support regulatory and compliance evidence.
+
+  - text: Banking, Payments & Treasury Integration
+    icon: account_balance
+    desc: Configure banking and treasury processes aligned with Bermuda financial institutions.
+    notes:
+      - Support integrations with Bank of Butterfield and other Bermuda-based or offshore banking partners.
+      - Configure USD, GBP, EUR and other foreign currency accounts with high-volume cash management.
+      - Enable treasury processes for collateralised reinsurance accounts, trust accounts and letters of credit.
+      - Ensure robust bank reconciliation automation for multi-currency statements.
+
+  - text: Procurement, AP & Local Vendor Management
+    icon: shopping_cart
+    desc: Tailor procurement and payable processes to Bermuda business practices.
+    notes:
+      - Capture vendor onboarding requirements including regulatory documentation and due diligence.
+      - Consider local supplier landscape which may be smaller and more service-focused.
+      - Configure invoice workflows and approvals aligned with Bermuda cost structures.
+      - Support offshore vendor management for reinsurance brokers and global service providers.
+
+  - text: Financial Close, Controls & Audit Readiness
+    icon: checklist
+    desc: Align controls, reconciliations and financial close with Bermuda audit cycles.
+    notes:
+      - Ensure ARCS supports Bermuda-specific reconciliation categories for reinsurance balances.
+      - Provide documentation and audit evidence for Bermuda statutory filings and BMA reviews.
+      - Support accelerated or late-year close cycles depending on group reporting timelines.
+      - Maintain clear postings, adjustments and audit trails for actuarial and reinsurance movements.
+
+  - text: Data Migration & Bermuda Cutover Planning
+    icon: sync_alt
+    desc: Migrate data from legacy reinsurance and finance systems into the global template.
+    notes:
+      - Map legacy COA and reinsurance-specific attributes into global structures.
+      - Cleanse policy, treaty, claims, bordereaux and broker data before migration.
+      - Validate multi-currency historical balances to ensure accurate opening positions.
+      - Avoid cutover during BMA filing periods or major actuarial reporting cycles.
+
+  - text: Integrations with Reinsurance, Policy & Actuarial Systems
+    icon: cloud_sync
+    desc: Integrate Bermuda’s upstream and actuarial systems into Oracle Fusion and AHCS.
+    notes:
+      - Connect policy admin, claims platforms, underwriting systems and actuarial models.
+      - Support ingestion of bordereaux and actuarial adjustments for reserves and UPR.
+      - Align data structures with AHCS for premium, claims and reinsurance accounting.
+      - Ensure stable integrations with modelling tools used for BMA solvency reporting.
+
+  - text: Training, Change Management & Bermuda Team Culture
+    icon: school
+    desc: Deliver change management and adoption tailored to Bermuda’s small, specialised teams.
+    notes:
+      - Provide hands-on training for reinsurance accountants and actuarial analysts.
+      - Tailor training sessions to Bermuda’s small-team environment and cross-functional roles.
+      - Offer clear documentation for complex accounting flows such as ceded vs assumed reinsurance.
+      - Emphasise governance, audit readiness and data accuracy required by BMA oversight.
+
+  - text: Time Zone, Delivery & Hypercare Alignment
+    icon: schedule
+    desc: Manage delivery planning with Bermuda’s Atlantic timezone relative to global teams.
+    notes:
+      - Establish overlap windows with US, UK and European teams supporting the global template.
+      - Schedule UAT cycles aligned with Bermuda business hours.
+      - Provide hypercare coverage across Atlantic and US time zones.
+      - Account for Bermuda-specific holidays and BMA submission cycles in planning.
+
+  - text: Testing & Local Scenario Validation
+    icon: rule
+    desc: Include Bermuda-specific insurance and reinsurance scenarios in SIT/UAT.
+    notes:
+      - Test assumed/ceded reinsurance, retrocession, reinstatements and broker settlements.
+      - Validate multi-currency premium and claims postings, reserves and FX movements.
+      - Test integrations with actuarial models and bordereaux ingestion.
+      - Involve Bermuda SMEs in end-to-end walkthroughs for statutory, IFRS, US GAAP and BMA reporting.
+
+  - text: Scalability, Offshore Alignment & Future Readiness
+    icon: auto_awesome
+    desc: Enable the global template to scale with Bermuda’s growth in reinsurance and alternative capital markets.
+    notes:
+      - Ensure ledger, COA and segment structures accommodate expansion in ILS, retro and specialty lines.
+      - Position Bermuda as a hub within the global insurance and reinsurance system landscape.
+      - Prepare for future regulatory evolution from the BMA, including ESG reporting.
+      - Align future enhancements with AHCS, ARCS, data warehouse and group-wide reporting frameworks.
