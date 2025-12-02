@@ -1,0 +1,120 @@
+title: "Oracle Fusion Global Template Rollout – Singapore Deployment"
+sub-title: "Key Considerations for Implementing a Global Template for Singapore-Based Finance & Operations Teams"
+
+objList:
+  - text: Singapore Financial Reporting & Regulatory Alignment
+    icon: balance
+    desc: Ensure the global template incorporates Singapore accounting, tax and regulatory needs.
+    notes:
+      - Align global Fusion design with Singapore Financial Reporting Standards (SFRS) where they differ from IFRS.
+      - Support Singapore statutory reporting, XBRL filing formats and MAS (Monetary Authority of Singapore) guidelines.
+      - Ensure GST (Goods & Services Tax) configuration aligns with IRAS requirements including reverse charge and exempt supplies.
+      - Validate withholding tax rules for cross-border services, royalties and interest payments.
+
+  - text: Local Operating Model & Singapore Team Structure
+    icon: groups
+    desc: Adapt the global process design to Singapore’s finance function and shared service participation.
+    notes:
+      - Identify whether Singapore acts as a regional APAC hub or a local functional team.
+      - Clarify responsibilities for P2P, O2C, R2R between local teams, shared services and HQ.
+      - Support Singapore’s typically lean finance teams with process automation and simplified workflows.
+      - Prepare targeted change management for Singapore teams who value clarity, structure and efficiency.
+
+  - text: Multi-Entity, Multi-Currency & Regional APAC Requirements
+    icon: public
+    desc: Ensure the design accommodates multi-currency operations and regional APAC regulatory diversity.
+    notes:
+      - Enable robust multi-currency processing including SGD, USD, EUR, CNY and other APAC currencies.
+      - Align ledger and balancing segment design to accommodate Singapore entity structures.
+      - Support regional intercompany transactions with consistent accounting rules and eliminations.
+      - Address regional tax complexity where Singapore interacts with Hong Kong, Australia and other APAC markets.
+
+  - text: GST Configuration & IRAS Compliance
+    icon: receipt_long
+    desc: Apply GST rules and reporting flows required by the Inland Revenue Authority of Singapore (IRAS).
+    notes:
+      - Configure GST codes for standard-rated, zero-rated, exempt and reverse charge transactions.
+      - Support automatic GST reporting, adjustments and reconciliations within Fusion.
+      - Ensure AP invoice workflows capture GST treatment accurately at line-level.
+      - Validate GST reporting outputs for IRAS filing and audits.
+
+  - text: Banking, Payments & Local Market Integrations
+    icon: account_balance
+    desc: Enable accurate and compliant integrations with Singapore’s banking landscape.
+    notes:
+      - Configure payables to support FAST, GIRO, MAS Electronic Payment System (MEPS) and SWIFT formats.
+      - Integrate with major Singapore banks such as DBS, UOB, OCBC and Standard Chartered.
+      - Support foreign currency bank accounts with auto-revaluation and translation rules.
+      - Implement bank statement automation aligned to Singapore cash management practises.
+
+  - text: Procurement & Supplier Management Localisation
+    icon: shopping_cart
+    desc: Tailor P2P processes to Singapore’s procurement policies and compliance standards.
+    notes:
+      - Capture supplier GST registration, IRAS validation and WHT applicability.
+      - Configure approval routing based on Singapore cost centres, budgets and delegated authorities.
+      - Support invoice matching practises common in APAC (3-way, 2-way, ERS).
+      - Address local contract terms, freight handling, and cross-border services invoicing.
+
+  - text: Financial Close, Reporting & Statutory Compliance
+    icon: checklist
+    desc: Align period close with Singapore statutory deadlines and reporting obligations.
+    notes:
+      - Singapore teams often close quickly; ensure global calendar supports local timelines.
+      - Provide automated reconciliations through ARCS for cash, GST, payroll and intercompany.
+      - Support SFRS statutory adjustments, audit adjustments and local financial statement generation.
+      - Maintain drill-back capability for IRAS or auditor queries.
+
+  - text: Data Migration & Singapore Cutover Considerations
+    icon: sync_alt
+    desc: Ensure clean migration of Singapore legacy data into the global template.
+    notes:
+      - Map legacy COA, customer, supplier and tax codes into the global structure.
+      - Cleanse GST-related fields, especially historical tax treatment and exemption flags.
+      - Avoid cutover during financial year-end (March or December depending on the company).
+      - Validate migrated bank accounts, approval hierarchies and local integrations.
+
+  - text: APAC Regional Integrations & Third-Party Platforms
+    icon: cloud_sync
+    desc: Integrate local and regional systems into the global template architecture.
+    notes:
+      - Connect to APAC payroll platforms (e.g., SAP SuccessFactors, Workday, ADP APAC).
+      - Integrate with Singapore HR, expense or travel systems commonly used regionally.
+      - Support MAS and IRAS reporting tools where required.
+      - Ensure currency feeds, FX rate APIs and treasury systems reflect APAC FX volatility.
+
+  - text: Working Practices, Training & Cultural Considerations
+    icon: school
+    desc: Deliver training and change management tailored to Singapore’s communication and work style.
+    notes:
+      - Provide structured, well-documented process guides for Singapore teams.
+      - Use shorter, focused training sessions aligned to Singapore’s efficient working culture.
+      - Deliver training in APAC time zones and include practical examples with GST and multi-currency impacts.
+      - Emphasise standardisation benefits while addressing local compliance concerns.
+
+  - text: Time Zone, Project Delivery & Hypercare Alignment
+    icon: schedule
+    desc: Align global project execution with Singapore’s business hours and APAC support needs.
+    notes:
+      - Establish a clear overlap window between Singapore and global design teams.
+      - Schedule UAT cycles in Singapore time zones to ensure local participation.
+      - Provide hypercare with APAC-hour coverage to address early issues quickly.
+      - Adapt communication cadence to suit APAC availability and regional holidays.
+
+  - text: Testing, Local Scenarios & Compliance Coverage
+    icon: rule
+    desc: Ensure test cycles reflect Singapore’s business flows and compliance activities.
+    notes:
+      - Include GST calculation, reverse charge, import GST and exempt supply scenarios in SIT and UAT.
+      - Validate multi-currency revaluation, translation and FX accounting for SGD-ledger entities.
+      - Test FAST/GIRO/payment file integrations with local banks.
+      - Involve Singapore finance SMEs in end-to-end testing of procurement, AP, AR and close processes.
+
+  - text: Future Scalability & APAC Expansion Readiness
+    icon: auto_awesome
+    desc: Prepare the global template for expansion across APAC leveraging Singapore’s strategic role.
+    notes:
+      - Ensure COA and ledger structures can scale for future APAC business growth.
+      - Position Singapore as a potential regional finance or treasury hub.
+      - Build flexibility for future GST rate changes or IRAS rule amendments.
+      - Integrate AHCS, ARCS and reporting layers for a unified APAC finance platform.
