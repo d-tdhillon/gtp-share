@@ -1,0 +1,120 @@
+title: "Oracle Fusion Global Template Rollout – US Deployment"
+sub-title: "Key Considerations for Implementing a Global Template for a Chicago-Based US Team"
+
+objList:
+  - text: US GAAP & Regulatory Alignment
+    icon: balance
+    desc: Ensure the global template accommodates US accounting, tax and compliance requirements.
+    notes:
+      - Incorporate US GAAP differences where global design defaults to IFRS or other standards.
+      - Include US federal, state and local tax handling such as sales tax, use tax and property tax.
+      - Ensure 1099/W-9 compliance within AP supplier onboarding and payment processing.
+      - Embed SOX controls, evidence capture and audit traceability across key modules.
+
+  - text: Local Operating Model & Chicago Team Structure
+    icon: groups
+    desc: Align the global process design with the organisational setup and responsibilities of the Chicago-based team.
+    notes:
+      - Identify central vs local execution responsibilities for P2P, O2C, R2R and reporting.
+      - Ensure super-user, controller and finance operations roles are clearly defined for the US.
+      - Tailor change management to Chicago team expectations of clarity, speed and direct communication.
+      - Account for shared services or hub-and-spoke models if Chicago oversees other US regions.
+
+  - text: Multi-Entity, Multi-State & Regional Processes
+    icon: domain
+    desc: Adapt the global template to the complexity of US multi-state operations.
+    notes:
+      - Support reporting and allocation structures for state-specific cost centres or business units.
+      - Align intercompany, tax and ledger structures to US legal entities.
+      - Reflect US-based operational nuances such as local approvals, procurement rules and cash processes.
+      - Incorporate state-level compliance requirements into design where needed.
+
+  - text: Tax, Withholding & 1099 Reporting
+    icon: receipt_long
+    desc: Ensure the global template supports US indirect taxes and vendor reporting obligations.
+    notes:
+      - Configure supplier tax attributes including TIN validation and withholding rules.
+      - Ensure AP processes support 1099 reporting, forms generation and IRS compliance.
+      - Include state-by-state sales and use tax workflows if not using an external tax engine.
+      - Confirm alignment with global tax models without compromising US obligations.
+
+  - text: Banking, Payments & US Financial Integrations
+    icon: account_balance
+    desc: Enable seamless interfaces with US financial institutions and middleware.
+    notes:
+      - Support ACH, Fedwire, check printing and virtual card payment formats.
+      - Integrate with common US banks such as J.P. Morgan, Citi, Bank of America or Wells Fargo.
+      - Configure bank statement formats and reconciliation rules suitable for US treasury operations.
+      - Validate prenote processes, positive pay and NACHA-specific requirements.
+
+  - text: Procurement & Supplier Management Localisation
+    icon: shopping_cart
+    desc: Adapt P2P processes to reflect US procurement and vendor management practices.
+    notes:
+      - Ensure supplier onboarding captures W-9 and US-specific tax attributes.
+      - Configure approval hierarchies aligned with US cost centre ownership.
+      - Address PO routing, invoice workflow and dispute handling expected by US operations.
+      - Support US pricing models, freight handling and contract terms.
+
+  - text: Financial Close, Controls & SOX Compliance
+    icon: checklist
+    desc: Align the global close model with US SOX, audit and reporting timelines.
+    notes:
+      - Incorporate strong segregation of duties, workflow approvals and evidence controls.
+      - Ensure the Chicago team can meet Day 3–5 US close deadlines within the global calendar.
+      - Integrate ARCS, Close Manager and automated reconciliations tailored to US workflows.
+      - Provide clear audit trails for journals, approvals and configuration changes.
+
+  - text: Data Migration & Cutover Planning
+    icon: sync_alt
+    desc: Ensure data migration aligns with US systems, calendars and compliance needs.
+    notes:
+      - Map legacy US chart of accounts, customers, suppliers and assets into the global template.
+      - Address additional data attributes required for US regulatory or tax reporting.
+      - Avoid cutover during Q1 SEC reporting season, US fiscal year-end or audit peaks.
+      - Account for multi-state data quality issues and legacy system fragmentation.
+
+  - text: US Integrations & Third-Party Platforms
+    icon: cloud_sync
+    desc: Validate and integrate US-specific third-party systems into the global template.
+    notes:
+      - Integrate US payroll platforms such as ADP, Workday or Paychex.
+      - Connect Vertex or Avalara for indirect tax if applicable.
+      - Include treasury, cash management or insurance-specific US systems as needed.
+      - Validate data flow from Chicago-based operational systems with local owners.
+
+  - text: Working Practices, Training & Change Management
+    icon: school
+    desc: Tailor communication, training and adoption plans to US team expectations.
+    notes:
+      - Provide clear and concise documentation with strong ownership visibility.
+      - Deliver training sessions in US time zones aligned with Chicago work schedules.
+      - Use scenario-based training reflecting US processes, regulatory needs and edge cases.
+      - Engage Chicago leadership early to reinforce the global template philosophy.
+
+  - text: Time Zone, Project Delivery & Hypercare Alignment
+    icon: schedule
+    desc: Manage global project execution with the Chicago timezone as a key deployment constraint.
+    notes:
+      - Establish core collaboration hours between US and global design teams.
+      - Structure sprints, UAT cycles and cutover rehearsals around CST/CDT availability.
+      - Schedule hypercare coverage to include US business hours for initial stabilisation.
+      - Ensure daily stand-ups and decision forums accommodate time zone overlap.
+
+  - text: Testing, Local Scenarios & Compliance Coverage
+    icon: rule
+    desc: Include comprehensive US-specific test cases within SIT and UAT.
+    notes:
+      - Build test coverage for 1099, US sales/use tax, NACHA payments and state-level transactions.
+      - Validate US-specific period close timing and reporting obligations.
+      - Include Chicago-based super-users in all end-to-end scenario walkthroughs.
+      - Ensure regression testing covers interactions between global template rules and US customisations.
+
+  - text: Future Scalability & US Operating Model Roadmap
+    icon: auto_awesome
+    desc: Align US deployment with future expansion, regulatory change and system growth.
+    notes:
+      - Design scalable CoA, ledger and workflow models that support US business growth.
+      - Build flexibility for future state tax, federal tax or regulatory rule changes.
+      - Prepare for deeper integration into AHCS, ARCS or FDW for US reporting.
+      - Position the Chicago team as a potential North American process hub.
