@@ -1,0 +1,285 @@
+workshopPlan:
+  - id: 1
+    title: Programme Mobilisation & Design Foundations
+    icon: "flag"
+    attendees:
+      - Global Finance Lead
+      - Regional Finance Leads (US, UK, SG, AU, BM)
+      - Group Financial Controller
+      - Finance Systems Architect
+      - Oracle Solution Architect
+      - PMO
+    discussionTopics:
+      - Programme goals and design principles
+      - Global template boundaries and governance
+      - Localisation overview (AU, SG, US, UK, BM)
+      - End-to-end finance process overview
+    deliverables:
+      - Confirmed design scope
+      - Global design principles
+      - Regional variance log
+      - Design decision framework
+
+  - id: 2
+    title: Chart of Accounts & Value Set Strategy
+    icon: "numbers"
+    attendees:
+      - Global CoA Owner
+      - Regional CoA SMEs
+      - Oracle CoA Architect
+      - Group Reporting Lead
+      - Insurance Finance SMEs
+    discussionTopics:
+      - CoA segment structure
+      - Value set definitions and hierarchies
+      - Global-to-local mapping
+      - Lloyd’s & insurance-specific segments
+      - Local GAAP requirements
+    deliverables:
+      - CoA design blueprint
+      - Value set definitions
+      - Source-to-CoA mapping templates
+      - Reporting segment strategy
+
+  - id: 3
+    title: Ledger Structure, Legal Entities & Calendar
+    icon: "account_balance"
+    attendees:
+      - Global & Regional Finance Leads
+      - Tax & Statutory Reporting SMEs
+      - Oracle Financials Architect
+      - Consolidation Lead
+    discussionTopics:
+      - Primary and secondary ledgers
+      - LE and balancing segment design
+      - Accounting calendars
+      - FX and currency strategy
+      - Multi-GAAP considerations
+    deliverables:
+      - Ledger & LE design workbook
+      - Calendar definition
+      - Localisation-specific ledger requirements
+
+  - id: 4
+    title: Source-to-Target Mapping & Data Model
+    icon: "device_hub"
+    attendees:
+      - Data Migration Lead
+      - Integration Architect (OIC)
+      - Regional Finance Data SMEs
+      - AHCS Team
+      - Reporting Lead
+    discussionTopics:
+      - Source system inventory
+      - Mapping rules and attributes
+      - FX, account & currency mapping
+      - Journal pass-through design
+      - SharePoint file ingestion model
+      - Lloyd’s agency & syndicate cash mapping
+    deliverables:
+      - Source-to-target mapping catalogue
+      - Interface dictionary
+      - File standards
+      - Data gaps log
+
+  - id: 5
+    title: Subledger Design (AP, AR, FA, Cash, Projects, Intercompany)
+    icon: "receipt_long"
+    attendees:
+      - Subledger Process Owners
+      - Oracle Functional Leads
+      - Regional Finance SMEs
+      - AHCS Lead
+    discussionTopics:
+      - AP/AR billing and insurance processes
+      - Supplier portal & OBN
+      - Cash/bank format localisation
+      - Fixed assets rules
+      - Intercompany & balancing logic
+      - AI-based workflows and approvals
+    deliverables:
+      - Subledger design workbook
+      - Localisation matrix
+      - Intercompany design spec
+      - Bank connectivity design
+
+  - id: 6
+    title: Accounting Hub (AHCS) & Insurance Subledger
+    icon: "hub"
+    attendees:
+      - AHCS Consultant
+      - Insurance Finance Lead
+      - Underwriting & Claims SMEs
+      - Integration Team
+      - Oracle Architect
+    discussionTopics:
+      - Event model (Premium, Claims, Reinsurance)
+      - Rules-based accounting engine
+      - FX and account derivation logic
+      - Multi-GAAP setups
+      - Journal validation & exception handling
+      - Operating model for AHCS as insurance subledger
+    deliverables:
+      - Event model framework
+      - Accounting rule catalogue
+      - Mapping sets
+      - Insurance subledger blueprint
+
+  - id: 7
+    title: Reporting Strategy (OTBI, SmartView, NR, FDW)
+    icon: "insights"
+    attendees:
+      - Reporting Lead
+      - FP&A
+      - Regional Reporting SMEs
+      - Data Warehouse Architect
+    discussionTopics:
+      - Statutory vs management reporting
+      - Global reporting pack
+      - Insurance dimensions (AY, YoA, Lloyd’s)
+      - Solvency II & regulatory reporting
+      - EDMCS/DRM integration
+    deliverables:
+      - Reporting catalogue
+      - Report mock-ups
+      - Narrative Reporting structure
+      - FDW requirements
+
+  - id: 8
+    title: Consolidation & Close (FCCS, Intercompany, ARCS)
+    icon: "sync_alt"
+    attendees:
+      - Consolidation Lead
+      - FCCS Architect
+      - Regional Controllers
+      - ARCS Lead
+      - Intercompany Lead
+    discussionTopics:
+      - Consolidation hierarchy & ownership
+      - FX translation & CTA logic
+      - Intercompany eliminations
+      - Close Manager tasks
+      - ARCS reconciliation model
+      - Lloyd’s & Bermuda regulatory requirements
+    deliverables:
+      - Consolidation blueprint
+      - Elimination rules
+      - Close calendar
+      - ARCS configuration pack
+
+  - id: 9
+    title: Tax Carve-Out (Direct, Indirect, IPT, Regional Rules)
+    icon: "gavel"
+    attendees:
+      - Global Tax Lead
+      - Regional Tax Leads
+      - Oracle Tax Specialist
+      - AP, AR and GL Leads
+      - Reporting Lead
+    discussionTopics:
+      - VAT/GST/IPT treatment
+      - US state tax complexity
+      - Bermuda tax model
+      - Tax accounting mapping to CoA
+      - Lloyd’s market IPT
+      - Withholding tax, reverse charge, self-assessment
+    deliverables:
+      - Tax configuration blueprint
+      - Regional tax rule matrix
+      - Tax-to-CoA mapping
+      - Compliance reporting requirements
+
+  - id: 10
+    title: End-to-End Integration & Cross-Stream Walkthrough
+    icon: "workflow"
+    attendees:
+      - All Stream Leads
+      - PMO
+      - Business SMEs
+    discussionTopics:
+      - End-to-end flow walkthrough
+      - Interface orchestration and monitoring
+      - Localisation dependencies
+      - Cutover & migration planning
+      - Security & workflow approval chains
+    deliverables:
+      - E2E design traceability
+      - Cross-stream diagrams
+      - RICEFW list
+
+  - id: 11
+    title: Final Playback, Review & Sign-off
+    icon: "verified"
+    attendees:
+      - CFO / Group Controller
+      - Regional Finance Directors
+      - IT Leadership
+      - PMO
+      - Stream Leads
+    discussionTopics:
+      - Final design playback
+      - Review of decisions
+      - Variance closure
+      - Build & SIT readiness
+      - Training & UAT strategy
+    deliverables:
+      - Final design sign-off pack
+      - RAID log
+      - Build readiness checklist
+      - Training & change plan
+
+clientResources:
+  functionalFinance:
+    - Global Finance Lead
+    - Regional Finance Leads (US, UK, SG, AU, BM)
+    - Group Reporting Lead
+    - FP&A representatives
+    - Insurance Finance SMEs
+    - Subledger Process Owners
+  taxTeam:
+    - Global Tax Lead
+    - Regional Tax Leads
+    - Lloyd’s Tax Specialist
+    - Indirect Tax SMEs (VAT/GST/IPT)
+  technicalAndData:
+    - Data Migration Lead
+    - Regional Data Analysts
+    - Integration Architect (OIC)
+    - ETL Developers
+    - AHCS Specialist
+    - Reporting & Analytics Lead
+    - EDMCS/DRM Owner
+  governanceAndProgramme:
+    - PMO Lead
+    - Change & Training Lead
+    - IT Security SME
+    - DevOps Lead
+  statutoryAndRegulatory:
+    - Regional Statutory Reporting Leads
+    - Consolidation Lead
+    - FCCS Architect
+    - ARCS Owner
+    - Solvency II / Regulatory SMEs
+
+deliverablesSummary:
+  functionalDesign:
+    - Chart of Accounts blueprint
+    - Ledger & Legal Entity design
+    - Subledger functional design (AP, AR, FA, CM, Projects, IC)
+    - AHCS & Insurance Subledger blueprint
+    - Tax configuration blueprint
+  dataAndIntegration:
+    - Source-to-target mapping catalogue
+    - Interface & integration architecture
+    - File formats & data dictionary
+    - Migration & cutover strategy
+  reportingAndClose:
+    - Reporting catalogue & structures
+    - Consolidation & FCCS blueprint
+    - ARCS reconciliation model
+    - Close calendar & task matrix
+  governance:
+    - Global template variance log
+    - RAID log
+    - Design principles
+    - Build & SIT readiness checklists
