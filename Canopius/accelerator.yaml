@@ -1,0 +1,182 @@
+finance-transformation-accelerators:
+  category: Finance Transformation
+  icon: transform
+
+  accelerators:
+
+    - title: Benchmark Chart of Accounts (CoA)
+      icon: account_tree
+      purpose: >
+        Provides an industry-aligned CoA with predefined structures, value sets,
+        hierarchies, and insurance-specific accounting elements.
+      features:
+        - Industry-standard segment definitions (LE, CC, LOB, Product, Account, IC).
+        - Predefined value sets and parent–child hierarchies.
+        - Insurance-specific accounts (premiums, claims, reinsurance, Lloyd’s).
+        - Naming conventions and governance framework.
+      deliverables:
+        - CoA benchmark workbook.
+        - Value set definitions and hierarchy build files.
+        - Source-to-target CoA mapping rules.
+        - Design authority standards and validations.
+      benefits:
+        - Reduces design time by 40–60%.
+        - Ensures cross-entity and global consistency.
+        - Improves reporting structure and financial governance.
+
+    - title: Financial Close Timetable & Calendar
+      icon: event_note
+      purpose: >
+        Provides a standardised D-3/D+3 close model with automated workflows and 
+        subledger alignment.
+      features:
+        - Close calendar aligned to Oracle Cloud Close Manager.
+        - Reconciliation sequencing across ARCS, AP, FA, Projects, Cash, Insurance SL.
+        - KPI dashboards for close health and bottlenecks.
+        - Role-based accountability (RACI).
+      deliverables:
+        - Monthly and quarterly close calendars.
+        - Close Manager task list and workflow templates.
+        - Subledger posting timetable and SLA definitions.
+        - Automation playbook for journals, IC, FX, and allocations.
+      benefits:
+        - Reduces close by 2–5 days.
+        - Improves auditability and transparency.
+
+    - title: Ledger Structure Blueprint
+      icon: library_books
+      purpose: >
+        Preconfigured ledger structures supporting multi-currency, multi-GAAP, 
+        and multi-entity operations.
+      features:
+        - Standard ledger templates for IFRS, US GAAP, local GAAP.
+        - Calendar, currency, and rate type definitions.
+        - Intercompany balancing and elimination setup.
+        - Localisation patterns for US, UK, SG, AU, Bermuda.
+      deliverables:
+        - Ledger design blueprint.
+        - Calendar and rate type configuration pack.
+        - Secondary ledger and GAAP mapping rules.
+        - Intercompany balancing design.
+      benefits:
+        - Ensures compliance and consistency.
+        - Reduces design rework and improves scalability.
+
+    - title: Value Set Mapping Framework
+      icon: sync_alt
+      purpose: >
+        Provides standardised mapping templates for legacy-to-target CoA and 
+        dimension transformation.
+      features:
+        - Source-to-target mappings for all financial dimensions.
+        - Templates for SAP, PeopleSoft, Sun, Dynamics legacy structures.
+        - Insurance-specific mapping logic (accident year, YoA, reinsurance).
+        - Embedded FX, account, and currency mapping logic.
+      deliverables:
+        - Mapping catalogue and controlled master file.
+        - ETL/OIC/EDMCS transformation rules.
+        - Reconciliation and validation checks.
+      benefits:
+        - Reduces mapping effort by 50–70%.
+        - Enables governance through centralised master data alignment.
+
+    - title: Reporting Catalogue Library
+      icon: view_list
+      purpose: >
+        Predefined reporting library covering statutory, management, solvency, 
+        Lloyd’s, actuarial, and operational needs.
+      features:
+        - 150+ pre-classified reports (GL, IC, claims, premiums, solvency).
+        - OTBI subject area cross-reference.
+        - BI Publisher layouts and self-service templates.
+        - Sensitive data security model.
+      deliverables:
+        - Reporting catalogue.
+        - Data lineage and source-to-report mapping.
+        - User access and role-mapping templates.
+      benefits:
+        - Ensures Day-1 reporting readiness.
+        - Reduces custom development and accelerates testing.
+
+    - title: Accounting Hub (AHCS) Journal Accelerator
+      icon: account_balance
+      purpose: >
+        Ready-made accounting rules for upstream systems including insurance,
+        actuarial, and operational platforms.
+      features:
+        - Predefined rules for premiums, claims, reinsurance, Lloyd’s agency and syndicate.
+        - Journal line rules, mapping sets, and description rules.
+        - SharePoint-based ingestion with flexible file structures.
+        - FX, account, and currency mapping embedded.
+      deliverables:
+        - AHCS accounting rulebook.
+        - Integration templates (CSV/API/OIC).
+        - ARCS reconciliation templates.
+        - Error-handling patterns.
+      benefits:
+        - Avoids multi-month accounting rule design cycles.
+        - Ensures consistent accounting across diverse data sources.
+
+    - title: General Ledger Journal Framework
+      icon: description
+      purpose: >
+        Standardises manual, automated, and AI-enhanced journals.
+      features:
+        - Standard templates for accrual, adjustment, FX, and IC journals.
+        - Automated validations and error checks.
+        - AI-driven approval workflows.
+        - Bulk upload templates and reconciliation checks.
+      deliverables:
+        - Journal library and templates.
+        - Workflow configuration pack.
+        - Controls and validation rules.
+      benefits:
+        - Reduces journal errors by 60%.
+        - Strengthens audit trail and policy enforcement.
+
+    - title: Consolidation Rules & Eliminations Accelerator
+      icon: data_object
+      purpose: >
+        Provides prebuilt consolidation and elimination logic for multi-entity, 
+        multi-currency insurance groups.
+      features:
+        - IC eliminations (payables/receivables, investments, services).
+        - Ownership structures including partial ownership.
+        - Currency translation and CTA handling.
+        - Lloyd’s consolidation patterns and optional EPM integration.
+      deliverables:
+        - Consolidation rules library.
+        - Entity and ownership hierarchy definitions.
+        - Consolidated reporting templates.
+        - EPM/FCC integration design (if in scope).
+      benefits:
+        - Accelerates group close.
+        - Provides consistent and audit-ready consolidation logic.
+
+  summary-table:
+    icon: table_view
+    items:
+      - name: Benchmark CoA
+        outputs: "CoA workbook, value sets, hierarchies, mappings"
+        benefits: "40–60% reduction in design time"
+      - name: Close Calendar
+        outputs: "Close timetable, CM tasks, automation playbook"
+        benefits: "Faster close, better controls"
+      - name: Ledger Structures
+        outputs: "Ledger blueprint, currency/GAAP setup"
+        benefits: "Compliance & multi-GAAP readiness"
+      - name: Value Set Mappings
+        outputs: "Mapping catalogue, ETL rules"
+        benefits: "Consistent MDM & 50–70% effort reduction"
+      - name: Reporting Catalogue
+        outputs: "150+ reports, OTBI/BIP templates"
+        benefits: "Day-1 reporting coverage"
+      - name: Accounting Hub
+        outputs: "Accounting rules, integration templates"
+        benefits: "Standardised accounting & scalable governance"
+      - name: GL Journals
+        outputs: "Templates, workflows, controls"
+        benefits: "Reduced journal errors & strong governance"
+      - name: Consolidations
+        outputs: "Rules, ownership, eliminations"
+        benefits: "Faster group close & transparency"
