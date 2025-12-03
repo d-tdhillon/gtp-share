@@ -1,0 +1,93 @@
+programme-delivery-assumptions:
+  category: Programme Delivery
+  icon: checklist
+
+  assumptions:
+
+    - section: Scope & Functional Assumptions
+      icon: scope
+      items:
+        - The programme scope aligns to the approved Finance Target Operating Model and process inventory.
+        - Only processes documented and signed off in the Blueprint are included in scope.
+        - Local statutory or regulatory variations outside the identified countries (US, UK, SG, AU, Bermuda, India) require change control.
+        - Upstream systems will provide data in the agreed format, structure, and quality.
+        - Additional subledgers or integrations beyond baseline scope will be handled through change requests.
+        - The global template solution will be reused consistently with minimal localisation.
+
+    - section: Data & Master Data Assumptions
+      icon: dataset
+      items:
+        - Legacy systems will provide complete and reconcilable historical and open-item data.
+        - Data cleansing, enrichment, and deduplication are owned by the client.
+        - A single source of truth for master data (EDMCS or equivalent) will be finalised before design sign-off.
+        - Source-to-target mappings (CoA, value sets, attributes) will be provided and validated by business SMEs.
+        - Data migration cycles rely on timely extracts and source-system availability.
+
+    - section: Technology & Integration Assumptions
+      icon: integration_instructions
+      items:
+        - Required cloud environments (DEV, TEST, PRE-PROD, PROD) will be provisioned and accessible on schedule.
+        - Oracle Cloud quarterly updates will be managed with defined regression testing windows.
+        - Integration platforms (OIC, SFTP, SharePoint ingestion, APIs) will be available for build and testing.
+        - Upstream system owners will adhere to approved interface templates and maintain stable file structures.
+        - Connectivity, firewalls, identity access, and VPN provisioning will follow the agreed RACI and timeline.
+        - AHCS will be used for all non-Oracle subledger accounting with standardised mapping sets and rules.
+
+    - section: Reporting, Analytics & Consolidation Assumptions
+      icon: bar_chart
+      items:
+        - The reporting catalogue at design sign-off is assumed to be the complete Day-1 reporting scope.
+        - Any new reporting discovered post-design requires change control.
+        - OTBI, BI Publisher, EPM/FCC (if applicable) will be provisioned within the analytics architecture.
+        - Consolidation hierarchies, ownership percentages, and elimination rules will remain stable after design.
+        - Lloyd’s and insurance regulatory reporting will rely on client-provided validated source data.
+
+    - section: Resourcing & Organisation Assumptions
+      icon: groups
+      items:
+        - Client will provide SMEs for GL, AP, AR, FA, Projects, Tax, Actuarial, Reinsurance, and Reporting.
+        - A Design Authority will be empowered to make timely decisions to avoid rework.
+        - Client SMEs will attend workshops, design reviews, testing cycles, and cutover rehearsals.
+        - Programme governance (SteerCo, PMO, RAID process) will be in place from day one.
+        - Attrition across project teams will not exceed 10% across the lifecycle.
+
+    - section: Change Management & Training Assumptions
+      icon: school
+      items:
+        - The client will support the global template approach and minimise customisation.
+        - Training will include trainer-led, Oracle Guided Learning, and walkthrough simulations.
+        - SMEs will support the creation and validation of training materials and SOP documents.
+        - Business readiness tasks (role mapping, comms, cutover prep) will be client-owned.
+
+    - section: Testing Assumptions
+      icon: bug_report
+      items:
+        - End-to-end test scenarios will be provided by business SMEs based on the process catalogue.
+        - Test data will be prepared by business teams and loaded into the test environment.
+        - UAT will be executed by business users with programme support for defect triage.
+        - Performance testing is limited to high-volume processes (AHCS ingestion, journals, IC eliminations).
+
+    - section: Cutover & Deployment Assumptions
+      icon: rocket_launch
+      items:
+        - The cutover plan will be jointly owned by programme and business teams.
+        - All legacy period close activities will be completed ahead of cutover.
+        - Transaction and master data freeze windows will be adhered to.
+        - Client will coordinate all third-party vendors involved in inbound and outbound integrations.
+        - Hypercare will follow go-live with agreed transition KPIs.
+
+    - section: Regulatory & Compliance Assumptions
+      icon: gavel
+      items:
+        - Regulatory requirements (IFRS, US GAAP, MAS, APRA, BMA, PRA) are assumed stable at design time.
+        - New regulations introduced mid-programme may require scope or timeline adjustment.
+        - Security design follows least-privilege and SOX-compliant access principles where relevant.
+        - Audit stakeholders will participate in reviews to prevent late-cycle design changes.
+
+    - section: Programme Governance & Ways of Working Assumptions
+      icon: rule
+      items:
+        - Decisions will be taken within five working days unless escalated through governance.
+        - RAID logs will be reviewed weekly; SteerCo will convene monthly.
+        - Documentation standards and storage locations (Teams/SharePoint) will be agreed upfront.
+        - Workshop sessions will be time-boxed with documented outcomes to protect design integrity.
