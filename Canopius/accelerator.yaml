@@ -1,1 +1,194 @@
+finance-transformation-accelerators:
+  category: Finance Transformation
+  icon: transform
 
+  accelerators:
+
+    # EXISTING ACCELERATORS (unchanged for context)
+    - title: Benchmark Chart of Accounts (CoA)
+      icon: account_tree
+      purpose: >
+        Provides an industry-aligned CoA with predefined structures, value sets,
+        hierarchies, and insurance-specific financial elements.
+      features:
+        - Industry-standard segment definitions (LE, CC, LOB, Product, Account, IC).
+        - Value sets and parent-child hierarchies.
+        - Insurance-specific accounts for premiums, claims, and reinsurance.
+      deliverables:
+        - CoA benchmark workbook.
+        - Value set definitions and hierarchy files.
+        - CoA mapping rules and governance standards.
+      benefits:
+        - 40–60% reduction in design effort.
+        - Consistent global financial structures.
+
+    # ————————————————————————————————
+    # NEW ACCELERATORS START HERE
+    # ————————————————————————————————
+
+    - title: Finance Portal (PMO Enablement)
+      icon: dashboard
+      purpose: >
+        A centralised PMO and Finance Transformation portal enabling governance,
+        document control, RAID management, and delivery visibility.
+      features:
+        - Integrated PMO dashboard for milestones, risks, dependencies.
+        - Automated reporting of progress, decision logs, and design artefacts.
+        - Stakeholder communication hub with approvals workflow.
+      deliverables:
+        - PMO portal workspace.
+        - RAID and decision-log templates.
+        - Programme governance dashboard.
+      benefits:
+        - Strong governance and transparency.
+        - Reduced admin burden on PMO teams.
+
+    - title: Data Hub (Migrations & Reconciliation Framework)
+      icon: hub
+      purpose: >
+        A unified data transformation and reconciliation framework covering
+        migrations, journal transformation, and financial data controls.
+      features:
+        - Data migration templates for trial balance, balances, open items.
+        - Journal transformation engine for harmonising upstream files.
+        - Reconciliation workflows for financial and master data.
+        - Automated dashboards showing data completeness and quality.
+      deliverables:
+        - Migration templates (Mock 1–3, Cutover).
+        - Journal transformation rules library.
+        - Reconciliation packs and control reports.
+      benefits:
+        - Faster migration cycles.
+        - Improved data quality and auditability.
+
+    - title: Journal Hub (Ad-hoc & Recurring Journals)
+      icon: note_add
+      purpose: >
+        A configurable workspace for preparing, validating, and uploading
+        manual and recurring journals.
+      features:
+        - Spreadsheet-based and web-based preparation templates.
+        - Inline validations for CoA segments, balances, IC, and period status.
+        - Workflow routing for review and approval.
+      deliverables:
+        - Journal preparation templates.
+        - Upload mechanisms and validation rules.
+      benefits:
+        - Significant reduction in journal preparation errors.
+        - Consistent templates across global finance teams.
+
+    - title: SmartVideos (AI Text-to-Speech Training Clips)
+      icon: smart_display
+      purpose: >
+        Short-form AI-generated video content that supports training, change
+        management, and onboarding through multilingual 90-second explainers.
+      features:
+        - Text-to-speech content generation.
+        - Language localisation for all client regions.
+        - Embedded process demonstrations and system walk-throughs.
+      deliverables:
+        - 90-second explainer videos for each process.
+        - Multilingual voiceover packs.
+        - Training playlist integrated into the finance portal.
+      benefits:
+        - Rapid onboarding and continuous learning.
+        - Consistent and scalable training assets.
+
+    - title: Business Readiness Framework
+      icon: sentiment_satisfied
+      purpose: >
+        Measures organisational readiness, adoption sentiment, and floor-level
+        concerns throughout the programme lifecycle.
+      features:
+        - Monthly readiness pulse checks.
+        - Heatmaps for concerns, risks, and capability gaps.
+        - Change sentiment tracking across user groups.
+      deliverables:
+        - Readiness assessment toolkit.
+        - Stakeholder sentiment reports.
+        - Mitigation playbooks for each readiness gap.
+      benefits:
+        - Higher adoption at go-live.
+        - Early identification of resistance or training gaps.
+
+    - title: Benchmarks (CoA, Close, DR)
+      icon: analytics
+      purpose: >
+        Benchmark library covering Chart of Accounts standards, month-end close
+        timings, and disaster recovery expectations.
+      features:
+        - Industry CoA benchmarks for insurers and financial services.
+        - Close timetable benchmarking (D+1, D+3, accelerated close models).
+        - DR and failover patterns for Oracle SaaS and connected ecosystem.
+      deliverables:
+        - CoA comparison report.
+        - Close timetable benchmark pack.
+        - Disaster recovery reference architecture.
+      benefits:
+        - Identifies optimisation areas with quantifiable targets.
+        - Supports business case and KPI definition.
+
+    - title: Native AI (Oracle AI Studio)
+      icon: memory
+      purpose: >
+        Use of Oracle’s native AI platform to enhance automation, anomaly
+        detection, and predictive accounting.
+      features:
+        - Predictive account coding for journals.
+        - Automated anomaly detection across balances and transactions.
+        - AI-enabled narrative analysis for financial patterns.
+      deliverables:
+        - AI model library and configuration pack.
+        - Predictive accounting rules.
+      benefits:
+        - Reduced manual effort in coding, reconciliation, and analysis.
+
+    - title: External AI Capabilities
+      icon: psychology
+      purpose: >
+        Incorporates external AI tooling to enhance journal summarisation,
+        reporting narratives, commentary, and review automation.
+      features:
+        - Journal summarisation with contextual explanations.
+        - Automated generation of report commentary.
+        - Variance narrative generation for Actuals vs Budget/Forecast.
+      deliverables:
+        - AI integration configuration.
+        - Narrative and summarisation templates.
+      benefits:
+        - Speeds up reporting and review cycles.
+        - Delivers consistent narrative quality across finance.
+
+    - title: Testing Accelerator (Playwright Automation Suite)
+      icon: fact_check
+      purpose: >
+        Provides a fully automated regression testing suite leveraging Playwright 
+        for Oracle Cloud functional test coverage.
+      features:
+        - Automated test scripts for GL, AP, AR, FA, Cash, Projects.
+        - UAT regression packs.
+        - Automated screenshot and evidence capture.
+      deliverables:
+        - Playwright test suite.
+        - Test data templates.
+        - Regression run reports.
+      benefits:
+        - Reduced manual testing effort.
+        - Reliable testing during quarterly Oracle releases.
+
+    - title: Reporting Excellence Toolkit (SmartView + Excel Drilldown)
+      icon: table_chart
+      purpose: >
+        Enhances reporting capability with SmartView-based analytics, Excel drilldown,
+        and user-friendly analysis templates.
+      features:
+        - SmartView templates for GL and EPM.
+        - Excel drilldown to transactions and balances.
+        - Live-connected pivot tables and dashboards.
+      deliverables:
+        - SmartView user toolkit.
+        - Excel reporting templates.
+        - Drill-down mapping guides.
+      benefits:
+        - Enables analysts to self-serve and accelerate insights.
+        - Reduces dependency on IT or BI teams.
