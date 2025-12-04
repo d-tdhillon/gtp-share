@@ -1,0 +1,139 @@
+global_design_phase:
+  purpose: >
+    Establish the future-state design for Finance processes, Chart of Accounts,
+    data structures, technical architecture, and Oracle Fusion configuration for
+    an insurance organisation. Ensure requirements are captured, validated, and
+    baselined prior to build.
+
+  approach:
+    - title: "Process-First, Oracle-Aligned Design"
+      icon: "settings" 
+      desc: >
+        The design approach begins by analysing current finance processes across
+        underwriting, claims, reinsurance, billing, and reporting, and defining
+        the future state using Oracle Fusion best practices while minimising
+        customisations and ensuring process consistency.
+
+    - title: "Global Template with Local Governance"
+      icon: "public" 
+      desc: >
+        A standardised global template is defined for COA, ledgers, subledgers,
+        and reporting structures, with localisation controlled through formal
+        governance to maintain scalability, compliance, and consistency across
+        regions and entities.
+
+    - title: "Iterative Design and Playback Cycles"
+      icon: "sync" 
+      desc: >
+        Requirements, designs, and prototypes are iteratively reviewed with
+        stakeholders using collaborative workshops and system playbacks to
+        validate understanding early and ensure alignment before build begins.
+
+    - title: "Requirements Traceability and Baseline Control"
+      icon: "fact_check" 
+      desc: >
+        All functional and technical requirements are captured, mapped to Oracle
+        capabilities, and formally baselined to control scope and support
+        traceability during configuration and testing.
+
+    - title: "Early Technical and Data Alignment"
+      icon: "architecture"
+      desc: >
+        Technical architecture, integration patterns, reporting structures, data
+        definitions, and security models are aligned early to ensure that the
+        end-to-end solution meets finance, operational, and IT requirements.
+
+    - title: "Embedded Test Strategy Definition"
+      icon: "rule"
+      desc: >
+        Testing considerations, including test data needs, scenario planning,
+        entry/exit criteria, and test phases, are embedded in the design process
+        to enable a seamless transition into SIT, UAT, and subsequent test cycles.
+
+  participants:
+    finance_and_business:
+      - Financial Accounting
+      - Claims Finance
+      - Premium & Receivables Accounting
+      - Reinsurance Finance
+      - Technical Accounting
+      - FP&A
+      - Treasury
+      - Regulatory Reporting
+    it_and_transformation:
+      - Oracle Fusion Functional SMEs
+      - Data & Conversion Team
+      - Integration Architects
+      - Reporting & Analytics
+      - Security & Controls
+      - Enterprise Architecture
+      - PMO
+      - Change & Training
+    external:
+      - Implementation Partner
+      - Audit & Compliance Reviewers
+
+  deliverables:
+    - title: "Global Design Blueprint"
+      desc: >
+        A comprehensive future-state design covering processes, data structures,
+        Chart of Accounts definitions, value sets, and Oracle Fusion configuration.
+
+    - title: "Baselined Requirements Pack"
+      desc: >
+        A formally signed-off set of functional and technical requirements,
+        mapped to Oracle capabilities and used for configuration and testing
+        traceability.
+
+    - title: "Architecture & Environment Framework"
+      desc: >
+        High-level architecture diagrams, integration patterns, security model,
+        and a defined base environment setup for configuration and testing.
+
+    - title: "Data Mapping & Test Data Definition"
+      desc: >
+        Documented mapping of legacy data to Oracle Fusion structures and a
+        fully defined set of one-month representative test data for SIT and UAT.
+
+    - title: "High-Level Test Strategy"
+      desc: >
+        A strategic overview of test phases, roles, responsibilities, scenarios,
+        entry/exit criteria, and defect processes to guide subsequent testing
+        activities.
+
+  outcomes:
+    - title: "Future-State Solution Approval"
+      icon: "thumb_up"
+      desc: >
+        The organisation achieves formal approval of a complete, Oracle-aligned
+        future-state design ready for configuration and build.
+
+    - title: "Validated Chart of Accounts"
+      icon: "list_alt"
+      desc: >
+        The COA, value sets, and reporting hierarchies are fully defined, mapped,
+        and validated to meet statutory, management, and operational needs.
+
+    - title: "Requirements Ready for Build"
+      icon: "assignment_turned_in"
+      desc: >
+        Baselined requirements provide clear scope and traceability for
+        configuration, reducing delivery risk and ensuring alignment across teams.
+
+    - title: "Technical Architecture Clarity"
+      icon: "account_tree"
+      desc: >
+        The programme has a clearly defined architecture covering integrations,
+        security, reporting, environments, and data flows to support implementation.
+
+    - title: "Environment Prepared for Configuration"
+      icon: "cloud_done"
+      desc: >
+        The base Oracle environment is set up and aligned to design principles,
+        enabling configuration activities to start immediately.
+
+    - title: "Test Strategy & Data Prepared"
+      icon: "playlist_add_check"
+      desc: >
+        A high-level test strategy and representative month-end test dataset are
+        in place, ensuring readiness for SIT, UAT, and subsequent validation cycles.
