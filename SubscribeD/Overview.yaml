@@ -1,0 +1,295 @@
+table:
+  name: Oracle ERP & Finance Operating Models – Comprehensive Comparison
+  models:
+    - key: own_operate
+      title: Own & Operate
+      subtitle: Client-Owned Oracle
+    - key: guided_run
+      title: Guided Run
+      subtitle: Managed Oracle Platform
+    - key: finance_as_a_service
+      title: Finance-as-a-Service
+      subtitle: Outcomes-Based
+
+  columns:
+    - key: driver_group
+      title: Driver Group
+    - key: driver
+      title: Driver (Title & Description)
+    - key: own_operate
+      title: Own & Operate (Client-Owned Oracle)
+    - key: guided_run
+      title: Guided Run (Managed Oracle Platform)
+    - key: finance_as_a_service
+      title: Finance-as-a-Service (Outcomes-Based)
+
+  rows:
+    - driver_group: Ownership & Access
+      driver:
+        title: System ownership
+        description: Who owns and controls the Oracle environment
+      cells:
+        own_operate: Client owns Oracle instance, configuration, and release control
+        guided_run: Partner operates platform; client retains logical ownership
+        finance_as_a_service: Partner owns and operates full platform
+
+    - driver_group: Ownership & Access
+      driver:
+        title: User access
+        description: Who can access the system
+      cells:
+        own_operate: Full finance, IT, audit, and admin access
+        guided_run: Finance and reporting access; admin restricted
+        finance_as_a_service: No system access; outputs only
+
+    - driver_group: Ownership & Access
+      driver:
+        title: Data ownership
+        description: Legal and operational data control
+      cells:
+        own_operate: Client owns and manages data
+        guided_run: Client owns data; partner manages custody
+        finance_as_a_service: Client owns data; partner acts as processor
+
+    - driver_group: Solution Design & Architecture
+      driver:
+        title: Design approach
+        description: How the solution is structured
+      cells:
+        own_operate: Fully bespoke, insurer-specific design
+        guided_run: Standard insurance blueprint with configurable extensions
+        finance_as_a_service: Standardised finance and reporting model
+
+    - driver_group: Solution Design & Architecture
+      driver:
+        title: Chart of accounts
+        description: Flexibility and structure
+      cells:
+        own_operate: Fully custom CoA and hierarchies
+        guided_run: Insurance-led CoA with configurable segments
+        finance_as_a_service: Fixed CoA aligned to reporting
+
+    - driver_group: Solution Design & Architecture
+      driver:
+        title: Integrations
+        description: Policy, claims, actuarial feeds
+      cells:
+        own_operate: Custom integrations built and owned by client
+        guided_run: Standard integration patterns managed by partner
+        finance_as_a_service: Predefined ingestion feeds only
+
+    - driver_group: Build, Run & Change
+      driver:
+        title: Implementation approach
+        description: How the solution is delivered
+      cells:
+        own_operate: Full custom implementation project
+        guided_run: Accelerated deployment using proven blueprint
+        finance_as_a_service: Service onboarding only
+
+    - driver_group: Build, Run & Change
+      driver:
+        title: Ongoing operations
+        description: Run and support model
+      cells:
+        own_operate: Client-led with SI / AMS support
+        guided_run: Partner-managed run with shared governance
+        finance_as_a_service: Fully managed service
+
+    - driver_group: Build, Run & Change
+      driver:
+        title: Change management
+        description: Enhancements and releases
+      cells:
+        own_operate: Client controls backlog and releases
+        guided_run: Joint backlog; partner delivers
+        finance_as_a_service: Service requests under SLA
+
+    - driver_group: Financial Reporting
+      driver:
+        title: Statutory accounts
+        description: IFRS / local GAAP reporting
+      cells:
+        own_operate: Produced in-system by client
+        guided_run: Produced using partner-maintained models
+        finance_as_a_service: Delivered as completed outputs
+
+    - driver_group: Financial Reporting
+      driver:
+        title: Consolidation & eliminations
+        description: Group reporting
+      cells:
+        own_operate: Fully custom consolidation rules
+        guided_run: Predefined models with configuration
+        finance_as_a_service: Consolidated results delivered
+
+    - driver_group: Financial Reporting
+      driver:
+        title: Close timeline
+        description: Month-end close duration
+      cells:
+        own_operate: 5–10 business days (process-dependent)
+        guided_run: Target 3–5 business days
+        finance_as_a_service: Target 2–4 business days (SLA)
+
+    - driver_group: Management Reporting
+      driver:
+        title: Board & executive MI
+        description: Performance, KPIs
+      cells:
+        own_operate: Fully bespoke dashboards and packs
+        guided_run: Standard insurance MI with configurable views
+        finance_as_a_service: Standard MI aligned to service scope
+
+    - driver_group: Management Reporting
+      driver:
+        title: Profitability analysis
+        description: Product / channel / cohort
+      cells:
+        own_operate: Fully flexible allocation models
+        guided_run: Standard allocations with configurable drivers
+        finance_as_a_service: Limited to predefined views
+
+    - driver_group: Management Reporting
+      driver:
+        title: Forecasting & planning
+        description: Budgeting and outlook
+      cells:
+        own_operate: Client-selected tools and processes
+        guided_run: Optional managed planning modules
+        finance_as_a_service: Delivered as service or add-on
+
+    - driver_group: Regulatory Reporting
+      driver:
+        title: Regulatory frameworks
+        description: IFRS 17, Solvency II, local regimes
+      cells:
+        own_operate: Client configures and maintains logic
+        guided_run: Partner maintains regulatory logic
+        finance_as_a_service: Regulatory outputs delivered
+
+    - driver_group: Regulatory Reporting
+      driver:
+        title: Regulatory timelines
+        description: Submission deadlines
+      cells:
+        own_operate: Dependent on internal readiness
+        guided_run: Managed to agreed calendars
+        finance_as_a_service: Delivered to regulatory SLAs
+
+    - driver_group: Regulatory Reporting
+      driver:
+        title: Audit & regulator access
+        description: Evidence and traceability
+      cells:
+        own_operate: Full system access and audit trails
+        guided_run: Read-only access plus audit support
+        finance_as_a_service: Audit packs and reconciliations provided
+
+    - driver_group: Delivery & Time to Value
+      driver:
+        title: Initial deployment
+        description: Time to first go-live
+      cells:
+        own_operate: 6–12 months
+        guided_run: 8–16 weeks
+        finance_as_a_service: 4–8 weeks
+
+    - driver_group: Delivery & Time to Value
+      driver:
+        title: Time to first close
+        description: First month-end completed
+      cells:
+        own_operate: 1–2 cycles post go-live
+        guided_run: First close supported immediately
+        finance_as_a_service: First close delivered in onboarding
+
+    - driver_group: Delivery & Time to Value
+      driver:
+        title: Change delivery speed
+        description: Enhancement timelines
+      cells:
+        own_operate: Project-based, variable
+        guided_run: Sprint-based, predictable
+        finance_as_a_service: SLA-driven
+
+    - driver_group: Risk, Compliance & Resilience
+      driver:
+        title: Key person risk
+        description: Dependency on individuals
+      cells:
+        own_operate: High
+        guided_run: Medium
+        finance_as_a_service: Low
+
+    - driver_group: Risk, Compliance & Resilience
+      driver:
+        title: Regulatory change response
+        description: Handling new requirements
+      cells:
+        own_operate: Client-led
+        guided_run: Partner-led
+        finance_as_a_service: Absorbed into service
+
+    - driver_group: Risk, Compliance & Resilience
+      driver:
+        title: Operational resilience
+        description: BCP and controls
+      cells:
+        own_operate: Client-defined
+        guided_run: Partner-managed
+        finance_as_a_service: Embedded in service
+
+    - driver_group: Commercial Model
+      driver:
+        title: Cost profile
+        description: Capex vs Opex
+      cells:
+        own_operate: High Capex + run costs
+        guided_run: Lower upfront + predictable Opex
+        finance_as_a_service: Fully Opex-based
+
+    - driver_group: Commercial Model
+      driver:
+        title: Cost predictability
+        description: Forecastability of spend
+      cells:
+        own_operate: Medium
+        guided_run: High
+        finance_as_a_service: Very high
+
+    - driver_group: Commercial Model
+      driver:
+        title: Scalability
+        description: Growth and complexity
+      cells:
+        own_operate: Scales with cost
+        guided_run: Scales efficiently
+        finance_as_a_service: Scales via service tiers
+
+    - driver_group: Strategic Fit
+      driver:
+        title: Target client profile
+        description: Who this suits best
+      cells:
+        own_operate: Complex or mature insurers
+        guided_run: Growing, lean finance teams
+        finance_as_a_service: Early-stage or focused insurers
+
+    - driver_group: Strategic Fit
+      driver:
+        title: Strategic focus
+        description: Management attention
+      cells:
+        own_operate: Finance as a strategic platform
+        guided_run: Finance as a managed capability
+        finance_as_a_service: Finance as a utility
+
+    - driver_group: Strategic Fit
+      driver:
+        title: Typical evolution path
+        description: How clients move over time
+      cells:
+        own_operate: End-state for complex firms
+        guided_run: Entry or steady state
+        finance_as_a_service: Common starting point
