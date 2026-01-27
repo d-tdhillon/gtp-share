@@ -1,0 +1,69 @@
+table:
+  name: RACI Matrix – Oracle ERP and Finance Operating Models
+  legend:
+    R: Responsible
+    A: Accountable
+    C: Consulted
+    I: Informed
+
+  models:
+    - own_operate
+    - guided_run
+    - finance_as_a_service
+
+  rows:
+    - category: Governance and Platform
+      activities:
+        - name: Oracle environment ownership
+          own_operate: "A/R Client"
+          guided_run: "A Client / R Partner"
+          finance_as_a_service: "A/R Partner"
+
+        - name: Security and access management
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "A/R Partner"
+
+        - name: Release and patch management
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "A/R Partner"
+
+    - category: Month-End Close
+      activities:
+        - name: Close calendar definition
+          own_operate: "A/R Client"
+          guided_run: "A Client / R Partner"
+          finance_as_a_service: "A/R Partner"
+
+        - name: Subledger and GL close
+          own_operate: "A/R Client"
+          guided_run: "R Partner / C Client"
+          finance_as_a_service: "A/R Partner"
+
+        - name: Journals and accruals
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "R Partner / A Client"
+
+        - name: Close sign-off
+          own_operate: "A Client"
+          guided_run: "A Client"
+          finance_as_a_service: "A Client"
+
+    - category: Reporting and Audit
+      activities:
+        - name: Statutory reporting
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "R Partner / A Client"
+
+        - name: Management reporting
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "A/R Partner"
+
+        - name: Audit and regulator support
+          own_operate: "A/R Client"
+          guided_run: "R Partner / A Client"
+          finance_as_a_service: "R Partner / A Client"
