@@ -1,0 +1,66 @@
+table:
+  name: Indicative Cost and Value Ranges
+  currency: GBP_millions
+  assumptions:
+    - Mid-market insurer
+    - Single to few legal entities
+    - Standard IFRS and local GAAP
+    - Stable source systems
+    - No major M&A or remediation
+
+  models:
+    - own_operate
+    - guided_run
+    - finance_as_a_service
+
+  rows:
+    - category: Upfront One-Off Costs
+      items:
+        - name: Initial implementation
+          own_operate: "3.0–5.0"
+          guided_run: "0.8–1.5"
+          finance_as_a_service: "0.2–0.5"
+
+        - name: Internal mobilisation (opportunity cost)
+          own_operate: "0.5–1.0"
+          guided_run: "0.2–0.4"
+          finance_as_a_service: "0.05–0.15"
+
+        - name: Time to go-live
+          own_operate: "6–12 months"
+          guided_run: "8–16 weeks"
+          finance_as_a_service: "4–8 weeks"
+
+    - category: Annual Run Costs
+      items:
+        - name: Platform and support
+          own_operate: "0.8–1.5 per annum"
+          guided_run: "0.6–1.0 per annum"
+          finance_as_a_service: Included
+
+        - name: Internal finance and IT overhead
+          own_operate: "0.7–1.2 per annum"
+          guided_run: "0.3–0.6 per annum"
+          finance_as_a_service: "0.1–0.3 per annum"
+
+        - name: Total steady-state run cost
+          own_operate: "1.5–2.7 per annum"
+          guided_run: "0.9–1.6 per annum"
+          finance_as_a_service: "0.8–1.4 per annum"
+
+    - category: Value Realisation
+      items:
+        - name: Break-even point
+          own_operate: "Year 2–3"
+          guided_run: "Year 1–2"
+          finance_as_a_service: "< 12 months"
+
+        - name: Close cycle improvement
+          own_operate: "0–2 days"
+          guided_run: "3–5 days"
+          finance_as_a_service: "5–7 days"
+
+        - name: Annual cost avoidance vs Own & Operate
+          own_operate: "-"
+          guided_run: "0.6–1.2 per annum"
+          finance_as_a_service: "1.0–1.8 per annum"
