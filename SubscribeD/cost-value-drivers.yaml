@@ -1,0 +1,76 @@
+table:
+  name: Cost and Value Drivers by Operating Model
+  currency: GBP
+  models:
+    - own_operate
+    - guided_run
+    - finance_as_a_service
+
+  rows:
+    - category: Upfront Cost Drivers
+      drivers:
+        - name: Implementation effort
+          own_operate: High – bespoke design, build, testing, deployment
+          guided_run: Medium – accelerated blueprint deployment
+          finance_as_a_service: Low – onboarding and data mapping only
+
+        - name: Solution design complexity
+          own_operate: High – fully tailored CoA, processes, integrations
+          guided_run: Medium – standard design with configuration
+          finance_as_a_service: Low – fixed design
+
+        - name: Internal mobilisation
+          own_operate: High – finance, IT, data, change resources
+          guided_run: Medium – finance engagement only
+          finance_as_a_service: Low – minimal client involvement
+
+    - category: Ongoing Cost Drivers
+      drivers:
+        - name: Run and support
+          own_operate: High – internal teams plus AMS
+          guided_run: Medium – managed service fee
+          finance_as_a_service: Low – bundled into service
+
+        - name: Change and enhancements
+          own_operate: Variable and lumpy
+          guided_run: Predictable, sprint-based
+          finance_as_a_service: Controlled via service tiers
+
+        - name: Key person dependency
+          own_operate: High
+          guided_run: Medium
+          finance_as_a_service: Low
+
+    - category: Technology Cost Drivers
+      drivers:
+        - name: Oracle licensing
+          own_operate: Client-owned licences
+          guided_run: Included or optimised
+          finance_as_a_service: Embedded in service
+
+        - name: Infrastructure and DR
+          own_operate: Client-funded
+          guided_run: Partner-managed
+          finance_as_a_service: Embedded in service
+
+    - category: Value Drivers
+      drivers:
+        - name: Speed to first close
+          own_operate: Slow – post-stabilisation
+          guided_run: Fast – early value
+          finance_as_a_service: Immediate
+
+        - name: Close cycle compression
+          own_operate: Dependent on internal discipline
+          guided_run: Standardised and repeatable
+          finance_as_a_service: Highly optimised
+
+        - name: Regulatory confidence
+          own_operate: Variable
+          guided_run: High
+          finance_as_a_service: Very high
+
+        - name: Management focus
+          own_operate: Diverted to running finance
+          guided_run: Balanced
+          finance_as_a_service: Redirected to core business
