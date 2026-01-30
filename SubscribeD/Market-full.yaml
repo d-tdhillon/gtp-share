@@ -1,0 +1,1356 @@
+london_market_landscape:
+  metadata:
+    scope: "London Market insurers and managing agents (Lloyd’s and company market)"
+    last_refreshed: "2026-01-30"
+    target_gwp_cap_usd: 2000
+    scale_bands:
+      large: "> ~3bn GWP/GPW"
+      mid: "~0.5bn – 3bn GWP/GPW"
+      small: "< ~0.5bn GWP/GPW"
+    currency_note: "Premiums shown in reported currency and year (where disclosed). Many Lloyd’s participants disclose mainly at syndicate level."
+    sources:
+      - name: "Lloyd’s – Active Syndicates & Managing Agent list (2024 xlsx)"
+        url: "https://assets.lloyds.com/media/36cd4b44-701f-49e2-ad0e-4e7429c9a969/Copy%20of%202024%20List%20of%20Active%20Syndicates%20%20Managing%20Agent.xlsx"
+      - name: "IUA – Ordinary members list (company market)"
+        url: "https://www.iua.co.uk/IUANew/About_the_IUA/ordinary_members.aspx"
+      - name: "LMA – Full members list (cross-check)"
+        url: "https://lmalloyds.com/lma-membership/full-members-list/"
+      - name: "Lloyd’s – Syndicate reports and accounts (for enrichment step)"
+        url: "https://www.lloyds.com/about-lloyds/investor-relations/syndicate-reports-and-accounts"
+
+  firms:
+    # =========================
+    # Market aggregate
+    # =========================
+    - name: "Lloyd’s of London (Market Aggregate)"
+      operating_model: "Market-wide Lloyd’s"
+      channel: "lloyds"
+      role: "market_aggregate"
+      scale_band: "Large"
+      specialism: "Global insurance and reinsurance market (aggregate)"
+      premium:
+        amount: 55.5
+        currency: "GBP"
+        year: 2024
+        type: "Market GWP"
+      cfo: "Burkhard Keese"
+      erp: null
+      financials_link: "https://www.lloyds.com/about-lloyds/financial-performance"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "out_of_scope_market_aggregate"
+      notes: "Aggregate market figure; used as context only"
+
+    # =========================
+    # Listed / large specialty insurers (from earlier YAML)
+    # =========================
+    - name: "Beazley"
+      operating_model: "Listed specialty insurer (Lloyd’s + company market)"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: "Large"
+      specialism: "Cyber, specialty liability, marine, political risk, property"
+      premium:
+        amount: 6164.1
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: "Barbara Plucnar Jensen"
+      erp: "Workday Financials"
+      financials_link: "https://www.beazley.com/investor-relations"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_over_cap_group_level"
+      notes: "CFO appointed 2024"
+
+    - name: "Hiscox"
+      operating_model: "Listed specialty insurer (Lloyd’s + company market)"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: "Large"
+      specialism: "Specialty P&C, retail, cyber, reinsurance"
+      premium:
+        amount: 4766.9
+        currency: "USD"
+        year: 2024
+        type: "Group ICWP"
+      cfo: "Paul Cooper"
+      erp: "Oracle Financials"
+      financials_link: "https://www.hiscoxgroup.com/investors"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_over_cap_group_level"
+      notes: null
+
+    - name: "Lancashire"
+      operating_model: "Listed specialty insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: "Mid"
+      specialism: "Property cat, marine, energy, aviation"
+      premium:
+        amount: 2149.6
+        currency: "USD"
+        year: 2024
+        type: "Group GPW"
+      cfo: "Natalie Kershaw"
+      erp: null
+      financials_link: "https://www.lancashiregroup.com/investors"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "borderline_or_over_cap_group_level"
+      notes: null
+
+    - name: "Convex"
+      operating_model: "Private specialty insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: "Large"
+      specialism: "Short-tail specialty, catastrophe-exposed risks"
+      premium:
+        amount: 5166
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: null
+      erp: null
+      financials_link: "https://convexin.com"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_over_cap_group_level"
+      notes: "Subject to announced M&A activity"
+
+    - name: "Conduit Re"
+      operating_model: "Reinsurance-led platform"
+      channel: "company_market"
+      role: "reinsurer"
+      scale_band: "Mid"
+      specialism: "Property, casualty, specialty reinsurance"
+      premium:
+        amount: 1273.3
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: "Elaine Whelan"
+      erp: null
+      financials_link: "https://www.conduitreinsurance.com/investors"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_in_scope_group_level"
+      notes: null
+
+    - name: "Brit"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Large"
+      specialism: "Global specialty P&C"
+      premium:
+        amount: 3779.5
+        currency: "USD"
+        year: 2024
+        type: "Group written premium"
+      cfo: "Gavin Wilkinson"
+      erp: "Workday Financials"
+      financials_link: "https://www.britinsurance.com/about-us/investors"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_over_cap_group_level"
+      notes: null
+
+    - name: "Canopius"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Large"
+      specialism: "Specialty P&C and reinsurance"
+      premium:
+        amount: 3159
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: "Workday Financials"
+      financials_link: "https://www.canopius.com"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd_syndicate_vs_group"
+      notes: "Syndicate-level figure; group scope may differ"
+
+    - name: "Chaucer"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Large"
+      specialism: "Specialty insurance and reinsurance"
+      premium:
+        amount: 2384
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd_syndicate_vs_group"
+      notes: "Syndicate-level figure; needs cap validation"
+
+    - name: "MS Amlin"
+      operating_model: "Reinsurance-led insurer"
+      channel: "company_market"
+      role: "insurer_or_reinsurer"
+      scale_band: "Large"
+      specialism: "Reinsurance, marine, property, specialty"
+      premium:
+        amount: 2222.3
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: null
+      erp: "Oracle Financials"
+      financials_link: "https://www.msamlin.com/about-us/financial-information"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "borderline_or_over_cap_group_level"
+      notes: null
+
+    - name: "QBE"
+      operating_model: "Global carrier (Lloyd’s + company market)"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: "Large"
+      specialism: "Commercial and specialty insurance"
+      premium:
+        amount: 2536
+        currency: "GBP"
+        year: 2024
+        type: "Lloyd’s syndicate GPW"
+      cfo: null
+      erp: "Oracle Financials"
+      financials_link: "https://www.qbe.com/investors"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd_syndicate_vs_group"
+      notes: "Syndicate-level figure; group level likely over cap"
+
+    - name: "Tokio Marine Kiln"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Mid"
+      specialism: "Global specialty P&C"
+      premium:
+        amount: 1817
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: null
+      financials_link: "https://www.tokiomarinekiln.com"
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "likely_in_scope_syndicate_level"
+      notes: null
+
+    # =========================
+    # Lloyd’s managing agents (expanded list for “full scan”)
+    # (Premium left as tbd unless already in earlier YAML)
+    # =========================
+    - name: "AEGIS Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Allied World Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Antares Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Apollo Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Small"
+      specialism: "Specialty and delegated authority business"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Arch Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Argenta Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Ariel Re Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Ark Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Mid"
+      specialism: "Specialty insurance"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Ascot Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Mid"
+      specialism: "Commercial specialty insurance"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Aspen Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Atrium Underwriters Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Mid"
+      specialism: "Specialty commercial insurance"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "AXA XL Underwriting Agencies Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Axis Managing Agency Ltd"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Beazley Furlonge Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "Corrected channel typo from earlier draft (lloys -> lloyds)"
+
+    - name: "Blenheim Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Chubb Underwriting Agencies Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Cincinnati Global Underwriting Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Dale Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Enstar Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: "Legacy / run-off oriented platform"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Everest Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Faraday Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Hamilton Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Hampden Agencies Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: "Capacity / agency and underwriting support"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Hartford Underwriting Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "HCC Underwriting Agency Ltd"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Hiscox Syndicates Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Inigo Managing Agent Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "IQUW Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Lancashire Syndicates Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Liberty Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Lime Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Managing Agency Partners Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Markel Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "MS Amlin Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Munich Re Syndicate Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Nephila Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Small"
+      specialism: "ILS-aligned property catastrophe"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Newline Underwriting Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Polo Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Premia Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: "Platform-style managing agent"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Probitas Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: "Small"
+      specialism: "Specialty commercial risks"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "QBE Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "RenaissanceRe Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "RiverStone Managing Agency"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: "Legacy / run-off oriented platform"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "S A Meacock & Company Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "SCOR Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Sirius International Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Starr Managing Agents Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Talbot Underwriting Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Tokio Marine Kiln Syndicates Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "Separate legal entity name from agent list; keep both if you track legal entities"
+
+    - name: "Travelers Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "W R Berkley Syndicate Management Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    - name: "Westfield Specialty Managing Agency Limited"
+      operating_model: "Lloyd’s managing agent"
+      channel: "lloyds"
+      role: "managing_agent"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: null
+
+    # =========================
+    # Company market participants (IUA ordinary members list subset from earlier draft)
+    # (Keeping as a "full scan" universe; enrichment step will add premium/cfo/links)
+    # =========================
+    - name: "Accelerant Insurance Europe Limited"
+      operating_model: "Company market insurer/reinsurer"
+      channel: "company_market"
+      role: "insurer_or_reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "AIG UK Ltd"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Allianz Global Corporate & Specialty SE"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "AmTrust Specialty Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Arch Insurance (UK) Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Aspen Insurance UK Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "AXA XL Insurance Company UK Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Berkshire Hathaway European Insurance DAC"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "CFC Underwriting Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: "Cyber and specialty"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Chubb European Group SE"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "CNA Insurance Company Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Conduit Reinsurance Limited"
+      operating_model: "Company market reinsurer"
+      channel: "company_market"
+      role: "reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member (legal entity; group data above under Conduit Re)"
+
+    - name: "Convex Insurance UK Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member (legal entity; group data above under Convex)"
+
+    - name: "Everest Insurance (Ireland) DAC"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Gard Marine and Energy Europe AS"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: "Marine and energy"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Great Lakes Insurance SE (UK Branch)"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Hamilton Insurance DAC"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "HDI Global SE – UK"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Liberty Mutual Insurance Europe SE"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Markel International Insurance Company Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "MS Amlin Insurance SE"
+      operating_model: "Company market insurer/reinsurer"
+      channel: "company_market"
+      role: "insurer_or_reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member (legal entity; group data above under MS Amlin)"
+
+    - name: "QBE UK Limited"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member (legal entity; group data above under QBE)"
+
+    - name: "SCOR UK Company Limited"
+      operating_model: "Company market reinsurer"
+      channel: "company_market"
+      role: "reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Swiss Re Europe S.A, UK Branch"
+      operating_model: "Company market reinsurer"
+      channel: "company_market"
+      role: "reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "TransRe London Limited"
+      operating_model: "Company market reinsurer"
+      channel: "company_market"
+      role: "reinsurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Westfield Specialty International (Europe) S.A."
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
+
+    - name: "Zurich Insurance Company Ltd (UK)"
+      operating_model: "Company market insurer"
+      channel: "company_market"
+      role: "insurer"
+      scale_band: null
+      specialism: null
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      premium_cap_target_gwp_usd: 2000
+      premium_status: "tbd"
+      notes: "IUA ordinary member"
