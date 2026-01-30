@@ -6,6 +6,7 @@ london_market_landscape:
       mid: "< ~3bn GWP/GPW"
     last_refreshed: "2026-01"
     currency_note: "Figures shown in reported currency and year"
+    sources_note: "Where available, annual report PDFs are captured in annual_report_url; leadership names should be validated against the latest annual report."
 
   firms:
     - name: "Lloyd’s of London (Market Aggregate)"
@@ -17,9 +18,11 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Market GWP"
+      ceo: null
       cfo: "Burkhard Keese"
       erp: null
       financials_link: "https://www.lloyds.com/about-lloyds/financial-performance"
+      annual_report_url: null
       notes: "Market-wide growth vs prior year"
 
     - name: "Beazley"
@@ -31,9 +34,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group GWP"
+      ceo: "Adrian Cox"
       cfo: "Barbara Plucnar Jensen"
       erp: "Workday Financials"
       financials_link: "https://www.beazley.com/investor-relations"
+      annual_report_url: "https://www.annualreports.com/HostedData/AnnualReports/PDF/LSE_BEZ_2024.pdf"
       notes: "CFO appointment in 2024"
 
     - name: "Hiscox"
@@ -45,9 +50,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group ICWP"
+      ceo: null
       cfo: "Paul Cooper"
       erp: "Oracle Financials"
       financials_link: "https://www.hiscoxgroup.com/investors"
+      annual_report_url: null
       notes: null
 
     - name: "Lancashire"
@@ -59,9 +66,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group GPW"
+      ceo: "Alex Maloney"
       cfo: "Natalie Kershaw"
       erp: null
       financials_link: "https://www.lancashiregroup.com/investors"
+      annual_report_url: "https://www.annualreports.com/HostedData/AnnualReports/PDF/LSE_LRE_2024.pdf"
       notes: null
 
     - name: "Convex"
@@ -73,9 +82,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group GWP"
+      ceo: null
       cfo: null
       erp: null
       financials_link: "https://convexin.com/insights"
+      annual_report_url: null
       notes: "Subject to announced M&A activity"
 
     - name: "Inigo"
@@ -83,9 +94,11 @@ london_market_landscape:
       specialism: "Property, casualty, specialty"
       scale_band: "Mid"
       premium: null
+      ceo: null
       cfo: null
       erp: null
       financials_link: null
+      annual_report_url: null
       notes: null
 
     - name: "IQUW"
@@ -93,9 +106,11 @@ london_market_landscape:
       specialism: "Marine, energy, specialty reinsurance"
       scale_band: "Mid"
       premium: null
+      ceo: null
       cfo: null
       erp: null
       financials_link: null
+      annual_report_url: null
       notes: null
 
     - name: "Brit"
@@ -107,9 +122,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group written premium"
+      ceo: null
       cfo: "Gavin Wilkinson"
       erp: "Workday Financials"
       financials_link: "https://www.britinsurance.com/about-us/investors"
+      annual_report_url: null
       notes: null
 
     - name: "Canopius"
@@ -121,9 +138,11 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Syndicate GPW"
+      ceo: null
       cfo: null
       erp: "Workday Financials"
       financials_link: "https://www.canopius.com/about-us"
+      annual_report_url: null
       notes: null
 
     - name: "Chaucer"
@@ -135,9 +154,11 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Syndicate GPW"
+      ceo: null
       cfo: null
       erp: null
       financials_link: null
+      annual_report_url: null
       notes: null
 
     - name: "MS Amlin"
@@ -149,9 +170,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group GWP"
+      ceo: null
       cfo: null
       erp: "Oracle Financials"
       financials_link: "https://www.msamlin.com/about-us/financial-information"
+      annual_report_url: null
       notes: null
 
     - name: "Conduit Re"
@@ -163,9 +186,11 @@ london_market_landscape:
         currency: "USD"
         year: 2024
         type: "Group GWP"
+      ceo: "Trevor Carvey"
       cfo: "Elaine Whelan"
       erp: null
       financials_link: "https://www.conduitreinsurance.com/investors"
+      annual_report_url: "https://www.annualreports.com/HostedData/AnnualReports/PDF/LSE_CRE_2024.pdf"
       notes: null
 
     - name: "QBE"
@@ -177,9 +202,11 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Lloyd’s syndicate GPW"
+      ceo: null
       cfo: null
       erp: "Oracle Financials"
       financials_link: "https://www.qbe.com/investors"
+      annual_report_url: null
       notes: null
 
     - name: "Tokio Marine Kiln"
@@ -191,9 +218,11 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Syndicate GPW"
+      ceo: null
       cfo: null
       erp: null
       financials_link: "https://www.tokiomarinekiln.com/about-us"
+      annual_report_url: null
       notes: null
 
     - name: "AXA XL (London Market)"
@@ -205,7 +234,130 @@ london_market_landscape:
         currency: "GBP"
         year: 2024
         type: "Syndicate GPW"
+      ceo: null
       cfo: null
       erp: null
       financials_link: "https://axaxl.com/about-us/financial-information"
+      annual_report_url: null
+      notes: null
+
+    # Added from the legacy market-overview.yaml peer list (kept in this file to avoid duplicated sources).
+    - name: "Fidelis Insurance"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Talbot Underwriting"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Atrium Underwriting"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Arch Insurance (Lloyd's)"
+      operating_model: null
+      specialism: null
+      scale_band: "Large"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Aspen Insurance"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "AXIS Capital"
+      operating_model: "Global specialty insurer and reinsurer"
+      specialism: null
+      scale_band: "Large"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: "https://www.annualreports.com/HostedData/AnnualReports/PDF/NYSE_AXS_2024.pdf"
+      notes: null
+
+    - name: "RenaissanceRe"
+      operating_model: "Reinsurance and insurance group"
+      specialism: null
+      scale_band: "Large"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: "https://www.annualreports.com/HostedData/AnnualReports/PDF/NYSE_RNR_2024.pdf"
+      notes: null
+
+    - name: "SiriusPoint"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Hamilton Insurance Group"
+      operating_model: null
+      specialism: null
+      scale_band: "Mid"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
+      notes: null
+
+    - name: "Markel (International / Specialty)"
+      operating_model: null
+      specialism: null
+      scale_band: "Large"
+      premium: null
+      ceo: null
+      cfo: null
+      erp: null
+      financials_link: null
+      annual_report_url: null
       notes: null
