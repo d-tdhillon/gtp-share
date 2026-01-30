@@ -1,0 +1,211 @@
+london_market_landscape:
+  metadata:
+    scope: "London Market insurers and managing agents (Lloyd’s and company market)"
+    scale_bands:
+      large: "> ~3bn GWP/GPW"
+      mid: "< ~3bn GWP/GPW"
+    last_refreshed: "2026-01"
+    currency_note: "Figures shown in reported currency and year"
+
+  firms:
+    - name: "Lloyd’s of London (Market Aggregate)"
+      operating_model: "Market-wide Lloyd’s"
+      specialism: "Insurance and reinsurance market (aggregate)"
+      scale_band: "Large"
+      premium:
+        amount: 55.5
+        currency: "GBP"
+        year: 2024
+        type: "Market GWP"
+      cfo: "Burkhard Keese"
+      erp: null
+      financials_link: "https://www.lloyds.com/about-lloyds/financial-performance"
+      notes: "Market-wide growth vs prior year"
+
+    - name: "Beazley"
+      operating_model: "Listed specialty insurer (Lloyd’s + company market)"
+      specialism: "Cyber, specialty liability, marine, political risk, property"
+      scale_band: "Large"
+      premium:
+        amount: 6164.1
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: "Barbara Plucnar Jensen"
+      erp: "Workday Financials"
+      financials_link: "https://www.beazley.com/investor-relations"
+      notes: "CFO appointment in 2024"
+
+    - name: "Hiscox"
+      operating_model: "Listed specialty insurer (Lloyd’s + company market)"
+      specialism: "Specialty P&C, retail, cyber, reinsurance"
+      scale_band: "Large"
+      premium:
+        amount: 4766.9
+        currency: "USD"
+        year: 2024
+        type: "Group ICWP"
+      cfo: "Paul Cooper"
+      erp: "Oracle Financials"
+      financials_link: "https://www.hiscoxgroup.com/investors"
+      notes: null
+
+    - name: "Lancashire"
+      operating_model: "Listed specialty insurer (Lloyd’s-focused)"
+      specialism: "Property cat, marine, energy, aviation"
+      scale_band: "Mid"
+      premium:
+        amount: 2149.6
+        currency: "USD"
+        year: 2024
+        type: "Group GPW"
+      cfo: "Natalie Kershaw"
+      erp: null
+      financials_link: "https://www.lancashiregroup.com/investors"
+      notes: null
+
+    - name: "Convex"
+      operating_model: "Private / founder-led specialty insurer"
+      specialism: "Short-tail specialty, catastrophe-exposed lines"
+      scale_band: "Large"
+      premium:
+        amount: 5166
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: null
+      erp: null
+      financials_link: "https://convexin.com/insights"
+      notes: "Subject to announced M&A activity"
+
+    - name: "Inigo"
+      operating_model: "Private specialty insurer"
+      specialism: "Property, casualty, specialty"
+      scale_band: "Mid"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      notes: null
+
+    - name: "IQUW"
+      operating_model: "Private Lloyd’s specialty insurer"
+      specialism: "Marine, energy, specialty reinsurance"
+      scale_band: "Mid"
+      premium: null
+      cfo: null
+      erp: null
+      financials_link: null
+      notes: null
+
+    - name: "Brit"
+      operating_model: "Lloyd’s-only managing agent"
+      specialism: "Global specialty P&C"
+      scale_band: "Large"
+      premium:
+        amount: 3779.5
+        currency: "USD"
+        year: 2024
+        type: "Group written premium"
+      cfo: "Gavin Wilkinson"
+      erp: "Workday Financials"
+      financials_link: "https://www.britinsurance.com/about-us/investors"
+      notes: null
+
+    - name: "Canopius"
+      operating_model: "Lloyd’s-only managing agent"
+      specialism: "Specialty P&C and reinsurance"
+      scale_band: "Large"
+      premium:
+        amount: 3159
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: "Workday Financials"
+      financials_link: "https://www.canopius.com/about-us"
+      notes: null
+
+    - name: "Chaucer"
+      operating_model: "Lloyd’s-only managing agent"
+      specialism: "Specialty insurance and reinsurance"
+      scale_band: "Large"
+      premium:
+        amount: 2384
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: null
+      financials_link: null
+      notes: null
+
+    - name: "MS Amlin"
+      operating_model: "Reinsurance-led platform"
+      specialism: "Reinsurance, marine, property, specialty"
+      scale_band: "Large"
+      premium:
+        amount: 2222.3
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: null
+      erp: "Oracle Financials"
+      financials_link: "https://www.msamlin.com/about-us/financial-information"
+      notes: null
+
+    - name: "Conduit Re"
+      operating_model: "Reinsurance-led platform"
+      specialism: "Property, casualty, specialty reinsurance"
+      scale_band: "Mid"
+      premium:
+        amount: 1273.3
+        currency: "USD"
+        year: 2024
+        type: "Group GWP"
+      cfo: "Elaine Whelan"
+      erp: null
+      financials_link: "https://www.conduitreinsurance.com/investors"
+      notes: null
+
+    - name: "QBE"
+      operating_model: "Global carrier (Lloyd’s + company market)"
+      specialism: "Commercial and specialty insurance"
+      scale_band: "Large"
+      premium:
+        amount: 2536
+        currency: "GBP"
+        year: 2024
+        type: "Lloyd’s syndicate GPW"
+      cfo: null
+      erp: "Oracle Financials"
+      financials_link: "https://www.qbe.com/investors"
+      notes: null
+
+    - name: "Tokio Marine Kiln"
+      operating_model: "Hybrid Lloyd’s managing agent"
+      specialism: "Global specialty P&C"
+      scale_band: "Mid"
+      premium:
+        amount: 1817
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: null
+      financials_link: "https://www.tokiomarinekiln.com/about-us"
+      notes: null
+
+    - name: "AXA XL (London Market)"
+      operating_model: "Global carrier (company market + Lloyd’s)"
+      specialism: "Large commercial and specialty insurance"
+      scale_band: "Large"
+      premium:
+        amount: 1377
+        currency: "GBP"
+        year: 2024
+        type: "Syndicate GPW"
+      cfo: null
+      erp: null
+      financials_link: "https://axaxl.com/about-us/financial-information"
+      notes: null
