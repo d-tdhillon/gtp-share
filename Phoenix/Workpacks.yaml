@@ -1,0 +1,500 @@
+delivery_work_packages:
+
+  governance_and_change:
+    icon: governance
+    description: >
+      Establish clear governance, decision-making, and change management structures
+      to provide delivery certainty and alignment across Finance, IT, Oracle, and the SI.
+    items:
+      - id: G1
+        title: Programme mobilisation & governance
+        description: >
+          Establish programme structure, sponsorship, decision forums, escalation paths,
+          and delivery cadence.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: G2
+        title: Delivery planning & phasing
+        description: >
+          Define phased delivery approach aligned to stabilise, enable, and scale objectives,
+          including milestones and dependencies.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: G3
+        title: Design authority & change control
+        description: >
+          Establish formal design authority, standards, and change control to prevent scope drift.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: C
+
+      - id: G4
+        title: Stakeholder & provider alignment
+        description: >
+          Align internal teams, outsourced providers, and offshore partners to delivery objectives
+          and ways of working.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: C
+
+      - id: G5
+        title: Change management strategy
+        description: >
+          Define structured change management approach covering impact assessment, engagement,
+          and readiness.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: C
+
+      - id: G6
+        title: Communications & readiness
+        description: >
+          Deliver targeted communications and readiness assessments across impacted stakeholders.
+        oracle_component: N/A
+        integration_type: N/A
+        firm: A
+        si: C
+
+  ledger_and_reporting:
+    icon: account_balance
+    description: >
+      Establish a robust ledger, chart of accounts, and reporting foundation aligned
+      to target-state finance design principles.
+    items:
+      - id: L1
+        title: Primary ledger configuration
+        description: >
+          Configure the primary ledger including currencies, balancing, and accounting options.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L2
+        title: Parallel target-state ledger
+        description: >
+          Configure a secondary or parallel ledger using target-state design principles
+          to support controlled transformation.
+        oracle_component: GL Secondary
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L3
+        title: Legal entities & balancing segments
+        description: >
+          Configure legal entities, balancing segments, and ownership structures.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L4
+        title: Chart of Accounts deployment
+        description: >
+          Deploy standardised group Chart of Accounts with appropriate local extensions.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L5
+        title: Accounting calendar & periods
+        description: >
+          Configure accounting calendars, period controls, and close management rules.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L6
+        title: Journal sources & controls
+        description: >
+          Define journal sources, categories, approval rules, and posting controls.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L7
+        title: Trial balance optimisation
+        description: >
+          Optimise trial balance structure and performance for reporting and close efficiency.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: L8
+        title: Financial reporting structures
+        description: >
+          Configure OTBI and Financial Reporting Studio outputs for management and statutory reporting.
+        oracle_component: BI / OTBI
+        integration_type: Outbound
+        firm: A
+        si: R
+
+  subledgers:
+    icon: receipt_long
+    description: >
+      Enable subledger processing to reduce manual journals, improve drill-down,
+      and strengthen accounting controls.
+    items:
+      - id: S1
+        title: Supplier master & controls
+        description: >
+          Configure supplier master data, approval workflows, and compliance controls.
+        oracle_component: AP / Supplier Hub
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S2
+        title: AP invoice processing
+        description: >
+          Enable invoice capture, validation, matching, and posting to the ledger.
+        oracle_component: AP
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S3
+        title: SLA accounting rules
+        description: >
+          Define subledger accounting rules for consistent and auditable postings.
+        oracle_component: SLA
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: S4
+        title: Cost allocations
+        description: >
+          Configure cost allocation and distribution rules aligned to business drivers.
+        oracle_component: Cost Accounting
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: S5
+        title: Asset master & categories
+        description: >
+          Configure asset categories, books, and capitalisation rules.
+        oracle_component: FA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S6
+        title: Asset capitalisation & depreciation
+        description: >
+          Enable asset lifecycle accounting including depreciation and disposals.
+        oracle_component: FA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S7
+        title: Customer & intercompany setup
+        description: >
+          Configure customer and intercompany trading relationships.
+        oracle_component: AR
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S8
+        title: Intercompany invoicing
+        description: >
+          Enable automated intercompany invoicing and settlement.
+        oracle_component: AR / Intercompany
+        integration_type: Bi-Directional
+        firm: A
+        si: R
+
+      - id: S9
+        title: Intercompany accounting
+        description: >
+          Configure accounting and elimination logic for intercompany activity.
+        oracle_component: SLA / GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: S10
+        title: Bank accounts & structures
+        description: >
+          Configure bank accounts, cash structures, and signatory controls.
+        oracle_component: Cash Management
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S11
+        title: Bank statement processing
+        description: >
+          Enable automated bank statement loading and matching.
+        oracle_component: Cash Management
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: S12
+        title: Cash accounting & reconciliation
+        description: >
+          Configure cash accounting entries and reconciliation processes.
+        oracle_component: Cash Management
+        integration_type: Outbound
+        firm: A
+        si: R
+
+  integrations_oic:
+    icon: hub
+    description: >
+      Implement governed, scalable integrations using Oracle Integration Cloud
+      to replace spreadsheet-based data exchange.
+    items:
+      - id: I1
+        title: OIC environments & security
+        description: >
+          Set up OIC environments, connectivity, security, and access controls.
+        oracle_component: OIC
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: I2
+        title: Investment feeds
+        description: >
+          Integrate investment transaction data into Oracle Fusion.
+        oracle_component: OIC to GL/SLA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: I3
+        title: Underwriting feeds
+        description: >
+          Integrate underwriting and policy results into the finance platform.
+        oracle_component: OIC to GL/SLA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: I4
+        title: Actuarial journals
+        description: >
+          Automate actuarial postings with controlled cut-offs and validation.
+        oracle_component: OIC to GL
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: I5
+        title: Treasury system integration
+        description: >
+          Enable bi-directional integration between treasury systems and cash management.
+        oracle_component: OIC to Cash
+        integration_type: Bi-Directional
+        firm: A
+        si: R
+
+      - id: I6
+        title: AP provider integration
+        description: >
+          Integrate outsourced AP provider data into Oracle AP.
+        oracle_component: OIC to AP
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: I7
+        title: Fixed asset feeds
+        description: >
+          Automate asset data feeds from source systems.
+        oracle_component: OIC to FA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: I8
+        title: Intercompany transaction feeds
+        description: >
+          Enable automated intercompany transaction exchange.
+        oracle_component: OIC to AR/AP
+        integration_type: Bi-Directional
+        firm: A
+        si: R
+
+      - id: I9
+        title: Integration error handling
+        description: >
+          Implement error handling, reprocessing, and monitoring frameworks.
+        oracle_component: OIC
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: I10
+        title: Reconciliation & control outputs
+        description: >
+          Produce reconciliation and control reports from integration processes.
+        oracle_component: OIC to BI
+        integration_type: Outbound
+        firm: A
+        si: R
+
+      - id: I11
+        title: Integration performance & volumes
+        description: >
+          Monitor integration throughput, latency, and error rates.
+        oracle_component: OIC
+        integration_type: N/A
+        firm: A
+        si: R
+
+  close_and_controls:
+    icon: checklist
+    description: >
+      Redesign and strengthen period close, controls, and assurance processes.
+    items:
+      - id: C1
+        title: Close calendar & sequencing
+        description: >
+          Define close calendar, dependencies, and sequencing across teams.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: C2
+        title: Actuarial close coordination
+        description: >
+          Align actuarial processes and cut-offs with finance close.
+        oracle_component: GL / SLA
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: C3
+        title: FX revaluation & translation
+        description: >
+          Configure FX revaluation and translation rules.
+        oracle_component: GL
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: C4
+        title: Reconciliations
+        description: >
+          Implement automated reconciliation and exception management.
+        oracle_component: ARCS
+        integration_type: Bi-Directional
+        firm: A
+        si: R
+
+      - id: C5
+        title: Control evidence & monitoring
+        description: >
+          Configure control execution and evidence capture.
+        oracle_component: ARCS / GL
+        integration_type: Outbound
+        firm: A
+        si: R
+
+      - id: C6
+        title: Audit reporting
+        description: >
+          Provide audit and regulatory reporting outputs.
+        oracle_component: BI / OTBI
+        integration_type: Outbound
+        firm: A
+        si: R
+
+  change_cutover_and_bau:
+    icon: swap_horiz
+    description: >
+      Execute controlled cutover, transition to BAU operations, and stabilise
+      the platform through structured hypercare.
+    items:
+      - id: CC1
+        title: Cutover strategy & planning
+        description: >
+          Define cutover approach, sequencing, and go/no-go criteria.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC2
+        title: Data migration & opening balances
+        description: >
+          Migrate data and establish accurate opening balances.
+        oracle_component: GL and Subledgers
+        integration_type: Inbound
+        firm: A
+        si: R
+
+      - id: CC3
+        title: Final configuration freeze & readiness
+        description: >
+          Freeze configuration and confirm operational readiness.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC4
+        title: Go-live execution & command centre
+        description: >
+          Execute go-live with central command centre and issue management.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC5
+        title: Hypercare support model
+        description: >
+          Provide enhanced post-go-live support and issue resolution.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC6
+        title: BAU operating model transition
+        description: >
+          Transition ownership to BAU teams and support structures.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC7
+        title: Provider & offshore handover
+        description: >
+          Transition processes and knowledge to providers and offshore teams.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
+
+      - id: CC8
+        title: Post go-live stabilisation & optimisation
+        description: >
+          Stabilise operations and implement early optimisation opportunities.
+        oracle_component: All
+        integration_type: N/A
+        firm: A
+        si: R
