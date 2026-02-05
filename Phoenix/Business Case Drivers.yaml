@@ -1,0 +1,147 @@
+business_case_drivers:
+  - id: operating_model_resilience
+    heading: Operating Model Resilience
+    icon: settings
+    description: >
+      Improve the resilience and predictability of the finance operating model by
+      reducing reliance on manual effort and key individuals.
+    metrics:
+      - Percentage of finance effort spent on manual reconciliation and journals
+      - Number of manual journals per close
+      - Close duration (days) and variability
+      - Number of critical key-person dependencies
+    data_sources:
+      - Finance time tracking or structured effort estimation
+      - Oracle Fusion journal volume reports
+      - Close calendars and operational run-books
+      - Finance management and team interviews
+    points:
+      - Manual processes are required to sustain BAU across multiple systems and data sources.
+      - Operational knowledge is concentrated in a small number of experienced individuals.
+      - Process predictability depends heavily on informal workarounds and sequencing.
+
+  - id: cost_of_finance
+    heading: Cost of Finance
+    icon: savings
+    description: >
+      Enable business growth without a linear increase in finance cost through
+      automation, standardisation, and improved scalability.
+    metrics:
+      - Total finance run cost
+      - Finance cost as a percentage of revenue, AUM, or GWP
+      - Finance FTE per legal entity
+      - Incremental finance cost per acquisition
+    data_sources:
+      - Finance payroll and vendor spend data
+      - Organisation charts and role definitions
+      - Prior acquisition integration cost reviews
+      - Management accounts and budget data
+    points:
+      - Finance costs currently scale primarily through additional effort rather than system capability.
+      - Incremental improvements do not materially change the long-term cost trajectory.
+      - Target-state design enables cost avoidance as the organisation grows.
+
+  - id: risk_and_controls
+    heading: Risk & Controls
+    icon: security
+    description: >
+      Strengthen auditability and regulatory confidence by embedding preventative,
+      system-enabled controls within the finance platform.
+    metrics:
+      - Number of manual versus system-based controls
+      - Internal and external audit hours
+      - Number of audit findings or management actions
+      - Time spent preparing audit and control evidence
+    data_sources:
+      - Internal and external audit reports
+      - ICFR / controls documentation and matrices
+      - Audit effort tracking
+      - Control owner interviews
+    points:
+      - Control objectives are achieved through a combination of system controls and manual compensating activities.
+      - Audit support requires recurring effort to evidence controls.
+      - Cleaner platform design reduces reliance on manual controls over time.
+
+  - id: people_and_capability
+    heading: People & Capability
+    icon: groups
+    description: >
+      Improve role sustainability, motivation, and retention by enabling finance
+      teams to focus on higher-value activities.
+    metrics:
+      - Attrition rates within Finance Operations
+      - Time to onboard new hires
+      - Percentage of time spent on manual versus analytical work
+      - Training and development hours per FTE
+    data_sources:
+      - HR attrition and recruitment data
+      - Exit interviews and engagement surveys
+      - Role profiles and skills matrices
+      - Manager estimates and team assessments
+    points:
+      - Skilled finance professionals spend significant time on manual processing and reconciliation.
+      - Limited capacity exists for analytics, insight, and development activities.
+      - Simplification supports clearer career paths and capability development.
+
+  - id: growth_and_acquisitions
+    heading: Growth & Acquisitions
+    icon: account_tree
+    description: >
+      Support acquisitive growth through a repeatable, lower-risk finance
+      integration and onboarding model.
+    metrics:
+      - Time to first close post-acquisition
+      - Number of bespoke integrations per acquisition
+      - Incremental finance FTE added per acquisition
+      - Stabilisation period length
+    data_sources:
+      - Post-acquisition reviews and retrospectives
+      - Programme and integration cost data
+      - Finance Operations estimates
+      - Close performance metrics
+    points:
+      - Each acquisition currently introduces bespoke finance processes and integrations.
+      - Manual effort increases during integration and early reporting periods.
+      - A standardised model reduces time, cost, and integration risk.
+
+  - id: platform_value
+    heading: Platform Value
+    icon: auto_awesome
+    description: >
+      Maximise return on existing Oracle investment by increasing adoption of
+      standard functionality, automation, and analytics.
+    metrics:
+      - Percentage of postings made via journals
+      - Number of spreadsheet-based interfaces
+      - Support effort associated with custom logic
+      - Adoption rate of standard Oracle modules and features
+    data_sources:
+      - Oracle Fusion usage and activity reports
+      - SI solution and architecture assessments
+      - Finance Operations support logs
+      - Platform documentation and design artefacts
+    points:
+      - Oracle Fusion is primarily used as a posting and reporting engine today.
+      - Workarounds and custom logic increase maintenance and support effort.
+      - A clean core platform enables future automation and AI adoption.
+
+  - id: evidence_based_change
+    heading: Evidence-Based Change
+    icon: science
+    description: >
+      Reduce transformation risk by proving benefits incrementally before wider
+      rollout across the organisation.
+    metrics:
+      - Manual effort reduction in pathfinder or new entity
+      - Reduction in journal volumes
+      - Close cycle improvement
+      - Number of target-state capabilities proven
+    data_sources:
+      - Pathfinder or new entity performance metrics
+      - Comparative close cycle data
+      - Programme governance reporting
+      - Benefits tracking logs
+    points:
+      - A parallel target-state ledger enables controlled experimentation.
+      - Benefits can be demonstrated in practice rather than assumed.
+      - Lessons learned inform broader remediation and future investment decisions.
