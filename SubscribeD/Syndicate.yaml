@@ -1,0 +1,272 @@
+lloyds_market_syndicate_accounting_files:
+  summary:
+    - code: ASB
+      name: Accounting Settlement & Balances
+      purpose: Core syndicate accounting balances and settlement movements; primary source for GL posting and member reporting.
+      typical_format: Flat file (often fixed-width) or delimited extract; some markets also provide structured variants.
+      typical_frequency: Monthly and/or quarterly (market/MA dependent)
+      primary_consumers:
+        - Managing Agent Finance / Syndicate Accounting
+        - GL / Data Warehouse
+      key_outputs:
+        - Premiums, claims, expenses movements
+        - Period result by syndicate / year of account / currency
+        - Settlement driven postings
+
+    - code: SCM
+      name: Syndicate Cash Movements
+      purpose: Cash movements related to central settlement, cash calls, distributions, and related cash events.
+      typical_format: Flat file or CSV-style delimited extract
+      typical_frequency: Monthly (often aligned to settlement cycles)
+      primary_consumers:
+        - Treasury
+        - Cash Management / Bank Reconciliation
+        - GL / Subledger interfaces
+      key_outputs:
+        - Cash call / distribution events
+        - Bank account and settlement references
+
+    - code: QMA
+      name: Quarterly Monitoring Return
+      purpose: Aggregated quarterly performance and regulatory monitoring return used for oversight and control reconciliations.
+      typical_format: Excel template (XLSX) for submission; downstream structured extracts for consumption
+      typical_frequency: Quarterly
+      primary_consumers:
+        - Managing Agent Finance
+        - Performance / MI
+        - Audit / Controls
+      key_outputs:
+        - P&L and Balance Sheet aggregates
+        - Actual vs forecast comparisons
+
+    - code: USM
+      name: Underwriting & Statistical Market Returns
+      purpose: Underwriting/statistical metrics supporting performance analytics and underwriting-to-accounting reconciliation.
+      typical_format: Flat file or XML-style structured extract
+      typical_frequency: Monthly and/or quarterly
+      primary_consumers:
+        - Underwriting MI / Analytics
+        - Actuarial
+        - Finance (reconciliation)
+      key_outputs:
+        - GWP/NWP and exposure metrics
+        - Risk code / line of business views
+
+  data_elements:
+    common_dimensions:
+      - name: syndicate_code
+        type: string
+        description: Lloyd’s syndicate identifier (e.g., 2488).
+        example: "2488"
+      - name: year_of_account
+        type: integer
+        description: Year of account (YoA) for underwriting/accounting view.
+        example: 2023
+      - name: reporting_period
+        type: string
+        description: Accounting period, typically YYYY-MM or period name aligned to close.
+        example: "2023-12"
+      - name: quarter
+        type: string
+        description: Quarter identifier used by QMA.
+        example: "2023-Q4"
+      - name: currency_code
+        type: string
+        description: ISO currency code for the measure.
+        example: "GBP"
+      - name: source_reference
+        type: string
+        description: Reference provided by the market extract for traceability.
+        example: "CS20231215"
+
+    ASB:
+      description: Transaction-like accounting movements and balances used to post to GL and produce member reporting.
+      elements:
+        - name: syndicate_code
+          type: string
+          required: true
+          description: Syndicate identifier.
+        - name: year_of_account
+          type: integer
+          required: true
+          description: Year of account.
+        - name: reporting_period
+          type: string
+          required: true
+          description: Period the accounting movement relates to.
+        - name: currency_code
+          type: string
+          required: true
+          description: Currency of the movement.
+        - name: account_category
+          type: string
+          required: true
+         description: High-level classification of entry (premium/claim/expense/reserve/etc.).
+          allowed_values:
+            - PREMIUM
+            - CLAIM
+            - EXPENSE
+            - RESERVE
+            - OTHER
+          example: "PREMIUM"
+        - name: account_code
+          type: string
+          required: true
+          description: Market/account mapping code used to derive GL natural account.
+          example: "400100"
+        - name: debit_amount
+          type: number
+          required: false
+          description: Debit value (if debit/credit provided separately).
+          example: 750000.00
+        - name: credit_amount
+          type: number
+          required: false
+          description: Credit value (if debit/credit provided separately).
+          example: 1250000.00
+        - name: net_amount
+          type: number
+          required: true
+          description: Signed net movement (credit positive / debit negative or per local convention).
+          example: 1250000.00
+        - name: settlement_type
+          type: string
+          required: false
+          description: Settlement route indicator.
+          allowed_values:
+            - CENTRAL
+            - NON_CENTRAL
+          example: "CENTRAL"
+        - name: counterparty
+          type: string
+          required: false
+          description: Counterparty or market participant reference if present.
+          example: "CENTRAL_SETTLEMENT"
+
+    SCM:
+      description: Cash movement events associated with central settlement, cash calls, and distributions.
+      elements:
+        - name: syndicate_code
+          type: string
+          required: true
+          description: Syndicate identifier.
+        - name: movement_date
+          type: date
+          required: true
+          description: Date of the cash movement/value date.
+          example: "2023-12-15"
+        - name: currency_code
+          type: string
+          required: true
+          description: Currency of the cash movement.
+        - name: movement_type
+          type: string
+          required: true
+          description: Type of cash movement event.
+          allowed_values:
+            - CASH_CALL
+            - DISTRIBUTION
+            - FEE
+            - ADJUSTMENT
+            - OTHER
+          example: "CASH_CALL"
+        - name: amount
+          type: number
+          required: true
+          description: Signed cash amount (positive inflow to MA, negative outflow, per convention).
+          example: 500000.00
+        - name: bank_account_code
+          type: string
+          required: false
+          description: Bank/account identifier used for settlement.
+          example: "LLOYDS_GBP_01"
+        - name: settlement_reference
+          type: string
+          required: false
+          description: Central settlement run/reference ID.
+          example: "CS20231215"
+        - name: central_settlement_flag
+          type: boolean
+          required: false
+          description: Indicates if movement is via central settlement.
+          example: true
+
+    QMA:
+      description: Quarterly aggregated return; used for oversight, controls and reconciliation to accounting outputs.
+      elements:
+        - name: syndicate_code
+          type: string
+          required: true
+          description: Syndicate identifier.
+        - name: quarter
+          type: string
+          required: true
+          description: Quarter identifier.
+        - name: currency_code
+          type: string
+          required: true
+          description: Currency of the reported metric.
+        - name: statement_type
+          type: string
+          required: true
+          description: Whether record is P&L or Balance Sheet.
+          allowed_values:
+            - PNL
+            - BALANCE_SHEET
+          example: "PNL"
+        - name: metric
+          type: string
+          required: true
+          description: Metric/line item name used in the return.
+          example: "GWP"
+        - name: actual_amount
+          type: number
+          required: true
+          description: Actual value for the quarter.
+          example: 1250000.00
+        - name: forecast_amount
+          type: number
+          required: false
+          description: Forecast value for the quarter (if provided).
+          example: 1200000.00
+
+    USM:
+      description: Underwriting/statistical records used for analytics and underwriting-to-accounting reconciliation.
+      elements:
+        - name: syndicate_code
+          type: string
+          required: true
+          description: Syndicate identifier.
+        - name: year_of_account
+          type: integer
+          required: true
+          description: Year of account.
+        - name: risk_code
+          type: string
+          required: true
+          description: Risk/line of business or class code used in underwriting reporting.
+          example: "MARINE01"
+        - name: currency_code
+          type: string
+          required: true
+          description: Currency of the underwriting measures.
+        - name: gross_written_premium
+          type: number
+          required: false
+          description: Gross written premium.
+          example: 2000000.00
+        - name: net_written_premium
+          type: number
+          required: false
+          description: Net written premium.
+          example: 1500000.00
+        - name: exposure_value
+          type: number
+          required: false
+          description: Exposure metric value (definition depends on class).
+          example: 50000000.00
+        - name: line_size_percent
+          type: number
+          required: false
+          description: Participation/line size percentage.
+          example: 75.0
