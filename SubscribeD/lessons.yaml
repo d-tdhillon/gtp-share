@@ -1,0 +1,148 @@
+lessons_learned:
+  - category: strategy_and_scope
+    icon: account_tree
+    description: Defines how the finance transformation was positioned, scoped, and aligned to insurance-wide outcomes.
+    lessons:
+      - id: LS01
+        lesson: Finance Transformation was scoped too narrowly as a finance-only initiative
+        root_cause: Policy, claims, and reinsurance dependencies not fully recognised
+        impact: Increased manual journals and reconciliations post-go-live
+        recommendation: Treat insurance FT as an end-to-end value chain transformation
+
+      - id: LS02
+        lesson: Global vs local standards were insufficiently defined upfront
+        root_cause: Desire to retain flexibility for local entities
+        impact: Late design changes and inconsistent reporting
+        recommendation: Define non-negotiable global standards with exception governance
+
+  - category: regulatory_and_compliance
+    icon: gavel
+    description: Covers regulatory, statutory, and actuarial considerations impacting finance design.
+    lessons:
+      - id: LS03
+        lesson: Regulatory requirements were not primary design drivers
+        root_cause: Compliance treated as downstream reporting activity
+        impact: Retrofitting IFRS 17 and Solvency II logic increased cost and risk
+        recommendation: Anchor system and process design around regulatory outcomes
+
+  - category: data_and_migration
+    icon: storage
+    description: Addresses data quality, ownership, and migration challenges.
+    lessons:
+      - id: LS04
+        lesson: Source data quality was overestimated
+        root_cause: Historical reliance on manual corrections and spreadsheets
+        impact: Extended migration cycles and audit challenges
+        recommendation: Assign clear business ownership for data cleansing
+
+      - id: LS05
+        lesson: Data migration effort was under-scoped
+        root_cause: Limited understanding of legacy data structures
+        impact: Delays to testing and unstable cutover
+        recommendation: Perform early data profiling and multiple dry runs
+
+  - category: integrations
+    icon: hub
+    description: Focuses on integration complexity across insurance systems.
+    lessons:
+      - id: LS06
+        lesson: Integration complexity exceeded core system complexity
+        root_cause: High number of insurance-specific source systems
+        impact: Reconciliation issues and delayed close
+        recommendation: Treat integrations as first-class deliverables
+
+      - id: LS07
+        lesson: Reinsurance accounting complexity was underestimated
+        root_cause: Bespoke treaties and timing differences
+        impact: Manual postings and reconciliation backlogs
+        recommendation: Design reinsurance flows with specialist input
+
+  - category: operating_model
+    icon: groups
+    description: Covers people, roles, processes, and ways of working.
+    lessons:
+      - id: LS08
+        lesson: New systems did not drive new ways of working
+        root_cause: Limited process re-engineering focus
+        impact: Continued reliance on Excel-based workarounds
+        recommendation: Redesign end-to-end processes alongside implementation
+
+      - id: LS09
+        lesson: BAU roles and ownership were unclear post-go-live
+        root_cause: Incomplete transition planning
+        impact: Control gaps and duplicated effort
+        recommendation: Define BAU ownership, RACI, and service model early
+
+  - category: change_and_adoption
+    icon: change_circle
+    description: Relates to user adoption, training, and organisational readiness.
+    lessons:
+      - id: LS10
+        lesson: Change fatigue reduced adoption effectiveness
+        root_cause: FT delivered alongside BAU and regulatory change
+        impact: Slower stabilisation and reduced confidence
+        recommendation: Invest in structured change management and extended hypercare
+
+  - category: close_controls_and_reporting
+    icon: fact_check
+    description: Covers close performance, controls, audit, and reporting outcomes.
+    lessons:
+      - id: LS11
+        lesson: Faster close benefits were not immediately realised
+        root_cause: Manual journals and reconciliations not eliminated
+        impact: Delayed close improvements
+        recommendation: Redesign close processes, not just automate them
+
+      - id: LS12
+        lesson: Legacy controls were lifted into the new environment
+        root_cause: Risk aversion during design
+        impact: Post-go-live audit findings
+        recommendation: Redesign controls to align with automated processes
+
+      - id: LS13
+        lesson: Day-one reporting expectations were unrealistic
+        root_cause: Underestimated data stabilisation period
+        impact: Stakeholder dissatisfaction
+        recommendation: Set expectations for phased MI maturity
+
+  - category: governance_and_delivery
+    icon: rule
+    description: Addresses programme governance, decision-making, and delivery discipline.
+    lessons:
+      - id: LS14
+        lesson: Business ownership of design decisions was insufficient
+        root_cause: Over-reliance on system integrator
+        impact: Misaligned outcomes and long-term dependency
+        recommendation: Ensure finance retains decision accountability
+
+      - id: LS15
+        lesson: Key decisions were deferred too long
+        root_cause: Desire to maintain optionality
+        impact: Late rework and cost escalation
+        recommendation: Enforce decision deadlines with escalation paths
+
+  - category: cutover_and_transition
+    icon: sync
+    description: Covers cutover, parallel run, and transition to BAU.
+    lessons:
+      - id: LS16
+        lesson: Cutover and parallel run effort was underestimated
+        root_cause: Optimistic planning assumptions
+        impact: Team overload and operational risk
+        recommendation: Plan extended parallel runs with additional resourcing
+
+  - category: benefits_realisation
+    icon: trending_up
+    description: Focuses on value delivery and benefits tracking.
+    lessons:
+      - id: LS17
+        lesson: Benefits were not actively tracked
+        root_cause: Delivery focus outweighed outcome focus
+        impact: Reduced ROI visibility
+        recommendation: Baseline and govern benefits throughout the programme
+
+      - id: LS18
+        lesson: Optimisation phase was under-funded
+        root_cause: Programme closed immediately after stabilisation
+        impact: Value left unrealised
+        recommendation: Fund post-go-live optimisation as a formal phase
