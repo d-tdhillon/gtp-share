@@ -1,0 +1,73 @@
+talent_model_evolution:
+  themes:
+    - theme: Source of Value
+      description: What creates value for the firm and the client
+      junior:
+        now: Configuration effort and task execution
+        future: Agent supervision and exception handling
+      mid_level:
+        now: Solution build ownership
+        future: Decision-rule design and outcome quality
+      leader:
+        now: Delivery oversight
+        future: Economic accountability and trust
+
+    - theme: Nature of Work
+      description: Day-to-day activities performed by each level
+      junior:
+        now: Build, test, and reconcile transactions
+        future: Review agent outputs and investigate anomalies
+      mid_level:
+        now: Design processes and integrations
+        future: Orchestrate agents and define escalation paths
+      leader:
+        now: Steering committees and governance
+        future: Own decision models and business outcomes
+
+    - theme: Skills and Capabilities
+      description: Core skills required to be effective
+      junior:
+        now: Oracle screens, templates, and FBDIs
+        future: Analytical thinking, AI fluency, controls awareness
+      mid_level:
+        now: Functional leadership and solution design
+        future: Systems thinking, accounting intent, AI orchestration
+      leader:
+        now: Programme leadership
+        future: Judgment, regulation, explainability
+
+    - theme: Governance and Risk
+      description: How risk and controls are managed
+      junior:
+        now: Follow controls and document evidence
+        future: Monitor agent confidence levels and alerts
+      mid_level:
+        now: Design controls and UAT sign-off
+        future: Embed controls into agent workflows
+      leader:
+        now: Risk acceptance and audit sign-off
+        future: Regulatory defensibility of automated decisions
+
+    - theme: Team Shape and Scale
+      description: How teams are structured and leveraged
+      junior:
+        now: Large teams with narrow roles
+        future: Fewer juniors with broader accountability
+      mid_level:
+        now: Manager-heavy delivery layers
+        future: Lean teams with high leverage
+      leader:
+        now: Pyramid ownership
+        future: Diamond-shaped teams
+
+    - theme: Differentiation and Growth
+      description: What drives career progression and firm differentiation
+      junior:
+        now: Certifications and utilisation
+        future: Judgment quality and insight
+      mid_level:
+        now: Delivery track record
+        future: Industry expertise and decision credibility
+      leader:
+        now: Revenue and margin ownership
+        future: Trusted advisor status
