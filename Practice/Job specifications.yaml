@@ -1,0 +1,159 @@
+deloitte_style_job_specifications:
+  organisation:
+    firm: Deloitte
+    practice: Finance Transformation and Oracle Cloud (Financial Services)
+    operating_model: Agent-led delivery (AI-assisted configuration, testing, reconciliation, and controls)
+
+  roles:
+    - role_id: FS-AL-001
+      title: Agent-Supervised Finance Analyst
+      level: Junior (Analyst / Consultant)
+      location: Amsterdam / London / Hybrid
+      travel: "Client-site as required (typically 0–40%)"
+      role_summary: >
+        Support Oracle Cloud Finance and Finance Transformation engagements by supervising AI/agent outputs,
+        performing exception analysis, maintaining audit-ready evidence, and supporting continuous controls
+        monitoring in an agent-led delivery model.
+      key_responsibilities:
+        - Review AI/agent-generated outputs (journals, reconciliations, mappings, test evidence) and validate correctness against defined rules and accounting intent.
+        - Triage exceptions and anomalies, perform root-cause analysis, and document resolutions in a clear, auditable manner.
+        - Support finance process walkthroughs (Record-to-Report, Procure-to-Pay, Order-to-Cash) and capture decision points, tolerances, and escalation triggers.
+        - Assist with data readiness activities (data quality checks, reconciliation packs, lineage notes) and support integration validation with technical teams.
+        - Maintain high-quality engagement artefacts (control evidence, runbooks, decision logs, testing traceability).
+        - Contribute to continuous improvement of agent prompts, checklists, and exception playbooks.
+      required_experience:
+        years: "1–3"
+        background:
+          - "Finance, accounting, audit, or ERP/finance systems support exposure"
+      required_capabilities:
+        finance_and_accounting:
+          - "Working knowledge of debits/credits, subledger-to-GL flow, and reconciliations"
+          - "Comfortable interpreting accounting outcomes and spotting anomalies"
+        data_and_tools:
+          - "Strong Excel/Sheets capability; basic SQL literacy desirable"
+          - "Comfort with BI/report outputs; attention to detail in evidence management"
+        ai_and_agent_fluency:
+          - "Able to review and validate AI outputs; understands confidence/exception concepts"
+        communication:
+          - "Clear written documentation; able to explain findings to seniors and client SMEs"
+      preferred_experience:
+        - "Exposure to Oracle Fusion Financials (GL/AP/AR/FA/CM) or similar ERP"
+        - "Exposure to controls (SOX/ICFR) or audit evidence expectations"
+        - "Financial Services or Insurance domain awareness"
+      qualifications:
+        - "Degree in Accounting, Finance, Economics, STEM, or equivalent experience"
+        - "Part-qualified accounting (ACCA/ACA/CIMA) is advantageous"
+      success_measures:
+        - "Accuracy and completeness of validated agent outputs and evidence packs"
+        - "Speed and quality of exception triage and root-cause documentation"
+        - "Reliability and auditability of engagement artefacts"
+      behaviours:
+        - "Analytical and detail-oriented; comfortable working with ambiguity"
+        - "Curious and coachable; proactive in improving playbooks and prompts"
+        - "Professional skepticism (trust, but verify)"
+      progression_path:
+        - "Finance Systems Orchestrator (Senior Consultant / Manager track)"
+
+    - role_id: FS-AL-002
+      title: Finance Systems Orchestrator (Oracle Cloud + Agents)
+      level: Mid-level (Senior Consultant / Manager)
+      location: Amsterdam / London / Hybrid
+      travel: "Client-site as required (typically 20–60%)"
+      role_summary: >
+        Lead the design and operation of agent-assisted finance delivery by translating business and accounting intent into
+        decision rules, thresholds, controls, and escalation paths. Own process behaviour, supervise agent workflows, and
+        ensure outcomes are explainable, compliant, and robust across scenarios.
+      key_responsibilities:
+        - Translate business requirements into “economic intent” and operational decision rules (tolerances, approvals, confidence thresholds).
+        - Orchestrate agent workflows across configuration, testing, reconciliation, reporting, and close activities; define guardrails and hand-offs.
+        - Design exception management: alerting logic, escalation routes, and runbooks for common and critical failure modes.
+        - Embed controls into automated workflows (prevent/detect, continuous monitoring) and ensure evidence is audit-ready.
+        - Own process integrity across R2R, P2P, O2C; validate that system outcomes match accounting policy and regulatory needs.
+        - Partner with technical teams on data contracts and integration patterns (API/OIC), ensuring reconciliation and traceability.
+        - Coach junior staff on anomaly detection, evidence quality, and agent-supervision best practices.
+      required_experience:
+        years: "5–8"
+        background:
+          - "Finance transformation, ERP delivery, controllership, or finance operations leadership"
+      required_capabilities:
+        finance_and_accounting:
+          - "Strong accounting judgement across subledger, GL, close, and reporting"
+          - "Able to articulate the ‘why’ behind postings and process outcomes"
+        oracle_and_delivery:
+          - "ERP solution design experience (Oracle Fusion preferred) across at least two finance domains"
+          - "Comfort with end-to-end traceability: source → subledger → GL → reporting"
+        ai_and_agent_orchestration:
+          - "Designs thresholds/guardrails; understands failure modes and exception patterns"
+          - "Able to improve prompts/playbooks and manage agent output quality"
+        controls_and_risk:
+          - "Designs embedded controls and evidence; understands SOX/ICFR expectations"
+        stakeholder_management:
+          - "Runs workshops, drives decisions, resolves conflicts, communicates trade-offs"
+      preferred_experience:
+        - "Oracle Integration Cloud (OIC), Accounting Hub / accounting rules exposure"
+        - "BI Publisher / OTBI reporting and reconciliation pack design"
+        - "Financial Services / Insurance (e.g., multi-currency, regulated reporting, complex close)"
+      qualifications:
+        - "Degree or equivalent professional experience"
+        - "Accounting qualification (ACCA/ACA/CIMA/CPA) strongly preferred"
+      success_measures:
+        - "Stability of process outcomes (low exception leakage; high explainability)"
+        - "Control effectiveness and auditability of automated workflows"
+        - "Reduced cycle time and rework without compromising compliance"
+      behaviours:
+        - "Structured problem-solving; calm under delivery pressure"
+        - "Commercial mindset; pragmatic decision-maker"
+        - "Strong coaching and quality leadership"
+      progression_path:
+        - "Finance Systems Architect / AI-Enabled Transformation Lead (Senior Manager / Director track)"
+
+    - role_id: FS-AL-003
+      title: Finance Systems Architect / AI-Enabled Transformation Lead
+      level: Leadership (Senior Manager / Director)
+      location: Amsterdam / London / Hybrid
+      travel: "Client-site as required (typically 20–60%)"
+      role_summary: >
+        Provide executive leadership for agent-enabled finance transformation and Oracle Cloud delivery. Accountable for
+        end-to-end design of finance operating model behaviour, automation boundaries, risk posture, and regulatory defensibility.
+        Acts as trusted advisor to CFO, Finance Leadership, Risk, and Audit.
+      key_responsibilities:
+        - Define target finance operating model with agent-led execution: what is automated, what is supervised, and what remains human-owned.
+        - Own “economic design” and decision accountability: accounting intent, policy interpretation, and decision rights.
+        - Set governance for agent workflows: escalation paths, model risk controls, audit trails, and explainability standards.
+        - Lead senior client stakeholders (CFO/Controller, CRO, Head of Internal Audit) through trade-offs and risk acceptance.
+        - Establish delivery approach and quality strategy: controls-by-design, continuous monitoring, and audit-ready evidence.
+        - Shape go-to-market offerings, reusable assets, and talent strategy; mentor senior team members.
+        - Provide oversight of complex integrations, data lineage, and reporting integrity to ensure regulatory-grade outcomes.
+      required_experience:
+        years: "10–15+"
+        background:
+          - "Finance transformation leadership, controllership, risk/controls leadership, or large-scale ERP programme leadership"
+      required_capabilities:
+        executive_finance_judgment:
+          - "Deep understanding of accounting policy, close/reporting requirements, and regulatory expectations"
+          - "Able to defend automated decision outcomes with credible rationale"
+        operating_model_and_governance:
+          - "Designs decision rights, operating model controls, and organisational adoption"
+        agent_and_model_risk:
+          - "Understands explainability, auditability, human-in-the-loop design, and model risk governance"
+        architecture_literacy:
+          - "Strong grasp of end-to-end ERP ecosystem (integrations, data, reporting), without needing to ‘build’ personally"
+        commercial_leadership:
+          - "Shapes deals, manages risk, drives margin, builds client trust and long-term relationships"
+      preferred_experience:
+        - "Financial Services / Insurance specialism (regulated environments, complex close, multi-currency, market reporting)"
+        - "Oracle Fusion suite breadth (GL/AP/AR/FA/CM), Accounting Hub, reporting platforms"
+        - "Experience with audit committees, regulators, or model risk frameworks"
+      qualifications:
+        - "Accounting qualification (ACCA/ACA/CIMA/CPA) preferred"
+        - "Evidence of senior leadership in transformation programmes"
+      success_measures:
+        - "Client trust and repeatable outcomes; regulatory/audit confidence"
+        - "Reduced delivery effort with improved quality and control effectiveness"
+        - "Capability build: reusable assets, skilled teams, sustainable delivery model"
+      behaviours:
+        - "High judgment and integrity; strong executive presence"
+        - "Comfortable challenging clients and teams on risk and decision quality"
+        - "Coaches leaders; builds a learning culture around agent-led delivery"
+      progression_path:
+        - "Partner / Practice Leadership (Agent-Led Finance Transformation)"
