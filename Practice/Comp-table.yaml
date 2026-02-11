@@ -1,1 +1,71 @@
+future_finance_consulting_recruitment_specifications:
+  model: Agent-Led Finance Consulting
+  groups:
 
+    - group: Role & Accountability
+      description: Defines ownership and value contribution in an agent-enabled delivery model
+      categories:
+        - category: Purpose
+          junior:
+            title: Agent-Supervised Finance Analyst
+            summary: Supervise agent outputs, resolve exceptions, ensure transaction accuracy and audit readiness.
+          mid_level:
+            title: Finance Systems Orchestrator
+            summary: Design decision rules, orchestrate agents, and ensure end-to-end process integrity.
+          leader:
+            title: Finance Systems Architect / AI Transformation Lead
+            summary: Define economic intent, own automated decision frameworks, and ensure regulatory defensibility.
+
+        - category: Core Accountability
+          junior: Transaction quality and anomaly resolution.
+          mid_level: Process stability, decision integrity, and outcome quality.
+          leader: Financial system behaviour, automation boundaries, and enterprise risk posture.
+
+    - group: Experience & Domain
+      description: Required professional background, accounting depth, and industry expertise
+      categories:
+        - category: Required Experience
+          junior: 1–3 years in finance, audit, or ERP-related roles.
+          mid_level: 5–8 years in finance transformation, ERP delivery, or controllership environments.
+          leader: 10–15+ years leading finance transformation or large-scale ERP programmes.
+
+        - category: Accounting Depth
+          junior: Working knowledge of debits/credits, reconciliations, and subledger-to-GL flow.
+          mid_level: Strong accounting judgement across R2R, P2P, and O2C processes.
+          leader: Deep accounting policy interpretation and regulatory expertise.
+
+        - category: Industry Knowledge
+          junior: Desirable but not essential.
+          mid_level: Strong advantage and differentiator.
+          leader: Critical differentiator and core credibility driver.
+
+    - group: Technical & Automation Capability
+      description: Systems fluency and ability to operate within agent-driven finance environments
+      categories:
+        - category: ERP & Systems
+          junior: Exposure to Oracle GL/AP/AR helpful; strong Excel; foundational data literacy.
+          mid_level: ERP solution design (Oracle Fusion preferred); integration awareness (API/OIC); automation logic understanding.
+          leader: Multi-system architecture literacy; finance operating model design; governance frameworks.
+
+        - category: AI & Agent Fluency
+          junior: Comfortable reviewing AI outputs and investigating exception flags.
+          mid_level: Define thresholds, escalation paths, and supervise agent workflows.
+          leader: Own explainability standards, model risk governance, and automation boundary decisions.
+
+    - group: Governance, Behaviour & Growth
+      description: Controls mindset, leadership behaviours, and long-term progression
+      categories:
+        - category: Controls & Risk
+          junior: Follow control frameworks and maintain audit-ready documentation.
+          mid_level: Design embedded controls and continuous monitoring mechanisms.
+          leader: Defend automated decisions to CFO, Audit Committee, and Regulators.
+
+        - category: Behavioural Traits
+          junior: Analytical, detail-oriented, curious, comfortable with ambiguity.
+          mid_level: Structured thinker, strong communicator, commercially aware.
+          leader: High judgement, executive presence, calm under scrutiny.
+
+        - category: Career Path
+          junior: Progression toward Finance Systems Orchestrator role.
+          mid_level: Progression toward Architect or Industry Lead role.
+          leader: Progression toward Partner or Strategic Advisory leadership.
