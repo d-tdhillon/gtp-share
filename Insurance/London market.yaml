@@ -1,0 +1,892 @@
+london_market_targets:
+  - managing_agent: "AEGIS Managing Agency Ltd"
+    parent_group: "AEGIS London"
+    insurance_type: "Lloyd’s specialty insurer (commercial & specialty lines; London Market)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=David%20Croom-Johnson%20AEGIS%20London%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=AEGIS%20London%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=AEGIS%20London%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=AEGIS%20London%20Finance%20Transformation"
+    executives:
+      ceo: "David Croom-Johnson"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Allied World Managing Agency Ltd"
+    parent_group: "Fairfax Financial"
+    insurance_type: "Global commercial specialty insurer (P&C; specialty, professional, reinsurance) with Lloyd’s platform"
+    gwp_estimate:
+      value: 32500
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Gross premiums written (group estimate)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Lou%20Iglesias%20Allied%20World%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Julian%20James%20Allied%20World%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Allied%20World%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Allied%20World%20Finance%20Transformation"
+    executives:
+      ceo: "Lou Iglesias"
+      cfo: "Julian James"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Antares Managing Agency Ltd"
+    parent_group: "Qatar Insurance Group"
+    insurance_type: "Lloyd’s specialty insurer (commercial specialty; London Market lines)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Craig%20Rickman%20Antares%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Antares%20Managing%20Agency%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Antares%20Managing%20Agency%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Antares%20Finance%20Transformation"
+    executives:
+      ceo: "Craig Rickman"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Apollo Syndicate Management Ltd"
+    parent_group: "Apollo Group Holdings"
+    insurance_type: "Lloyd’s specialty insurer (commercial specialty; London Market)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=David%20Ibeson%20Apollo%20Syndicate%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Apollo%20Syndicate%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Apollo%20Syndicate%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Apollo%20Syndicate%20Finance%20Transformation"
+    executives:
+      ceo: "David Ibeson"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Arch Managing Agency Ltd"
+    parent_group: "Arch Capital Group"
+    insurance_type: "Global specialty P&C insurer and reinsurer with Lloyd’s platform"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Nicolas%20Papadopoulo%20Arch%20Capital%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Francois%20Morin%20Arch%20Capital%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=John%20Mullen%20Arch%20Capital%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Arch%20Capital%20Finance%20Transformation"
+    executives:
+      ceo: "Nicolas Papadopoulo"
+      cfo: "Francois Morin"
+      cio_cto: "John Mullen"
+      finance_transformation_lead: null
+
+  - managing_agent: "Argenta Syndicate Management Ltd"
+    parent_group: "Hannover Re"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty lines)"
+    gwp_estimate:
+      value: 29.8215
+      currency: "EUR bn"
+      fiscal_year: 2024
+      metric: "Gross premium (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Nick%20Moore%20Argenta%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Argenta%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Hannover%20Re%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Hannover%20Re%20Finance%20Transformation"
+    executives:
+      ceo: "Nick Moore"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Ark Syndicate Management Ltd"
+    parent_group: "White Mountains"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty; reinsurance & specialty mix)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Ian%20Beaton%20Ark%20Syndicate%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Ark%20Syndicate%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Ark%20Syndicate%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Ark%20Syndicate%20Finance%20Transformation"
+    executives:
+      ceo: "Ian Beaton"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Ascot Underwriting Ltd"
+    parent_group: "CPPIB / Caisse de dépôt"
+    insurance_type: "Global specialty insurer with Lloyd’s platform (commercial specialty, reinsurance)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Jonathan%20Zaffino%20Ascot%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Ascot%20Underwriting%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Ascot%20Underwriting%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Ascot%20Finance%20Transformation"
+    executives:
+      ceo: "Jonathan Zaffino"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Aspen Managing Agency Ltd"
+    parent_group: "Apollo Global Management"
+    insurance_type: "Specialty insurer/reinsurer with Lloyd’s platform (commercial specialty, reinsurance)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Mark%20Cloutier%20Aspen%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Aspen%20Insurance%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Aspen%20Insurance%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Aspen%20Finance%20Transformation"
+    executives:
+      ceo: "Mark Cloutier"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Asta Managing Agency Ltd"
+    parent_group: "Davies Group"
+    insurance_type: "Third-party Lloyd’s managing agent / platform (syndicate management services)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Lorcan%20Larkin%20Asta%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Asta%20Managing%20Agency%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Davies%20Group%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Davies%20Group%20Finance%20Transformation"
+    executives:
+      ceo: "Lorcan Larkin"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Atrium Underwriters Ltd"
+    parent_group: "Stone Point Capital"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty; London Market)"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Richard%20Harries%20Atrium%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Atrium%20Underwriters%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Atrium%20Underwriters%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Atrium%20Finance%20Transformation"
+    executives:
+      ceo: "Richard Harries"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "AXA XL Underwriting Agencies Ltd"
+    parent_group: "AXA Group"
+    insurance_type: "Global commercial P&C and specialty (incl. reinsurance) with Lloyd’s presence"
+    gwp_estimate:
+      value: 110
+      currency: "EUR bn"
+      fiscal_year: 2024
+      metric: "Gross written premiums & other revenues (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Scott%20Gunter%20AXA%20XL%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Alban%20de%20Mailly%20Nesle%20AXA%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=AXA%20Group%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=AXA%20Finance%20Transformation%20Director"
+    executives:
+      ceo: "Scott Gunter"
+      cfo: "Alban de Mailly Nesle"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Axis Managing Agency Ltd"
+    parent_group: "AXIS Capital"
+    insurance_type: "Global specialty insurer/reinsurer with Lloyd’s platform"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Vince%20Tizzio%20AXIS%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Peter%20Vogt%20AXIS%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=AXIS%20Capital%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=AXIS%20Finance%20Transformation"
+    executives:
+      ceo: "Vince Tizzio"
+      cfo: "Peter Vogt"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Beazley Furlonge Ltd"
+    parent_group: "Beazley plc"
+    insurance_type: "Specialty insurer (cyber, specialty risks, marine, property, liability) with Lloyd’s syndicates"
+    gwp_estimate:
+      value: 6.1641
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Insurance written premium (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Adrian%20Cox%20Beazley%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Barbara%20Plucnar%20Jensen%20Beazley%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Paul%20Bantick%20Beazley%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Beazley%20Finance%20Transformation%20Director"
+    executives:
+      ceo: "Adrian Cox"
+      cfo: "Barbara Plucnar Jensen"
+      cio_cto: "Paul Bantick"
+      finance_transformation_lead: null
+
+  - managing_agent: "Blenheim Underwriting Ltd"
+    parent_group: "Blenheim Group"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=David%20McMillan%20Blenheim%20Underwriting%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Blenheim%20Underwriting%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Blenheim%20Underwriting%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Blenheim%20Finance%20Transformation"
+    executives:
+      ceo: "David McMillan"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Brit Syndicates Ltd"
+    parent_group: "Fairfax Financial"
+    insurance_type: "Specialty insurer (marine, property, casualty, reinsurance) with Lloyd’s syndicate"
+    gwp_estimate:
+      value: 32.5
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Gross premiums written (parent group estimate)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Martin%20Thompson%20Brit%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Gavin%20Wilkinson%20Brit%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Bilge%20Mert%20Brit%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Brit%20Insurance%20Finance%20Transformation"
+    executives:
+      ceo: "Martin Thompson"
+      cfo: "Gavin Wilkinson"
+      cio_cto: "Bilge Mert"
+      finance_transformation_lead: null
+
+  - managing_agent: "Canopius Managing Agents Ltd"
+    parent_group: "Centerbridge Partners / Gallatin Point"
+    insurance_type: "Specialty (re)insurer via Lloyd’s + company markets (property, casualty, marine, specialty)"
+    gwp_estimate:
+      value: 3.53
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Insurance contract written premium (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Neil%20Robertson%20Canopius%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Gavin%20Phillips%20Canopius%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Dan%20Murphy%20Canopius%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Canopius%20Finance%20Transformation"
+    executives:
+      ceo: "Neil Robertson"
+      cfo: "Gavin Phillips"
+      cio_cto: "Dan Murphy"
+      finance_transformation_lead: null
+
+  - managing_agent: "Chaucer Syndicates Ltd"
+    parent_group: "China Re"
+    insurance_type: "Specialty (re)insurance with Lloyd’s syndicate (marine, property, casualty, specialty)"
+    gwp_estimate:
+      value: 178.483
+      currency: "RMB bn"
+      fiscal_year: 2024
+      metric: "Consolidated gross written premiums (parent group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=John%20Fowle%20Chaucer%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Chaucer%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Chaucer%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Chaucer%20Finance%20Transformation"
+    executives:
+      ceo: "John Fowle"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Chubb Underwriting Agencies Ltd"
+    parent_group: "Chubb Ltd"
+    insurance_type: "Global commercial P&C + consumer + life (specialty, financial lines, property, casualty)"
+    gwp_estimate:
+      value: 45.1
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "P&C net premiums written (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Evan%20Greenberg%20Chubb%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Peter%20Enns%20Chubb%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Chubb%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Chubb%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Evan Greenberg"
+      cfo: "Peter Enns"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "CNA Hardy"
+    parent_group: "CNA Financial"
+    insurance_type: "Commercial specialty P&C (hardy specialty, marine, property, casualty) in London Market"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Dino%20Robusto%20CNA%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Douglas%20Worman%20CNA%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=CNA%20Financial%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=CNA%20Finance%20Transformation"
+    executives:
+      ceo: "Dino Robusto"
+      cfo: "Douglas Worman"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Dale Managing Agency Ltd"
+    parent_group: "Pine Walk Capital"
+    insurance_type: "Lloyd’s platform for specialist MGA-style underwriting (varied specialty lines)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Paul%20Drew%20Dale%20Managing%20Agency%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Dale%20Managing%20Agency%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Pine%20Walk%20Capital%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Pine%20Walk%20Finance%20Transformation"
+    executives:
+      ceo: "Paul Drew"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Enstar Managing Agency Ltd"
+    parent_group: "Enstar Group"
+    insurance_type: "Run-off and legacy re/insurance specialist with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Dominic%20Silvester%20Enstar%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Matt%20Kirk%20Enstar%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Enstar%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Enstar%20Finance%20Transformation"
+    executives:
+      ceo: "Dominic Silvester"
+      cfo: "Matt Kirk"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Everest Managing Agency Ltd"
+    parent_group: "Everest Group"
+    insurance_type: "Global re/insurer (specialty insurance + reinsurance) with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Juan%20Andrade%20Everest%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Mark%20Kociancic%20Everest%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Everest%20Group%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Everest%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Juan Andrade"
+      cfo: "Mark Kociancic"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Faraday Underwriting Ltd"
+    parent_group: "General Re (Berkshire Hathaway)"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty; reinsurance-oriented platform)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Richard%20Ibeson%20Faraday%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Faraday%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=General%20Re%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=General%20Re%20Finance%20Transformation"
+    executives:
+      ceo: "Richard Ibeson"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Hamilton Managing Agency Ltd"
+    parent_group: "Hamilton Insurance Group"
+    insurance_type: "Specialty insurer/reinsurer with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Pina%20Albo%20Hamilton%20Insurance%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Jonathan%20Reiss%20Hamilton%20Insurance%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Hamilton%20Insurance%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Hamilton%20Finance%20Transformation"
+    executives:
+      ceo: "Pina Albo"
+      cfo: "Jonathan Reiss"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Hartford Underwriting Agency Ltd"
+    parent_group: "The Hartford"
+    insurance_type: "US commercial P&C and personal lines insurer with London Market platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Chris%20Swift%20The%20Hartford%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Beth%20Bombara%20The%20Hartford%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=The%20Hartford%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=The%20Hartford%20Finance%20Transformation"
+    executives:
+      ceo: "Chris Swift"
+      cfo: "Beth Bombara"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "HCC Underwriting Agency Ltd"
+    parent_group: "Tokio Marine HCC"
+    insurance_type: "Specialty insurance group (accident & health, professional lines, specialty P&C) with Lloyd’s presence"
+    gwp_estimate:
+      value: null
+      currency: null
+      fiscal_year: 2024
+      metric: null
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Susan%20Rivera%20Tokio%20Marine%20HCC%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20HCC%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20HCC%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20HCC%20Finance%20Transformation"
+    executives:
+      ceo: "Susan Rivera"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Hiscox Syndicates Ltd"
+    parent_group: "Hiscox Ltd"
+    insurance_type: "Specialty insurer (commercial, specialty, retail; cyber and specialty risks) with Lloyd’s syndicates"
+    gwp_estimate:
+      value: 4.7669
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Insurance contract written premium (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Aki%20Hussain%20Hiscox%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Paul%20Cooper%20Hiscox%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Chris%20Loake%20Hiscox%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Hiscox%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Aki Hussain"
+      cfo: "Paul Cooper"
+      cio_cto: "Chris Loake"
+      finance_transformation_lead: null
+
+  - managing_agent: "Inigo Managing Agent Ltd"
+    parent_group: "Inigo Ltd"
+    insurance_type: "Lloyd’s specialty managing agent (commercial specialty; London Market)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Richard%20Watson%20Inigo%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Inigo%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Inigo%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Inigo%20Finance%20Transformation"
+    executives:
+      ceo: "Richard Watson"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "IQUW Syndicate Management Ltd"
+    parent_group: "IQUW Holdings"
+    insurance_type: "Lloyd’s specialty managing agent (property, specialty, marine and other London Market lines)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Stephen%20Young%20IQUW%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=IQUW%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=IQUW%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=IQUW%20Finance%20Transformation"
+    executives:
+      ceo: "Stephen Young"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Lancashire Syndicates Ltd"
+    parent_group: "Lancashire Holdings"
+    insurance_type: "Specialty insurer (property, marine, energy, aviation, cyber) with Lloyd’s and company market"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Alex%20Maloney%20Lancashire%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Natalie%20Kershaw%20Lancashire%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Lancashire%20Group%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Lancashire%20Finance%20Transformation"
+    executives:
+      ceo: "Alex Maloney"
+      cfo: "Natalie Kershaw"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Liberty Managing Agency Ltd"
+    parent_group: "Liberty Mutual"
+    insurance_type: "Global commercial and specialty insurer with Lloyd’s managing agency"
+    gwp_estimate:
+      value: 44.963
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Net written premium (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Tim%20Sweeney%20Liberty%20Mutual%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Liberty%20Mutual%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Liberty%20Mutual%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Liberty%20Mutual%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Tim Sweeney"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Lime Syndicate Management Ltd"
+    parent_group: "Lime Group"
+    insurance_type: "Lloyd’s specialty managing agent (niche specialty lines)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Martin%20Reith%20Lime%20Syndicate%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Lime%20Syndicate%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Lime%20Syndicate%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Lime%20Finance%20Transformation"
+    executives:
+      ceo: "Martin Reith"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Managing Agency Partners Ltd"
+    parent_group: "MAP Group"
+    insurance_type: "Lloyd’s managing agent platform (third-party syndicate management services)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Jeremy%20Shulman%20Managing%20Agency%20Partners%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Managing%20Agency%20Partners%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Managing%20Agency%20Partners%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Managing%20Agency%20Partners%20Finance%20Transformation"
+    executives:
+      ceo: "Jeremy Shulman"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Markel Syndicate Management Ltd"
+    parent_group: "Markel Group"
+    insurance_type: "Specialty insurer (commercial specialty, professional lines, programs) with Lloyd’s managing agent"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Tom%20Gayner%20Markel%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Jeremy%20Noble%20Markel%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Chad%20Nitschke%20Markel%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Markel%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Tom Gayner"
+      cfo: "Jeremy Noble"
+      cio_cto: "Chad Nitschke"
+      finance_transformation_lead: null
+
+  - managing_agent: "MS Amlin Underwriting Ltd"
+    parent_group: "Mitsui Sumitomo Insurance"
+    insurance_type: "Specialty (re)insurer (marine, property, casualty, reinsurance) with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Carrier%20MS%20Amlin%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=MS%20Amlin%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=MS%20Amlin%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=MS%20Amlin%20Finance%20Transformation"
+    executives:
+      ceo: "Andrew Carrier"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Munich Re Syndicate Ltd"
+    parent_group: "Munich Re Group"
+    insurance_type: "Global reinsurer and specialty insurer with Lloyd’s syndicate presence"
+    gwp_estimate:
+      value: 42.8
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Estimated GPW (third-party estimate referenced via S&P)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Joachim%20Wenning%20Munich%20Re%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Christoph%20Jurecka%20Munich%20Re%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Barry%20ODwyer%20Munich%20Re%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Munich%20Re%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Joachim Wenning"
+      cfo: "Christoph Jurecka"
+      cio_cto: "Barry O’Dwyer"
+      finance_transformation_lead: null
+
+  - managing_agent: "Nephila Syndicate Management Ltd"
+    parent_group: "Markel Group"
+    insurance_type: "ILS / reinsurance-focused underwriting and syndicate management (property cat and specialty programs)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Frank%20Majors%20Nephila%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Nephila%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Nephila%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Nephila%20Finance%20Transformation"
+    executives:
+      ceo: "Frank Majors"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Newline Underwriting Management Ltd"
+    parent_group: "Odyssey Group"
+    insurance_type: "Specialty insurer/reinsurer with Lloyd’s presence (commercial specialty and reinsurance)"
+    gwp_estimate:
+      value: 32.5
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Parent group GPW estimate (Fairfax context)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Ian%20Summers%20Newline%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Newline%20Underwriting%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Odyssey%20Group%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Odyssey%20Group%20Finance%20Transformation"
+    executives:
+      ceo: "Ian Summers"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Polo Managing Agency Ltd"
+    parent_group: "Polo Group"
+    insurance_type: "Lloyd’s specialty managing agent (niche specialty and commercial lines)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Simon%20Latham%20Polo%20Managing%20Agency%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Polo%20Managing%20Agency%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Polo%20Managing%20Agency%20CTO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Polo%20Finance%20Transformation"
+    executives:
+      ceo: "Simon Latham"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Premia Managing Agency Ltd"
+    parent_group: "Premia Holdings"
+    insurance_type: "Lloyd’s managing agent (specialty commercial lines)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=James%20Cavanagh%20Premia%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Premia%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Premia%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Premia%20Finance%20Transformation"
+    executives:
+      ceo: "James Cavanagh"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Probitas Managing Agency Ltd"
+    parent_group: "Aviva plc"
+    insurance_type: "Lloyd’s managing agent (specialty P&C; marine and specialty mix)"
+    gwp_estimate:
+      value: 12.204
+      currency: "GBP bn"
+      fiscal_year: 2024
+      metric: "General Insurance premiums (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Ash%20Bathia%20Probitas%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Probitas%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Aviva%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Aviva%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Ash Bathia"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "QBE Underwriting Ltd"
+    parent_group: "QBE Insurance Group"
+    insurance_type: "Global commercial P&C and specialty with Lloyd’s managing agent"
+    gwp_estimate:
+      value: 22.4
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Gross written premiums (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Horton%20QBE%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Inder%20Singh%20QBE%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Chris%20Painter%20QBE%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=QBE%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Andrew Horton"
+      cfo: "Inder Singh"
+      cio_cto: "Chris Painter"
+      finance_transformation_lead: null
+
+  - managing_agent: "RenaissanceRe Syndicate Management Ltd"
+    parent_group: "RenaissanceRe"
+    insurance_type: "Global reinsurer with Lloyd’s syndicate platform (property cat and specialty reinsurance)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Kevin%20ODonnell%20RenaissanceRe%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Robert%20Qutub%20RenaissanceRe%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=RenaissanceRe%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=RenaissanceRe%20Finance%20Transformation"
+    executives:
+      ceo: "Kevin O’Donnell"
+      cfo: "Robert Qutub"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "RiverStone Managing Agency Ltd"
+    parent_group: "RiverStone Group"
+    insurance_type: "Run-off / legacy (re)insurance specialist with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Luke%20Tanzer%20RiverStone%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=RiverStone%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=RiverStone%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=RiverStone%20Finance%20Transformation"
+    executives:
+      ceo: "Luke Tanzer"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "SCOR Managing Agency Ltd"
+    parent_group: "SCOR SE"
+    insurance_type: "Global reinsurer (life & health + P&C reinsurance) with Lloyd’s presence"
+    gwp_estimate:
+      value: 20.1
+      currency: "EUR bn"
+      fiscal_year: 2024
+      metric: "Gross written premiums (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Thierry%20Leger%20SCOR%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Ian%20Kelly%20SCOR%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=SCOR%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=SCOR%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Thierry Léger"
+      cfo: "Ian Kelly"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Starr Managing Agents Ltd"
+    parent_group: "Starr Companies"
+    insurance_type: "Global specialty insurer (commercial specialty; aviation, marine, property, casualty) with Lloyd’s platform"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Maurice%20Greenberg%20Starr%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Starr%20Companies%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Starr%20Companies%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Starr%20Finance%20Transformation"
+    executives:
+      ceo: "Maurice Greenberg"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Talbot Underwriting Ltd"
+    parent_group: "AIG"
+    insurance_type: "Specialty commercial P&C via Lloyd’s (AIG group platform; financial lines, property, casualty)"
+    gwp_estimate:
+      value: 23.9
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Net premiums written (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Mark%20Haberfeld%20Talbot%20Underwriting%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=AIG%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=AIG%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=AIG%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Mark Haberfeld"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Tokio Marine Kiln Syndicates Ltd"
+    parent_group: "Tokio Marine Holdings"
+    insurance_type: "Specialty (re)insurer via Lloyd’s (marine, energy, aviation, property, cyber, specialty)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Matthew%20Shaw%20Tokio%20Marine%20Kiln%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20Kiln%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Tokio%20Marine%20Finance%20Transformation"
+    executives:
+      ceo: "Matthew Shaw"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Travelers Syndicate Management Ltd"
+    parent_group: "The Travelers Companies"
+    insurance_type: "US commercial P&C and surety carrier with Lloyd’s syndicate platform"
+    gwp_estimate:
+      value: 43.4
+      currency: "USD bn"
+      fiscal_year: 2024
+      metric: "Net written premiums (group)"
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Alan%20Schnitzer%20Travelers%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Dan%20Frey%20Travelers%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Mojgan%20Lefebvre%20Travelers%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Travelers%20Finance%20Transformation%20ERP"
+    executives:
+      ceo: "Alan Schnitzer"
+      cfo: "Dan Frey"
+      cio_cto: "Mojgan Lefebvre"
+      finance_transformation_lead: null
+
+  - managing_agent: "WR Berkley Syndicate Management Ltd"
+    parent_group: "WR Berkley Corporation"
+    insurance_type: "Specialty commercial P&C group with Lloyd’s syndicate"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Rob%20Berkley%20WR%20Berkley%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Richard%20Baio%20WR%20Berkley%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=WR%20Berkley%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=WR%20Berkley%20Finance%20Transformation"
+    executives:
+      ceo: "Rob Berkley"
+      cfo: "Richard Baio"
+      cio_cto: null
+      finance_transformation_lead: null
+
+  - managing_agent: "Westfield Specialty Managing Agency Ltd"
+    parent_group: "Westfield Group"
+    insurance_type: "Specialty commercial insurer with Lloyd’s managing agent (property, casualty, specialty)"
+    gwp_estimate: { value: null, currency: null, fiscal_year: 2024, metric: null }
+    linkedin_search:
+      ceo: "https://www.linkedin.com/search/results/people/?keywords=Ed%20Largent%20Westfield%20CEO"
+      cfo: "https://www.linkedin.com/search/results/people/?keywords=Westfield%20Insurance%20CFO"
+      cio_cto: "https://www.linkedin.com/search/results/people/?keywords=Westfield%20Insurance%20CIO"
+      finance_transformation_lead: "https://www.linkedin.com/search/results/people/?keywords=Westfield%20Finance%20Transformation"
+    executives:
+      ceo: "Ed Largent"
+      cfo: null
+      cio_cto: null
+      finance_transformation_lead: null
