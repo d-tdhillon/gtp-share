@@ -1,0 +1,173 @@
+fs_market_strategy:
+
+  title: "Financial Services Market Grid – Oracle + Strategic Partner Positioning"
+
+  pillars:
+
+    - id: 1
+      name: "Existing Oracle Install Base"
+      description: "FS organisations already running Oracle (EBS or Fusion) with expansion, optimisation or consolidation opportunities."
+
+      target_profile:
+        - "Oracle EBS or Fusion installed"
+        - "Multiple ledgers / entity complexity"
+        - "Under-utilised Accounting Hub"
+        - "Fragmented reporting landscape"
+        - "Post-M&A integration challenges"
+
+      primary_triggers:
+        - "M&A integration"
+        - "Regulatory pressure"
+        - "Upgrade to Fusion"
+        - "Ledger redesign"
+        - "Cost optimisation"
+
+      oracle_angle: "Expand and optimise existing Oracle footprint"
+
+      deal_objective: "Expansion revenue and consumption growth"
+      competitive_intensity: "Low to Medium"
+
+    - id: 2
+      name: "Large-Scale Finance Transformation"
+      description: "CFO-led strategic finance transformation initiatives, often in competitive Oracle vs Workday scenarios."
+
+      target_profile:
+        - "ERP sunset programme"
+        - "RFP stage buyers"
+        - "Multi-country or multi-entity operations"
+        - "Operating model redesign underway"
+
+      primary_triggers:
+        - "Legacy ERP end-of-life"
+        - "Cost-income ratio pressure"
+        - "Post-merger consolidation"
+        - "Digital transformation programme"
+
+      oracle_angle: "Win strategic platform decision"
+
+      deal_objective: "Net-new strategic platform win"
+      competitive_intensity: "High (Workday typically present)"
+
+    - id: 3
+      name: "Mid-Market FS – Broker & London Market"
+      description: "Mid-sized brokers, MGAs and specialty insurers requiring scalable but industry-aligned finance solutions."
+
+      target_profile:
+        - "£100m–£1bn revenue brokers"
+        - "Lean finance teams"
+        - "Manual bordereaux and claims processing"
+        - "Legacy finance stack"
+        - "Preparing for sale, IPO or expansion"
+
+      primary_triggers:
+        - "Growth through acquisition"
+        - "Regulatory reporting burden"
+        - "Manual reconciliation issues"
+        - "System fragmentation"
+
+      oracle_angle: "Industry-specific scalable finance platform"
+
+      deal_objective: "Market penetration and industry specialisation"
+      competitive_intensity: "Medium to High (Workday simplicity narrative strong)"
+
+  industry_wide_finance_solutions:
+
+    description: "Targeted horizontal finance solutions applicable across all FS segments to create entry points, protect accounts and drive expansion."
+
+    offerings:
+
+      - name: "Balance Sheet Reconciliations Optimisation"
+        objective: "Reduce manual reconciliations and audit exposure."
+        capabilities:
+          - "Automated reconciliation frameworks"
+          - "Account certification controls"
+          - "Exception-based review model"
+          - "Integration with subledger flows"
+        commercial_angle: "Improves control environment and accelerates close."
+
+      - name: "Cash Reconciliation & Treasury Automation"
+        objective: "Improve visibility and reduce unreconciled cash balances."
+        capabilities:
+          - "Bank statement automation"
+          - "Cash positioning dashboards"
+          - "Exception-driven reconciliation"
+          - "Integration across entities"
+        commercial_angle: "Reduces operational risk and enhances liquidity transparency."
+
+      - name: "Master Data Management (MDM) Clean-Up"
+        objective: "Improve data quality across finance entities."
+        capabilities:
+          - "Supplier and customer data cleansing"
+          - "Chart of accounts standardisation"
+          - "Governance framework setup"
+          - "Data quality monitoring"
+        commercial_angle: "Foundation for regulatory reporting accuracy and scalable growth."
+
+      - name: "Last Mile Reporting Optimisation"
+        objective: "Eliminate Excel overlays and manual reporting adjustments."
+        capabilities:
+          - "Embedded reporting rationalisation"
+          - "EPM alignment"
+          - "Regulatory reporting automation"
+          - "Data lineage clarity"
+        commercial_angle: "Reduces audit risk and improves CFO confidence."
+
+      - name: "Close Process Acceleration"
+        objective: "Shorten month-end close and reduce manual journal entries."
+        capabilities:
+          - "Close calendar redesign"
+          - "Journal automation"
+          - "Intercompany simplification"
+          - "Reconciliation workflow optimisation"
+        commercial_angle: "Faster close, improved transparency, reduced finance headcount pressure."
+
+  cross_pillar_accelerators:
+
+    description: "Strategic win accelerators applied across all three market pillars."
+
+    offerings:
+
+      - name: "Workday Differentiation Strategy"
+        purpose: "Counter simplicity narrative and position Oracle for regulated complexity."
+        elements:
+          - "Scalability over simplicity messaging"
+          - "Regulatory resilience positioning"
+          - "CFO-level competitive narrative"
+          - "Deal battle card support"
+
+      - name: "Commercial & Pricing Differentiator"
+        purpose: "Reduce perceived cost and risk barriers."
+        elements:
+          - "Phased commercial roadmap"
+          - "Modular deployment sequencing"
+          - "Consumption-led expansion logic"
+          - "Value-case modelling"
+
+      - name: "Product Demo Enhancement"
+        purpose: "Shift demos from feature-led to architecture-led."
+        elements:
+          - "Ledger + subledger flow walkthrough"
+          - "Insurance-specific use cases"
+          - "M&A integration scenario"
+          - "Regulatory reporting demonstration"
+
+      - name: "AI Art of the Possible Workshops"
+        purpose: "Position Oracle as innovation platform beyond ERP."
+        elements:
+          - "Automated reconciliations"
+          - "Accounting anomaly detection"
+          - "Regulatory data validation"
+          - "Journal automation"
+          - "Finance productivity analytics"
+
+      - name: "Diagnostic Entry Offer"
+        purpose: "Low-risk entry mechanism to shape deals early."
+        elements:
+          - "2–4 week architecture blueprint"
+          - "Risk assessment"
+          - "Phased roadmap"
+          - "Executive presentation output"
+
+  strategic_message:
+    headline: "The pillar determines the entry strategy. Industry-wide solutions open doors. Cross-pillar accelerators determine whether we win."
+    positioning: "Architecture-led, risk-aware, financially grounded partnership designed to increase Oracle FS win rate, protect accounts and drive expansion."
