@@ -1,0 +1,177 @@
+programme:
+  name: "London Market Insurance Finance Transformation"
+  version: "1.0"
+  description: "End-to-end finance transformation covering operating model, ERP, technical accounting, regulatory reporting, data, integration and infrastructure."
+
+workstreams:
+
+  - name: "Programme Governance & Change"
+    icon: "account_balance"
+    material_style: "outlined"
+    description: "Provides strategic oversight, stakeholder alignment and structured delivery control across the transformation lifecycle."
+    scope_attributes:
+      - Programme mobilisation and governance
+      - SteerCo and Design Authority
+      - Integrated planning and risk management
+      - Business readiness and training
+      - Regulatory coordination
+    key_workpackages:
+      - Charter and scope definition
+      - Governance framework
+      - Change impact assessment
+      - Communications strategy
+      - Training and adoption
+    integration_touchpoints:
+      - Executive stakeholders
+      - All transformation workstreams
+      - Regulators and audit bodies
+
+  - name: "Finance Operating Model & Close Optimisation"
+    icon: "manage_accounts"
+    material_style: "outlined"
+    description: "Designs the target finance operating model including organisational structure, control framework and accelerated close."
+    scope_attributes:
+      - Target operating model
+      - Close redesign (Day 0–5 vision)
+      - Role and responsibility matrix
+      - Shared services vs retained finance
+      - Expense allocation methodology
+    key_workpackages:
+      - Current state assessment
+      - Target operating model design
+      - Chart of accounts redesign
+      - Close optimisation blueprint
+    integration_touchpoints:
+      - ERP configuration
+      - Intercompany framework
+      - Data governance
+
+  - name: "Core Finance Systems (ERP)"
+    icon: "account_balance_wallet"
+    material_style: "outlined"
+    description: "Implements and configures general ledger, subledgers and financial control processes."
+    scope_attributes:
+      - General ledger configuration
+      - Multi-currency framework
+      - Accounts Payable and Receivable
+      - Expense management integration
+      - Cash management and bank reconciliation
+      - Intercompany accounting (ICO)
+    key_workpackages:
+      - Ledger and legal entity setup
+      - Intercompany rules engine
+      - Journal governance
+      - Bank reconciliation automation
+      - Expense system integration
+    integration_touchpoints:
+      - Banking systems
+      - Policy administration
+      - Claims systems
+      - Reinsurance platforms
+      - Data warehouse
+
+  - name: "Technical Accounting & London Market Processing"
+    icon: "assessment"
+    material_style: "outlined"
+    description: "Designs premium, claims, reinsurance and delegated authority accounting aligned to London Market requirements."
+    scope_attributes:
+      - Bordereaux ingestion and validation
+      - Premium recognition (direct & facultative)
+      - Claims financial flows
+      - Reinsurance treaty modelling
+      - Unearned premium and reserving logic
+    key_workpackages:
+      - Bordereaux validation engine
+      - RI recoverables tracking
+      - Claims integration design
+      - Subledger to GL control framework
+    integration_touchpoints:
+      - Policy admin systems
+      - Claims platforms
+      - Reinsurance systems
+      - Lloyd’s reporting feeds
+
+  - name: "Regulatory & External Reporting"
+    icon: "gavel"
+    material_style: "outlined"
+    description: "Delivers statutory, Lloyd’s, Solvency II and management reporting through structured mapping and automation."
+    scope_attributes:
+      - Lloyd’s QMA/QMB alignment
+      - Solvency II QRT mapping
+      - IFRS / UK GAAP reporting
+      - Board and management MI
+      - Disclosure automation
+    key_workpackages:
+      - Trial balance to regulatory mapping
+      - Capital reporting integration
+      - Regulatory dry runs
+      - Management dashboard design
+    integration_touchpoints:
+      - ERP
+      - Risk and capital models
+      - Data warehouse
+
+  - name: "Data, Integration & Master Data"
+    icon: "hub"
+    material_style: "outlined"
+    description: "Defines the enterprise finance data model and enables controlled integration across all upstream and downstream systems."
+    scope_attributes:
+      - Enterprise finance data model
+      - API and batch integration strategy
+      - Broker and cost centre master governance
+      - Data validation and reconciliation controls
+      - Subledger to GL automation
+    key_workpackages:
+      - Interface inventory
+      - Data dictionary
+      - Integration build
+      - Automated reconciliation controls
+    integration_touchpoints:
+      - ERP
+      - Policy admin
+      - Claims systems
+      - Banking platforms
+      - Reporting layer
+
+  - name: "Infrastructure, Security & DevOps"
+    icon: "cloud"
+    material_style: "outlined"
+    description: "Establishes secure, scalable and compliant cloud architecture supporting finance and regulatory operations."
+    scope_attributes:
+      - Cloud hosting strategy
+      - Environment topology (Dev/Test/Prod)
+      - Identity and access management
+      - Disaster recovery and resilience
+      - Monitoring and performance management
+      - Regulatory security compliance
+    key_workpackages:
+      - Environment provisioning
+      - Network and firewall setup
+      - IAM and SSO integration
+      - DR testing
+      - Production readiness review
+    integration_touchpoints:
+      - ERP platform
+      - Integration middleware
+      - Security operations
+      - Audit and compliance teams
+
+  - name: "Testing, Migration & Cutover"
+    icon: "rocket_launch"
+    material_style: "outlined"
+    description: "Ensures controlled migration, end-to-end validation and a stable transition to production."
+    scope_attributes:
+      - SIT and UAT
+      - London Market end-to-end scenarios
+      - Regulatory parallel runs
+      - Opening balance migration
+      - Hypercare support model
+    key_workpackages:
+      - Data migration strategy
+      - Dry run rehearsals
+      - Parallel regulatory submission
+      - Cutover and go-live
+    integration_touchpoints:
+      - All upstream systems
+      - Regulatory reporting
+      - Infrastructure monitoring
