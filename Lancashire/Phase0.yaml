@@ -1,0 +1,170 @@
+phase_0_preparation:
+  name: "Phase 0 – Finance Transformation Readiness & De-Risking"
+  timeline: "07-2025 to 06-2026"
+  objective: "De-risk ERP replacement and 2029 syndicate merger by improving structural, data, control and architectural readiness before formal build begins."
+
+  preparation_domains:
+
+    - domain: "Strategy & Governance"
+      objective: "Create clarity of direction before technology selection and build."
+      activities:
+        - Define transformation principles (cloud-first, automate-first, control-by-design)
+        - Confirm ERP end-of-support timeline and risk exposure
+        - Align transformation outcomes to underwriting and capital strategy
+        - Define measurable success metrics (e.g. close days reduction)
+        - Establish Design Authority governance
+        - Confirm high-level syndicate merger assumptions
+      deliverables:
+        - Transformation charter
+        - Governance framework
+        - Executive success metrics
+      risk_reduction:
+        - Prevents scope drift
+        - Reduces executive misalignment
+
+    - domain: "Chart of Accounts & Structural Clean-Up"
+      objective: "Avoid migrating inefficiencies into new ERP."
+      activities:
+        - Analyse unused or duplicate CoA segments
+        - Rationalise cost centres
+        - Standardise legal entity codes
+        - Document intercompany relationships
+        - Map regulatory hierarchies to CoA
+        - Identify reporting done outside ERP (Excel dependencies)
+      deliverables:
+        - Target CoA design principles
+        - Structural rationalisation plan
+      risk_reduction:
+        - Simplifies ERP configuration
+        - Reduces post-merger rework
+
+    - domain: "Data Readiness & Quality"
+      objective: "Ensure clean and controlled migration."
+      activities:
+        - Profile GL balance integrity
+        - Identify suspense and aged reconciling items
+        - Reconcile subledger to GL differences
+        - Assess broker and counterparty master duplication
+        - Review reinsurance recoverable ageing
+        - Define data ownership and stewardship roles
+      deliverables:
+        - Data quality heatmap
+        - Cleansing backlog
+        - Data ownership matrix
+      risk_reduction:
+        - Avoids migration surprises
+        - Reduces audit exposure
+
+    - domain: "Close & Control Maturity"
+      objective: "Improve processes before system change."
+      activities:
+        - Map current close calendar dependencies
+        - Identify high-volume manual journals
+        - Catalogue reconciliation inventory
+        - Assess Segregation of Duties conflicts
+        - Standardise recurring accrual logic
+        - Remove low-value reconciliations
+      deliverables:
+        - Close optimisation blueprint
+        - Control maturity assessment
+      risk_reduction:
+        - Reduces change disruption during ERP implementation
+        - Improves early automation adoption
+
+    - domain: "Technical Accounting Documentation"
+      objective: "Capture London Market accounting logic before transformation."
+      activities:
+        - Document premium recognition rules
+        - Document bordereaux validation logic
+        - Map claims accounting flows
+        - Catalogue reinsurance treaty accounting rules
+        - Document subledger-to-GL reconciliation process
+      deliverables:
+        - Accounting rule catalogue
+        - Technical accounting playbook
+      risk_reduction:
+        - Preserves institutional knowledge
+        - Accelerates ERP design workshops
+
+    - domain: "Integration & Architecture Inventory"
+      objective: "Understand system landscape complexity before ERP design."
+      activities:
+        - Catalogue upstream and downstream systems
+        - Identify manual file transfers
+        - Map batch vs real-time processing
+        - Estimate transaction volumes (premium, claims, RI)
+        - Identify unsupported or fragile integrations
+      deliverables:
+        - Integration inventory register
+        - Interface complexity heatmap
+      risk_reduction:
+        - Prevents underestimation of integration effort
+        - Improves cost estimation accuracy
+
+    - domain: "Infrastructure & Security Readiness"
+      objective: "Ensure infrastructure is not critical path during ERP rollout."
+      activities:
+        - Review identity and access model
+        - Assess disaster recovery maturity
+        - Validate data residency requirements
+        - Map regulatory security standards (Lloyd’s alignment)
+        - Assess performance bottlenecks during peak close
+      deliverables:
+        - Infrastructure readiness report
+        - Security gap assessment
+      risk_reduction:
+        - Prevents environment delays
+        - Reduces cybersecurity exposure
+
+    - domain: "Regulatory & Reporting Preparation"
+      objective: "Avoid regulatory disruption during transformation."
+      activities:
+        - Map TB to Lloyd’s QMA/QMB returns
+        - Map TB to Solvency II QRT
+        - Identify manual adjustment layers
+        - Review Pillar 3 disclosure production
+        - Engage external audit early on transformation roadmap
+      deliverables:
+        - Regulatory mapping documentation
+        - Submission process documentation
+      risk_reduction:
+        - Reduces regulatory submission risk
+        - Improves audit confidence
+
+    - domain: "People & Capability Readiness"
+      objective: "Prepare finance team for multi-year transformation."
+      activities:
+        - Conduct finance capability assessment
+        - Identify key-person dependency risks
+        - Define future-state finance skill profile
+        - Develop training roadmap (data, automation, controls)
+        - Identify retention strategy for critical SMEs
+      deliverables:
+        - Capability gap analysis
+        - Transformation training plan
+      risk_reduction:
+        - Reduces knowledge loss before merger
+        - Supports long-term operating model shift
+
+    - domain: "Syndicate Merger Early Alignment"
+      objective: "Reduce shock and duplication ahead of 2029 merger."
+      activities:
+        - Compare ledger structures across entities
+        - Identify CoA differences and overlaps
+        - Compare regulatory reporting hierarchies
+        - Identify duplicated reporting processes
+        - Draft high-level merged finance operating model
+      deliverables:
+        - Merger readiness assessment
+        - High-level harmonisation roadmap
+      risk_reduction:
+        - Reduces post-merger disruption
+        - Minimises structural reconfiguration in 2029
+
+  success_criteria_by_06-2026:
+    - Cleaned and rationalised chart of accounts
+    - Subledger-to-GL breaks identified and prioritised
+    - Integration landscape fully documented
+    - Accounting rule catalogue completed
+    - Data quality risks classified and backlog created
+    - Governance and design authority operational
