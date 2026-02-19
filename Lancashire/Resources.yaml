@@ -1,0 +1,199 @@
+resource_model:
+  name: "London Market Finance Transformation Resource Model"
+  horizon: "2025-2030"
+
+  internal_resources:
+
+    - category: "Executive"
+      role: "CFO (Programme Sponsor)"
+      phase_focus: ["P1","P2","P3","P4","P5"]
+      responsibilities:
+        - Own overall transformation vision and outcomes
+        - Secure funding and board approval
+        - Provide executive steering and escalation resolution
+        - Ensure alignment to underwriting and capital strategy
+        - Approve major design decisions (CoA, operating model, ERP selection)
+        - Sponsor syndicate merger finance alignment
+
+    - category: "Executive"
+      role: "CIO"
+      phase_focus: ["P1","P2","P3"]
+      responsibilities:
+        - Define enterprise technology strategy
+        - Approve ERP and integration architecture
+        - Oversee infrastructure and security posture
+        - Ensure ERP end-of-support risk is mitigated
+        - Manage vendor selection and contracts
+
+    - category: "Finance Leadership"
+      role: "Financial Controller"
+      phase_focus: ["P1","P2","P3","P4"]
+      responsibilities:
+        - Lead close optimisation redesign
+        - Define intercompany accounting framework
+        - Approve journal governance model
+        - Oversee control design and compliance
+        - Sign off migration reconciliations
+        - Ensure post-go-live stability of reporting
+
+    - category: "Finance"
+      role: "Head of Technical Accounting"
+      phase_focus: ["P2","P3","P4"]
+      responsibilities:
+        - Design premium and claims accounting flows
+        - Define bordereaux validation rules
+        - Lead reinsurance treaty accounting structure
+        - Approve subledger to GL reconciliation logic
+        - Validate regulatory reporting impacts
+
+    - category: "Finance"
+      role: "Regulatory Reporting Lead"
+      phase_focus: ["P3","P4"]
+      responsibilities:
+        - Map trial balance to Lloyd’s returns
+        - Define Solvency II QRT mapping logic
+        - Coordinate regulatory dry runs
+        - Liaise with actuarial and risk teams
+        - Oversee submission governance controls
+
+    - category: "Finance"
+      role: "Treasury Lead"
+      phase_focus: ["P2","P3"]
+      responsibilities:
+        - Define trust vs corporate bank structure
+        - Oversee bank connectivity and payment controls
+        - Implement automated bank reconciliation rules
+        - Design cash forecasting model
+        - Ensure regulatory trust compliance
+
+    - category: "IT & Architecture"
+      role: "Enterprise Architect"
+      phase_focus: ["P1","P2","P3"]
+      responsibilities:
+        - Define target state architecture blueprint
+        - Approve integration patterns (API / batch)
+        - Ensure scalability and resilience
+        - Align ERP, data warehouse and middleware layers
+        - Validate security and performance design
+
+    - category: "Data"
+      role: "Data Architect"
+      phase_focus: ["P1","P2","P3"]
+      responsibilities:
+        - Define enterprise finance data model
+        - Design master data governance framework
+        - Oversee data dictionary and lineage
+        - Define reconciliation automation logic
+        - Ensure data quality controls are embedded
+
+    - category: "Transformation"
+      role: "Programme Director"
+      phase_focus: ["P1","P2","P3","P4","P5"]
+      responsibilities:
+        - Own overall delivery execution
+        - Manage budget and resource allocation
+        - Coordinate cross-workstream dependencies
+        - Lead risk and issue management forums
+        - Provide executive reporting
+
+    - category: "Transformation"
+      role: "Change Lead"
+      phase_focus: ["P1","P2","P3","P4","P5"]
+      responsibilities:
+        - Conduct change impact assessments
+        - Deliver communication strategy
+        - Coordinate finance training programmes
+        - Support adoption and behaviour change
+        - Manage stakeholder engagement across syndicates
+
+  external_resources:
+
+    - category: "Advisory"
+      role: "Transformation Partner"
+      phase_focus: ["P1","P2","P3","P4","P5"]
+      responsibilities:
+        - Provide programme methodology and governance model
+        - Lead target operating model design workshops
+        - Supply London Market SME capability
+        - Support board-level reporting materials
+        - Validate regulatory readiness
+
+    - category: "ERP Implementation"
+      role: "ERP Solution Architect"
+      phase_focus: ["P2"]
+      responsibilities:
+        - Lead ERP blueprint and configuration design
+        - Define ledger and subledger architecture
+        - Approve intercompany rules configuration
+        - Ensure best-practice cloud configuration
+        - Coordinate technical and functional teams
+
+    - category: "ERP Implementation"
+      role: "Functional Leads (GL/AP/AR/ICO)"
+      phase_focus: ["P2"]
+      responsibilities:
+        - Configure ERP modules
+        - Define accounting rules
+        - Build approval workflows
+        - Conduct system walkthroughs with finance
+        - Support SIT and UAT
+
+    - category: "Data & Integration"
+      role: "Integration Lead"
+      phase_focus: ["P2","P3"]
+      responsibilities:
+        - Define interface inventory
+        - Design API and middleware strategy
+        - Build policy, claims and RI integrations
+        - Implement error handling framework
+        - Monitor interface performance post go-live
+
+    - category: "Data & Migration"
+      role: "Data Migration Lead"
+      phase_focus: ["P3"]
+      responsibilities:
+        - Define migration strategy and sequencing
+        - Cleanse and validate historical data
+        - Execute opening balance loads
+        - Reconcile subledger and GL balances
+        - Provide migration audit evidence
+
+    - category: "Regulatory SME"
+      role: "Lloyd’s / Solvency II Specialist"
+      phase_focus: ["P3","P4"]
+      responsibilities:
+        - Validate regulatory mapping logic
+        - Support QMA/QMB submission testing
+        - Review Solvency II QRT outputs
+        - Advise on Pillar 3 disclosures
+        - Support regulator engagement during transition
+
+    - category: "Infrastructure"
+      role: "Cloud Architect"
+      phase_focus: ["P2"]
+      responsibilities:
+        - Design environment topology (Dev/Test/Prod)
+        - Implement high availability architecture
+        - Define disaster recovery strategy
+        - Align IAM and SSO with ERP
+        - Conduct performance and load testing
+
+    - category: "Testing"
+      role: "Test Manager"
+      phase_focus: ["P3","P4"]
+      responsibilities:
+        - Define SIT and UAT strategy
+        - Coordinate end-to-end London Market scenarios
+        - Manage defect triage and resolution
+        - Oversee regulatory dry runs
+        - Certify production readiness
+
+    - category: "Merger & Integration"
+      role: "Syndicate Merger Finance Lead"
+      phase_focus: ["P5"]
+      responsibilities:
+        - Harmonise chart of accounts across entities
+        - Align reporting hierarchies
+        - Coordinate ledger consolidation
+        - Rationalise duplicated processes
+        - Oversee post-merger control alignment
