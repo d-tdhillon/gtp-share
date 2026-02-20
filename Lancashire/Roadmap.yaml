@@ -1,1 +1,144 @@
+roadmap:
+  name: "London Market Finance Transformation Roadmap"
+  horizon: "2025-2030"
 
+  strategic_drivers:
+    - ERP platform reaching end-of-support
+    - 2029 planned syndicate merger
+    - Regulatory automation and reporting optimisation
+    - Operational efficiency and underwriting discipline
+    - Data-led performance management
+
+phases:
+
+  - phase_id: "P1"
+    name: "Strategy & Stabilisation"
+    start_date: "07-2025"
+    end_date: "06-2026"
+    primary_objective: "Establish strategic foundation and reduce operational risk before major technology change."
+    key_initiatives:
+      - Enterprise finance strategy definition
+      - ERP end-of-support impact assessment
+      - Current-state process and close benchmarking
+      - Target operating model blueprint
+      - Initial data architecture and master data strategy
+      - Risk and controls assessment
+    pros:
+      - Reduces ambiguity before large investment
+      - Protects financial reporting stability
+      - Aligns finance transformation with underwriting strategy
+    cons:
+      - Limited visible business benefit initially
+      - Risk of stakeholder fatigue without quick wins
+    dependencies:
+      - Executive sponsorship
+      - Confirmed syndicate merger timeline
+
+  - phase_id: "P2"
+    name: "Core ERP Modernisation"
+    start_date: "07-2026"
+    end_date: "12-2027"
+    primary_objective: "Replace legacy ERP and eliminate technology end-of-support risk."
+    key_initiatives:
+      - ERP selection and approval
+      - GL, AP, AR implementation
+      - Intercompany accounting framework
+      - Expense and corporate card integration
+      - Banking connectivity (BACS, CHAPS, SEPA)
+      - Security, IAM and environment provisioning
+      - Close process automation
+    pros:
+      - Removes unsupported platform risk
+      - Enhances resilience and auditability
+      - Establishes scalable cloud architecture
+    cons:
+      - High delivery intensity
+      - Change fatigue risk
+      - Requires strong governance discipline
+    dependencies:
+      - Infrastructure readiness
+      - Data model sign-off
+      - Funding approval
+
+  - phase_id: "P3"
+    name: "Integrated Technical Accounting"
+    start_date: "01-2028"
+    end_date: "12-2028"
+    primary_objective: "Automate London Market accounting flows and reduce manual reconciliations."
+    key_initiatives:
+      - Policy admin to finance integration
+      - Claims financial interface automation
+      - Bordereaux ingestion and validation engine
+      - Reinsurance treaty accounting integration
+      - Subledger to GL control automation
+      - Automated reconciliation framework
+    pros:
+      - Improves financial accuracy
+      - Reduces operational risk
+      - Enables real-time management insight
+    cons:
+      - High system interdependency complexity
+      - Intensive SIT and regulatory testing requirements
+    dependencies:
+      - Stable ERP platform (Phase 2 complete)
+      - Mature data governance
+
+  - phase_id: "P4"
+    name: "Regulatory & Insight Optimisation"
+    start_date: "01-2029"
+    end_date: "09-2029"
+    primary_objective: "Automate Lloyd’s, Solvency II and management reporting ahead of syndicate merger."
+    key_initiatives:
+      - Trial balance to regulatory mapping automation
+      - QMA/QMB submission pipeline
+      - Solvency II QRT integration
+      - Management dashboards and combined ratio analytics
+      - Continuous close framework
+    pros:
+      - Reduces regulatory submission risk
+      - Improves executive insight and capital reporting
+      - Positions organisation for merger readiness
+    cons:
+      - High cross-functional coordination
+      - Actuarial and finance alignment complexity
+    dependencies:
+      - Mature integration architecture
+      - Regulatory alignment and dry runs
+
+  - phase_id: "P5"
+    name: "Syndicate Merger & Platform Consolidation"
+    start_date: "10-2029"
+    end_date: "12-2030"
+    primary_objective: "Align finance architecture to support merged syndicate operations and optimise cost base."
+    key_initiatives:
+      - Harmonised chart of accounts
+      - Ledger consolidation and entity rationalisation
+      - Shared services operating model alignment
+      - Unified reporting framework
+      - Post-merger control harmonisation
+    pros:
+      - Scalable merged platform
+      - Reduced duplication of processes
+      - Improved consolidated insight
+    cons:
+      - Significant change overlaying previous transformation
+      - Cultural integration risks
+      - Resource capacity strain
+    dependencies:
+      - Successful ERP and integration stabilisation
+      - Legal completion of syndicate merger
+
+risk_themes:
+  - ERP migration execution risk
+  - Regulatory compliance risk during transition
+  - Data quality and integration dependency risk
+  - Change fatigue across finance and underwriting teams
+  - Timeline compression risk due to merger
+
+target_state_by_12-2030:
+  - Fully supported cloud ERP platform
+  - Automated London Market technical accounting
+  - Continuous close capability
+  - Integrated regulatory reporting framework
+  - Finance architecture aligned to merged syndicate structure
+  - Enterprise data model supporting underwriting performance analytics
