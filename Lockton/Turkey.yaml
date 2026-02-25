@@ -1,0 +1,182 @@
+integration_options:
+  country: Turkey
+  local_erp: DAOI
+  group_erp: Oracle Fusion
+
+  categories:
+
+    - name: Integration Architecture
+      icon: account_tree
+      dimensions:
+
+        - title: Integration Model
+          description: How financial data moves from DAOI to Group Oracle.
+          option_1: Monthly trial balance upload.
+          option_2: Daily or periodic journal-level interface.
+          option_3: Subledger feed into Accounting Hub then posted to Oracle GL.
+
+        - title: Data Granularity
+          description: Level of financial detail transferred to Group.
+          option_1: General ledger summary balances only.
+          option_2: Journal line detail.
+          option_3: Subledger transaction-level detail.
+
+        - title: Accounting Logic Ownership
+          description: Where accounting transformation and mapping rules are maintained.
+          option_1: DAOI maintains accounting logic.
+          option_2: DAOI maintains accounting logic with mapping validation.
+          option_3: Centralised rule engine within Oracle Accounting Hub.
+
+    - name: FX and Inflation Management
+      icon: currency_exchange
+      dimensions:
+
+        - title: FX Handling
+          description: Where currency translation and remeasurement occurs.
+          option_1: Month-end translation in Oracle.
+          option_2: Per journal or in Oracle at upload.
+          option_3: Centralised rule-based FX logic in Accounting Hub.
+
+        - title: Hyperinflation Capability (IAS 29)
+          description: Ability to manage high inflation accounting adjustments.
+          option_1: Manual or offline adjustments.
+          option_2: Partial control through journal adjustments.
+          option_3: Structured and centrally controlled adjustment logic.
+
+        - title: FX Volatility Visibility
+          description: Ability to monitor intra-period FX impact.
+          option_1: Low visibility (monthly view).
+          option_2: Medium visibility (near real-time journals).
+          option_3: High visibility with transaction-level insight.
+
+    - name: Tax Management
+      icon: receipt_long
+      dimensions:
+
+        - title: Indirect Tax Processing
+          description: Where VAT and withholding tax calculations are managed.
+          option_1: Fully calculated and reported in DAOI; summary balances uploaded.
+          option_2: Calculated in DAOI; tax journals interfaced.
+          option_3: Calculated in DAOI with central validation and mapping oversight.
+
+        - title: Tax Transparency
+          description: Level of tax detail visible at group level.
+          option_1: Low visibility (summary only).
+          option_2: Medium visibility (journal-level insight).
+          option_3: High visibility (subledger-level detail retained).
+
+        - title: Deferred Tax Adjustments
+          description: Ability to post and manage group-level tax adjustments.
+          option_1: Manual group journals required.
+          option_2: Possible via mapped journal feeds.
+          option_3: Centralised rule-based adjustments supported.
+
+    - name: Expenses and Operational Spend
+      icon: payments
+      dimensions:
+
+        - title: Expense Processing Location
+          description: Where AP and employee expenses are operationally processed.
+          option_1: Fully processed in DAOI.
+          option_2: Fully processed in DAOI.
+          option_3: Processed in DAOI with centralised accounting transformation.
+
+        - title: Expense Classification Control
+          description: Alignment of expense categorisation to group standards.
+          option_1: Summary-level mapping only.
+          option_2: Journal-level mapping and validation.
+          option_3: Rule-based classification and enrichment in Accounting Hub.
+
+        - title: Expense Analytics Capability
+          description: Ability to analyse spend drivers at group level.
+          option_1: Limited analytical capability.
+          option_2: Improved insight through journal detail.
+          option_3: Strong analytical capability with transaction-level visibility.
+
+    - name: Control and Governance
+      icon: verified_user
+      dimensions:
+
+        - title: Intercompany Management
+          description: Ability to reconcile and eliminate intercompany balances.
+          option_1: Manual reconciliation process.
+          option_2: Semi-automated reconciliation.
+          option_3: Rule-based validation and stronger matching controls.
+
+        - title: Audit Trail Strength
+          description: Traceability from source transaction to consolidated reporting.
+          option_1: Medium strength audit trail.
+          option_2: High audit traceability.
+          option_3: Very high traceability with transformation logging.
+
+        - title: Data Standardisation
+          description: Alignment to group chart of accounts and policy standards.
+          option_1: Mapping only.
+          option_2: Mapping with structured validation.
+          option_3: Centralised governance and rule enforcement.
+
+    - name: Reporting and Close
+      icon: insights
+      dimensions:
+
+        - title: Drilldown Capability
+          description: Ability to trace balances to transaction level.
+          option_1: No drilldown capability.
+          option_2: Limited drilldown.
+          option_3: Strong drilldown with retained references.
+
+        - title: Consolidation Speed
+          description: Impact on group close timeline.
+          option_1: Slower due to manual checks.
+          option_2: Improved close cycle.
+          option_3: Strong close acceleration through automation.
+
+    - name: Implementation and Operations
+      icon: build
+      dimensions:
+
+        - title: Speed to Deploy
+          description: Estimated implementation duration.
+          option_1: 6 to 8 weeks.
+          option_2: 3 to 5 months.
+          option_3: 3 to 6 months.
+
+        - title: Cost Level
+          description: Relative implementation and support cost.
+          option_1: Low.
+          option_2: Medium.
+          option_3: Medium to High.
+
+        - title: Operational Disruption
+          description: Impact on Turkey finance operations.
+          option_1: Very low disruption.
+          option_2: Low disruption.
+          option_3: Low disruption.
+
+        - title: Technical Complexity
+          description: Integration and design effort required.
+          option_1: Low complexity.
+          option_2: Medium complexity.
+          option_3: Medium to high complexity.
+
+    - name: Strategic Fit
+      icon: trending_up
+      dimensions:
+
+        - title: Scalability
+          description: Ability to extend model to other countries.
+          option_1: Low scalability.
+          option_2: Medium scalability.
+          option_3: High scalability.
+
+        - title: Long-Term Alignment
+          description: Fit with global ERP standardisation strategy.
+          option_1: Tactical short-term solution.
+          option_2: Transitional solution.
+          option_3: Strong strategic middle-ground.
+
+        - title: Governance Centralisation
+          description: Degree of group control over accounting policy.
+          option_1: Low central control.
+          option_2: Medium central control.
+          option_3: High central control.
