@@ -1,0 +1,187 @@
+report:
+  title: "Proof of Concept – AFCS-Led Accounting Architecture"
+  subtitle: "Single Country / Single Entity Insurance Deployment"
+  version: "1.0"
+  duration:
+    total_weeks: 16
+    summary: "Time-boxed 16-week proof of concept to validate architecture, governance, performance, and reconciliation controls."
+
+  executive_summary: >
+    This Proof of Concept (PoC) validates an AFCS-led accounting architecture
+    for a single-country, single-entity insurance operation. The initiative will
+    demonstrate granular source ingestion, event-level accounting generation,
+    controlled rule governance, statutory ledger posting, reconciled reporting,
+    and allocation modelling within a controlled production-like environment.
+
+    The PoC is designed to de-risk a broader rollout by proving operating model
+    readiness, reconciliation discipline, performance scalability, and data model fit.
+
+  objectives:
+
+    strategic:
+      - "Validate AFCS as enterprise accounting data foundation."
+      - "Confirm clean separation between calculation layer and legal book of record."
+      - "Demonstrate audit-ready traceability from source event to GL."
+      - "Provide blueprint for scalable multi-entity expansion."
+
+    functional:
+      - "Ingest premium, claims, and reinsurance feeds into AFCS."
+      - "Generate balanced journals through AFCS → AHCS → GL."
+      - "Produce reconciled trial balance."
+      - "Deliver one LOB-level management P&L."
+      - "Demonstrate driver-based allocation model."
+
+    technical:
+      - "Validate integration and batch performance."
+      - "Confirm reconciliation controls."
+      - "Prove event-to-ledger traceability."
+      - "Test environment resilience and scalability."
+
+  scope:
+
+    included:
+      - "Selected insurance product line(s)."
+      - "1–3 accounting periods."
+      - "Core accounting flows."
+      - "Single allocation use case."
+      - "Management and statutory outputs."
+      - "Reconciliation framework."
+
+    excluded:
+      - "Full tax transformation."
+      - "Regulatory capital modelling."
+      - "Multi-entity consolidation."
+      - "Full IFRS transformation."
+      - "Advanced scenario modelling."
+
+  timeline:
+
+    phases:
+
+      - phase: "Phase 1 – Architecture & Design"
+        duration_weeks: 4
+        objectives:
+          - "Confirm target operating model."
+          - "Define reconciliation framework."
+          - "Agree accounting policies and mappings."
+        key_deliverables:
+          - "Approved architecture blueprint."
+          - "Control framework document."
+          - "Signed-off data model design."
+
+      - phase: "Phase 2 – Build & Integration"
+        duration_weeks: 6
+        objectives:
+          - "Configure AFCS data model."
+          - "Develop ingestion pipelines."
+          - "Configure AHCS accounting rules."
+          - "Establish GL integration."
+        key_deliverables:
+          - "Working end-to-end data flow."
+          - "Journal generation validated."
+          - "Initial reconciliation success."
+
+      - phase: "Phase 3 – Testing & Parallel Run"
+        duration_weeks: 4
+        objectives:
+          - "Execute SIT and UAT."
+          - "Run parallel comparison against legacy."
+          - "Validate allocations and P&L views."
+        key_deliverables:
+          - "Balanced subledger-to-GL reconciliation."
+          - "Management P&L reconciled to statutory."
+          - "Performance benchmark results."
+
+      - phase: "Phase 4 – Assessment & Decision Gate"
+        duration_weeks: 2
+        objectives:
+          - "Document findings."
+          - "Assess scalability and cost."
+          - "Present decision recommendation."
+        key_deliverables:
+          - "PoC outcome report."
+          - "Risk assessment update."
+          - "Rollout recommendation."
+
+  risks:
+
+    - category: "Data Quality"
+      description: "Inconsistent or insufficient granularity in source systems."
+      mitigation: "Early profiling, cleansing, and validation rules."
+
+    - category: "Reconciliation Complexity"
+      description: "AFCS outputs fail to reconcile cleanly to GL."
+      mitigation: "Design reconciliation checkpoints from outset."
+
+    - category: "Performance"
+      description: "Batch processing exceeds agreed window."
+      mitigation: "Volume simulation and early performance testing."
+
+    - category: "Governance Ambiguity"
+      description: "Unclear ownership between AFCS and AHCS."
+      mitigation: "Defined operating model and approval workflows."
+
+    - category: "Scope Creep"
+      description: "Expansion beyond PoC boundaries."
+      mitigation: "Strict success criteria and time-boxing."
+
+    - category: "Change Resistance"
+      description: "Finance team discomfort with event-led accounting model."
+      mitigation: "Stakeholder engagement and training."
+
+  dependencies:
+
+    business:
+      - "Defined accounting policies."
+      - "Approved chart of accounts."
+      - "Allocation driver agreement."
+      - "Availability of sample production-like data."
+
+    technical:
+      - "Provisioned DEV/SIT/UAT environments."
+      - "Secure connectivity to source systems."
+      - "Data extraction capability."
+      - "Integration resource availability."
+
+    governance:
+      - "Named finance process owners."
+      - "Agreed reconciliation tolerances."
+      - "Defined sign-off framework."
+
+  success_criteria:
+
+    - "Source data loads successfully into AFCS."
+    - "Balanced journals generated and posted into GL."
+    - "Subledger-to-GL reconciliation balances."
+    - "Management P&L reconciles to statutory totals."
+    - "Batch performance meets agreed window."
+    - "Full audit traceability demonstrated."
+
+  expected_outcomes:
+
+    immediate:
+      - "Validated target architecture."
+      - "Measured performance metrics."
+      - "Confirmed data model suitability."
+      - "Identified integration complexity."
+      - "Clear rollout cost estimate."
+
+    strategic:
+      - "Reduced enterprise rollout risk."
+      - "Reusable blueprint for expansion."
+      - "Improved finance data governance."
+      - "Stronger transformation business case."
+
+  decision_gate:
+
+    post_poc_options:
+      - "Proceed to phased rollout."
+      - "Expand to additional entities."
+      - "Adjust architecture scope."
+      - "Re-sequence transformation roadmap."
+
+  executive_statement: >
+    This PoC is not intended to prove technology capability alone.
+    It is designed to validate organisational readiness, governance discipline,
+    reconciliation integrity, and scalability of an event-led accounting foundation
+    before enterprise deployment.
