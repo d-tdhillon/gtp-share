@@ -1,1 +1,265 @@
+meta:
+  context:
+    industry: insurance
+    deployment_scope:
+      country: single
+      legal_entity: single
+    target_architecture: AFCS-led
+    primary_products:
+      - AFCS (Account Foundation Cloud Service)
+      - AHCS (Accounting Hub Cloud Service)
+      - Fusion GL
+    optional_products:
+      - Fusion Subledger Accounting (SLA)
+      - FCCS (only if consolidation required)
+  legend:
+    primary: "✔"
+    supporting: "◐"
+    not_typical: "–"
 
+minimum_viable_stack:
+  layers:
+    - name: Source Systems
+      examples: [PAS, Claims, Reinsurance, Commissions, External Feeds]
+    - name: AFCS
+      role: "Granular data foundation, enrichment, allocation/calculation, accounting-event staging, journal output"
+    - name: AHCS
+      role: "Accounting policy enforcement, rules, subledger governance, controlled journal creation"
+    - name: Fusion GL
+      role: "Legal book of record, statutory trial balance, close ownership"
+    - name: Optional
+      items:
+        - "Fusion SLA: posting/control framework where required"
+        - "FCCS: consolidation and group adjustments (not MVS for single entity)"
+
+capability_landscape:
+  columns:
+    - category
+    - workpack
+    - description
+    - primary_system_layer
+
+  rows:
+    - category: Architecture & Governance
+      workpack: Target Operating Model
+      description: >-
+        Define boundaries between AFCS (data & calculation), AHCS (accounting governance),
+        and GL (book of record), including ownership, SoD, and decision rights.
+      primary_system_layer: Cross-layer
+
+    - category: Architecture & Governance
+      workpack: Control & Reconciliation Framework
+      description: >-
+        Design balancing checkpoints from source → AFCS → AHCS → GL with tolerance rules,
+        sign-offs, exception workflows, and audit-ready evidence.
+      primary_system_layer: Cross-layer
+
+    - category: Architecture & Governance
+      workpack: Security & Access Design
+      description: >-
+        Role-based access, approval workflows, and segregation between accounting rule maintenance,
+        journal approval, and operations.
+      primary_system_layer: All layers
+
+    - category: Data Foundation
+      workpack: Source System Integration
+      description: >-
+        Configure ingestion of PAS, claims, and reinsurance feeds into AFCS with agreed granularity
+        (policy/transaction/balance) and interface operational controls.
+      primary_system_layer: AFCS
+
+    - category: Data Foundation
+      workpack: Data Model Configuration
+      description: >-
+        Configure AFCS granular data model aligned to reporting, tax, and accounting requirements,
+        including dimensions and hierarchies.
+      primary_system_layer: AFCS
+
+    - category: Data Foundation
+      workpack: Data Quality & Validation
+      description: >-
+        Implement validation rules, completeness checks, rejection handling, and monitoring dashboards
+        at ingestion and enrichment stages.
+      primary_system_layer: AFCS
+
+    - category: Data Foundation
+      workpack: Historical Data Strategy
+      description: >-
+        Define opening balance vs history approach; design migration loads into AFCS and GL, including
+        cutover reconciliation approach and retention strategy.
+      primary_system_layer: AFCS + GL
+
+    - category: Accounting
+      workpack: Accounting Policy Mapping
+      description: >-
+        Align chart of accounts, accounting policies, and event attributes to ensure compliant journal generation
+        and consistent reporting classifications.
+      primary_system_layer: AHCS + GL
+
+    - category: Accounting
+      workpack: Event-to-Journal Design
+      description: >-
+        Configure derivation logic converting AFCS events into balanced accounting entries, including
+        mappings, enrichments, and balancing rules.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Accounting
+      workpack: SLA Rule Configuration
+      description: >-
+        Configure AHCS rules (and SLA where used) to enforce accounting standards and consistent posting logic,
+        including reversals and error handling.
+      primary_system_layer: AHCS
+
+    - category: Accounting
+      workpack: GL Integration & Posting
+      description: >-
+        Establish controlled journal transfer to Fusion GL with validations, posting schedules, and
+        reconciliation of subledger totals to GL.
+      primary_system_layer: AHCS + GL
+
+    - category: Insurance Logic
+      workpack: Premium Accounting Flow
+      description: >-
+        Enrich premium events in AFCS and generate governed accounting entries via AHCS, ensuring correct
+        revenue classification and dimensional tagging.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Insurance Logic
+      workpack: Claims & Reserve Accounting
+      description: >-
+        Configure claims movements and reserve logic with compliant accounting outputs and reporting attributes,
+        including reserve movements and settlement handling.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Insurance Logic
+      workpack: Reinsurance Accounting
+      description: >-
+        Capture ceded premium and recoverables at granular level and generate correct accounting treatment,
+        including contract-level tagging and settlement tracking.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Allocations
+      workpack: Cost Allocation Model
+      description: >-
+        Configure driver-based allocation logic (e.g., corporate → function → LOB) in AFCS with clear
+        reconciliation to GL and audit traceability.
+      primary_system_layer: AFCS
+
+    - category: Allocations
+      workpack: Technical Margin Calculation
+      description: >-
+        Implement combined ratio and technical result calculations for management reporting, ensuring outputs
+        reconcile to legal results and agreed definitions.
+      primary_system_layer: AFCS
+
+    - category: Tax
+      workpack: Tax Data Mapping
+      description: >-
+        Ensure tax-relevant attributes (e.g., VAT/GST, IPT where applicable, withholding indicators, tax codes)
+        are captured in AFCS and reflected in downstream accounting entries.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Tax
+      workpack: Tax Reporting Integration
+      description: >-
+        Enable tax reporting outputs from GL balances and subledger detail, with reconciliation between tax packs
+        and statutory ledger.
+      primary_system_layer: GL
+
+    - category: Tax
+      workpack: Deferred Tax & Adjustments
+      description: >-
+        Define approach for deferred tax journals and temporary differences; configure processes and postings
+        within AHCS/GL structure.
+      primary_system_layer: AHCS + GL
+
+    - category: Reporting
+      workpack: Statutory Reporting
+      description: >-
+        Produce trial balance, statutory financial statements, and required disclosures from GL as the legal book
+        of record, aligned to close calendar.
+      primary_system_layer: GL
+
+    - category: Reporting
+      workpack: Management P&L & Technical Results
+      description: >-
+        Generate LOB-level and technical P&L views from AFCS, with governed definitions and reconciliation back to
+        GL totals.
+      primary_system_layer: AFCS
+
+    - category: Reporting
+      workpack: Reconciliation Dashboards
+      description: >-
+        Provide dashboards and control reports for AFCS ↔ AHCS ↔ GL reconciliation, exception management,
+        and operational monitoring.
+      primary_system_layer: Cross-layer
+
+    - category: Change Management
+      workpack: Stakeholder Alignment
+      description: >-
+        Identify impacted stakeholders (Finance, Actuarial, IT) and establish communications, governance cadence,
+        and decision forums.
+      primary_system_layer: Programme
+
+    - category: Change Management
+      workpack: Training & Knowledge Transfer
+      description: >-
+        Deliver training for AFCS modelling, AHCS rule management, GL operations, reconciliation processes,
+        and runbook execution.
+      primary_system_layer: All layers
+
+    - category: Change Management
+      workpack: Operating Model Transition
+      description: >-
+        Transition legacy accounting and reporting processes to the AFCS-led model with updated SOPs,
+        role updates, and support model.
+      primary_system_layer: Cross-layer
+
+    - category: Infrastructure
+      workpack: Environment Provisioning
+      description: >-
+        Provision DEV/SIT/UAT/PROD environments for AFCS, AHCS, and GL with release management approach
+        and environment refresh strategy.
+      primary_system_layer: All layers
+
+    - category: Infrastructure
+      workpack: Integration & Connectivity
+      description: >-
+        Establish secure connectivity (network, identity, certificates) and integration patterns between source
+        systems and Oracle Cloud services.
+      primary_system_layer: AFCS + AHCS
+
+    - category: Infrastructure
+      workpack: Performance & Batch Design
+      description: >-
+        Define batch windows, processing schedules, performance benchmarks, and monitoring controls,
+        including capacity planning.
+      primary_system_layer: AFCS
+
+    - category: Infrastructure
+      workpack: Backup & DR Strategy
+      description: >-
+        Define backup, retention, disaster recovery, and business continuity procedures aligned to RTO/RPO
+        requirements and operational ownership.
+      primary_system_layer: Cross-layer
+
+    - category: Testing & Cutover
+      workpack: End-to-End Testing
+      description: >-
+        Validate full lifecycle from source ingestion to GL posting and reporting outputs, including negative testing,
+        error handling, and reconciliation.
+      primary_system_layer: All layers
+
+    - category: Testing & Cutover
+      workpack: Parallel Run & Reconciliation
+      description: >-
+        Run legacy vs new in parallel; resolve variances with controlled defect management and sign-off
+        criteria by process owners.
+      primary_system_layer: Cross-layer
+
+    - category: Testing & Cutover
+      workpack: Cutover & Hypercare
+      description: >-
+        Execute cutover plan (data loads, open items, opening balances), go-live governance, and hypercare
+        stabilisation with daily controls and exit criteria.
+      primary_system_layer: All layers
