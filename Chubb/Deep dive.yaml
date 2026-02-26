@@ -1,0 +1,255 @@
+title: "AFCS PoC – Cash & Billing Domain"
+context:
+  architecture: "AFCS-led Accounting Foundation"
+  scope: "Single Country / Single Entity"
+  source_systems:
+    - "Guidewire Billing (or PAS)"
+    - "Bank Statement Feed (BAI2 / MT940 / ISO20022)"
+  downstream_systems:
+    - "AHCS (Accounting Hub)"
+    - "Fusion GL"
+
+approach_and_steps:
+
+  - phase: "1. Domain Definition"
+    steps:
+      - name: "Define Canonical Objects"
+        description: >
+          Define AFCS objects BANK_STATEMENT_LINE and BILLING_OPEN_ITEM
+          including keys, monetary attributes, dimensions, and accounting attributes.
+        owner: "AFCS Functional"
+        output: "Canonical object model"
+
+      - name: "Define Event Taxonomy"
+        description: >
+          Define event types: RECEIPT, DISBURSEMENT, MATCHED_RECEIPT,
+          UNAPPLIED_CASH, PARTIAL_MATCH.
+        owner: "Finance + AFCS"
+        output: "Event catalogue"
+
+  - phase: "2. Source Analysis"
+    steps:
+      - name: "Profile Source Data"
+        description: >
+          Analyse Guidewire billing extract and bank file structure
+          to identify fields, quality issues, and granularity.
+        owner: "Data Engineering + PAS SME"
+        output: "Source data profiling report"
+
+      - name: "Identify Matching Keys"
+        description: >
+          Confirm usable matching attributes such as invoice_id,
+          policy_number, broker reference, amount, due_date.
+        owner: "Finance Operations"
+        output: "Matching key matrix"
+
+  - phase: "3. Mapping Design"
+    steps:
+      - name: "Source to Foundation Mapping"
+        description: >
+          Map Guidewire and bank fields into AFCS canonical model,
+          including transformations and reference lookups.
+        owner: "AFCS Functional"
+        output: "Mapping specification"
+
+      - name: "Define Enrichment Rules"
+        description: >
+          Derive accounting_date, legal_entity, ledger, GL mapping key,
+          and cash_type within AFCS.
+        owner: "AFCS Functional"
+        output: "Enrichment configuration"
+
+  - phase: "4. Matching Logic"
+    steps:
+      - name: "Design Matching Algorithm"
+        description: >
+          Define rule hierarchy: exact reference → token match →
+          amount/date tolerance → manual review queue.
+        owner: "AFCS + Finance"
+        output: "Matching logic design"
+
+      - name: "Exception Handling Model"
+        description: >
+          Define handling for unmatched, ambiguous, and partial receipts,
+          including suspense policy.
+        owner: "Finance Operations"
+        output: "Exception management policy"
+
+  - phase: "5. Accounting Design"
+    steps:
+      - name: "Define Journal Scenarios"
+        description: >
+          Define debit/credit outcomes for matched receipts,
+          unapplied cash, and partial settlements.
+        owner: "Finance Policy"
+        output: "Journal scenario matrix"
+
+      - name: "Define Accounting Payload"
+        description: >
+          Define structured accounting output from AFCS
+          to AHCS including journal source, category, segments, and amounts.
+        owner: "AFCS + AHCS"
+        output: "Accounting interface contract"
+
+  - phase: "6. Controls"
+    steps:
+      - name: "Define Reconciliation Framework"
+        description: >
+          Establish controls: bank totals vs GL cash,
+          matched receipts vs AR reduction,
+          suspense ageing.
+        owner: "Finance Control"
+        output: "Reconciliation control framework"
+
+  - phase: "7. Build & Test"
+    steps:
+      - name: "Configure & Integrate"
+        description: >
+          Build ingestion pipelines, enrichment logic,
+          matching engine, and accounting interface.
+        owner: "Development Team"
+        output: "Working end-to-end solution"
+
+      - name: "Golden Scenario Testing"
+        description: >
+          Execute curated test scenarios covering
+          matched, partial, and unmatched cash.
+        owner: "Testing Lead"
+        output: "Signed-off test pack"
+
+  - phase: "8. Operate"
+    steps:
+      - name: "Monitoring & Runbook"
+        description: >
+          Define daily process: ingest, match, post,
+          reconcile, and escalate exceptions.
+        owner: "Operations + Finance"
+        output: "Operational runbook"
+
+
+data_mapping_events:
+
+  billing_to_afcs:
+    source_system: "Guidewire Billing"
+    source_object: "Billing Invoice"
+    mappings:
+      - source_field: "invoice_id"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "invoice_id"
+        transformation: "Direct map"
+        purpose: "Primary matching anchor"
+
+      - source_field: "policy_number"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "policy_number"
+        transformation: "Direct map"
+        purpose: "Narrative-based matching"
+
+      - source_field: "account_id"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "customer_account_id"
+        transformation: "Direct map"
+        purpose: "Counterparty identification"
+
+      - source_field: "billed_premium"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "open_amount"
+        transformation: "Direct map"
+        purpose: "Receivable balance"
+
+      - source_field: "billed_fees"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "fee_amount"
+        transformation: "Direct map"
+        purpose: "Revenue split"
+
+      - source_field: "billed_tax"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "tax_amount"
+        transformation: "Direct map"
+        purpose: "Tax reconciliation"
+
+      - source_field: "due_date"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "due_date"
+        transformation: "Direct map"
+        purpose: "Matching tolerance window"
+
+      - source_field: "currency"
+        target_object: "BILLING_OPEN_ITEM"
+        target_attribute: "currency"
+        transformation: "Validate against ledger currency"
+        purpose: "FX handling"
+
+  bank_to_afcs:
+    source_system: "Bank Statement File"
+    source_object: "Statement Line"
+    mappings:
+      - source_field: "stmt_line_id"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "bank_stmt_line_id"
+        transformation: "Direct map"
+        purpose: "Primary key"
+
+      - source_field: "bank_account_no"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "bank_account_id"
+        transformation: "Lookup internal bank reference"
+        purpose: "Cash GL mapping"
+
+      - source_field: "value_date"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "accounting_date"
+        transformation: "Configurable policy"
+        purpose: "Posting control"
+
+      - source_field: "amount"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "amount"
+        transformation: "Signed amount logic"
+        purpose: "Journal amount"
+
+      - source_field: "currency"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "currency"
+        transformation: "Direct map"
+        purpose: "FX conversion"
+
+      - source_field: "narrative"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "reference_text"
+        transformation: "Clean and tokenise"
+        purpose: "Matching engine input"
+
+      - source_field: "debit_credit_flag"
+        target_object: "BANK_STATEMENT_LINE"
+        target_attribute: "cash_direction"
+        transformation: "Derive RECEIPT or DISBURSEMENT"
+        purpose: "Accounting logic"
+
+
+accounting_examples:
+
+  matched_premium_receipt:
+    description: "Cash matched exactly to open invoice"
+    journal:
+      - debit: "Cash Account"
+        credit: "Premium Receivable"
+        amount_logic: "Matched amount"
+
+  unapplied_cash:
+    description: "Cash received but not matched"
+    journal:
+      - debit: "Cash Account"
+        credit: "Unapplied Cash / Suspense"
+        amount_logic: "Full receipt amount"
+
+  partial_match:
+    description: "Cash partially matches invoice"
+    journal:
+      - debit: "Cash Account"
+        credit: "Premium Receivable (matched portion)"
+        amount_logic: "Matched amount"
+      - debit: "None"
+        credit: "Unapplied Cash (residual)"
+        amount_logic: "Unmatched balance"
