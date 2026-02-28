@@ -1,0 +1,118 @@
+london_market_finance_transformation:
+  title: "Typical Finance Transformation Outcomes – London Market Insurance"
+  sectors_in_scope:
+    - Managing Agents
+    - Syndicates
+    - Carriers
+    - Lloyd’s Market Participants
+
+  themes:
+
+    - name: "Financial Close & Control"
+      current_state:
+        - "10–15 day month-end close"
+        - "Heavy Excel dependency"
+        - "Manual journals and adjustments"
+        - "Unclear ownership across entities"
+      transformation_outcomes:
+        - "Standardised chart of accounts"
+        - "Automated journals and accruals"
+        - "Structured intercompany eliminations"
+        - "Clear finance ownership model"
+      measurable_impact:
+        - "Close reduced to 5–7 days"
+        - "Fewer audit adjustments"
+        - "Improved control environment"
+      london_market_nuance:
+        - "Clear segregation of syndicate vs corporate vs overseas branch reporting"
+        - "Improved QMA/QMB readiness for Lloyd’s reporting"
+
+    - name: "Technical Accounting & Subledger"
+      current_state:
+        - "Loose integration between PAS and ERP"
+        - "Suspense and clearing account build-up"
+        - "Manual premium and claims postings"
+      transformation_outcomes:
+        - "Rules-driven Accounting Hub or subledger"
+        - "Automated premium, claims, commissions, and fees"
+        - "End-to-end audit trail from policy to ledger"
+      measurable_impact:
+        - "Reduced reconciliation breaks"
+        - "Improved GWP and earned premium visibility"
+        - "Better claims reserve tracking"
+      london_market_nuance:
+        - "Integration from PAS (e.g., Guidewire) into ERP"
+        - "Management of bordereaux timing differences"
+        - "Improved technical provisions transparency"
+
+    - name: "Regulatory & External Reporting"
+      current_state:
+        - "Manual Solvency II packs"
+        - "Fragmented data sources"
+        - "Late audit adjustments"
+      transformation_outcomes:
+        - "Automated regulatory data flows"
+        - "XBRL-ready outputs"
+        - "Improved data lineage and governance"
+      measurable_impact:
+        - "Faster audit cycle"
+        - "Reduced regulator queries"
+        - "Lower reporting risk"
+      london_market_nuance:
+        - "Alignment to PRA and FCA expectations"
+        - "Compliance with Lloyd’s reporting standards"
+        - "Reconciled technical provisions across systems"
+
+    - name: "Operating Model & Cost Efficiency"
+      current_state:
+        - "Duplicate systems across managing agents"
+        - "Siloed finance teams"
+        - "High manual processing effort"
+      transformation_outcomes:
+        - "Shared services for AP and expenses"
+        - "Centralised chart of accounts governance"
+        - "Automated expense allocations and cost recharge"
+        - "System rationalisation"
+      measurable_impact:
+        - "20–40% reduction in manual processing effort"
+        - "Lower operating cost ratio"
+        - "Improved scalability"
+      london_market_nuance:
+        - "Often triggered by syndicate mergers"
+        - "Managing agent consolidation"
+        - "ERP end-of-support deadlines"
+
+    - name: "Data & Performance Insight"
+      current_state:
+        - "Lagging profitability reporting"
+        - "Shadow BI spreadsheets"
+        - "Limited underwriting and finance integration"
+      transformation_outcomes:
+        - "Real-time combined ratio dashboards"
+        - "Class-of-business profitability reporting"
+        - "Improved premium and claims cash forecasting"
+        - "Unified underwriting and finance data model"
+      measurable_impact:
+        - "Faster portfolio steering decisions"
+        - "Improved capital allocation"
+        - "Enhanced reinsurance optimisation"
+      london_market_nuance:
+        - "Visibility at class, syndicate, and reinsurance layer level"
+        - "Improved reporting for Lloyd’s oversight"
+
+    - name: "M&A & Integration Readiness"
+      current_state:
+        - "Parallel ledgers post-acquisition"
+        - "Inconsistent accounting policies"
+        - "Long integration timelines"
+      transformation_outcomes:
+        - "Harmonised chart of accounts"
+        - "Rapid ledger integration"
+        - "Standardised accounting policies"
+      measurable_impact:
+        - "Integration completed in 3–6 months vs 12+ months"
+        - "Reduced transition risk"
+        - "Lower dual-running cost"
+      london_market_nuance:
+        - "Supports Part VII transfers"
+        - "Enables syndicate restructuring"
